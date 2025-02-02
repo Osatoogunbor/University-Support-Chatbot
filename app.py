@@ -14,13 +14,6 @@ import os
 import time
 import streamlit.components.v1 as components
 
-import os
-from dotenv import load_dotenv
-import openai
-from pinecone import Pinecone
-
-# ✅ Load environment variables from .env file
-load_dotenv()
 
 # ✅ Access API keys securely
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
