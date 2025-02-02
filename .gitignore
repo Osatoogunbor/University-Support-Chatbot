@@ -1,0 +1,10 @@
+.env.env
+__pycache__/
+*.ipynb_checkpoints/
+.DS_Store
+node_modules/
+.vscode/
+.idea/
+*.log
+*.sqlite3
+.env
