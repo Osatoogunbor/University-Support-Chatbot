@@ -14,7 +14,10 @@ import os
 import time
 import streamlit.components.v1 as components
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 479371c (Your commit message here)
 # ✅ Access API keys securely
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
