@@ -20,3 +20,4 @@ spacy
 nltk
 streamlit-option-menu
 streamlit-aggrid
+python-dotenv

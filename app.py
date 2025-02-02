@@ -10,23 +10,12 @@ from openai import AsyncOpenAI  # <-- IMPORTANT: Keep your AsyncOpenAI import
 from pinecone import Pinecone
 from transformers import pipeline
 from gtts import gTTS
-import os
 import time
 import streamlit.components.v1 as components
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 479371c (Your commit message here)
-# ✅ Access API keys securely
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-
-# ✅ Check if API keys are loaded correctly
-if not OPENAI_API_KEY:
-    raise ValueError("❌ OPENAI_API_KEY not found! Check .env file.")
-if not PINECONE_API_KEY:
-    raise ValueError("❌ PINECONE_API_KEY not found! Check .env file.")
+# ✅ Access API keys securely from Streamlit secrets
+OPENAI_API_KEY = st.secrets["openai_api_key"]
+PINECONE_API_KEY = st.secrets["pinecone_api_key"]
 
 # ✅ Initialize OpenAI & Pinecone
 openai.api_key = OPENAI_API_KEY
@@ -38,6 +27,7 @@ pc = Pinecone(api_key=PINECONE_API_KEY)  # ✅ Pinecone initialization
 index = pc.Index("ai-powered-chatbot")
 
 st.write("✅ API keys loaded successfully!")
+
 
 # ✅ Load Sentiment Analysis Model
 sentiment_analyzer = pipeline(
