@@ -172,7 +172,7 @@ def main():
         """,
         unsafe_allow_html=True
     )
-    st.markdown('<div class="title">🎓 University Student Support Chatbot</div>', unsafe_allow_html=True)
+    st.markdown('<div class="title">🎓 UniEase: Your University Study and Wellbeing Companion </div>', unsafe_allow_html=True)
     st.write("🔹 Type your queries below.")
 
     # ✅ Chat history container
