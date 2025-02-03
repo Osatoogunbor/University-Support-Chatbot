@@ -179,8 +179,8 @@ async def generate_response(query):
                 },
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=300,
-            temperature=0.5,
+            max_tokens=250,
+            temperature=0.7,
             stream=True
         )
 
