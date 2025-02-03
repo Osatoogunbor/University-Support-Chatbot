@@ -2,12 +2,7 @@
 # coding: utf-8
 
 import asyncio
-import speech_recognition as sr
-import sys
-import os
 from transformers import pipeline
-from gtts import gTTS
-import time
 
 import streamlit as st
 import openai
@@ -31,13 +26,10 @@ openai.api_key = OPENAI_API_KEY
 aclient = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
 pc = Pinecone(api_key=PINECONE_API_KEY)
-
-
 index = pc.Index("ai-powered-chatbot")
 
 print("✅ API keys loaded successfully!")
 print("✅ Pinecone and OpenAI clients initialized!")
-
 
 # ✅ Load Sentiment Analysis Model
 sentiment_analyzer = pipeline(
@@ -45,27 +37,6 @@ sentiment_analyzer = pipeline(
     model="distilbert/distilbert-base-uncased-finetuned-sst-2-english",
     revision="714eb0f"
 )
-
-def speak_response(text):
-    try:
-        # Generate the speech using gTTS and save it as a temporary file
-        filename = f"response_{int(time.time())}.mp3"
-        tts = gTTS(text=text, lang="en")
-        tts.save(filename)
-
-        # Cross-platform audio playback
-        if sys.platform.startswith("win"):
-            os.system(f'start {filename}')  # Windows
-        elif sys.platform.startswith("linux"):
-            os.system(f'xdg-open {filename}')  # Linux
-        elif sys.platform.startswith("darwin"):
-            os.system(f'open {filename}')  # macOS
-        else:
-            print("❌ Unsupported platform for audio playback.")
-    except Exception as e:
-        print(f"❌ Error playing response: {e}")
-
-
 
 # ✅ Generic Intent Responses
 GENERIC_INTENTS = {
@@ -106,37 +77,10 @@ async def retrieve_chunks(query, top_k=3):
             top_k=top_k,
             include_metadata=True
         )
-
         return [match.metadata.get("answer", "") for match in result.matches]
     except Exception as e:
         st.error(f"❌ Error retrieving chunks: {e}")
         return []
-
-# ✅ Function to Convert Speech to Text
-# ✅ Function to Convert Speech to Text
-def recognize_speech():
-    # Check if a microphone is available
-    if not sr.Microphone.list_microphone_names():
-        st.error("No microphone detected. Voice input is disabled.")
-        return ""
-
-    recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        st.info("🎤 Speak now...")
-        recognizer.adjust_for_ambient_noise(source)
-        audio = recognizer.listen(source)
-
-    try:
-        text = recognizer.recognize_google(audio)
-        st.success(f"🟢 You said: {text}")
-        return text
-    except sr.UnknownValueError:
-        st.warning("🔴 Sorry, I could not understand the speech.")
-        return ""
-    except sr.RequestError:
-        st.error("🔴 Could not request results. Check your internet connection.")
-        return ""
-
 
 # ✅ Generate Response
 async def generate_response(query):
@@ -229,7 +173,7 @@ def main():
         unsafe_allow_html=True
     )
     st.markdown('<div class="title">🎓 University Student Support Chatbot</div>', unsafe_allow_html=True)
-    st.write("🔹 Speak or type your queries below. Click **'Start Voice Input'** to speak.")
+    st.write("🔹 Type your queries below.")
 
     # ✅ Chat history container
     if "messages" not in st.session_state:
@@ -255,22 +199,7 @@ def main():
         st.rerun()
 
     st.divider()
-    if st.button("🎤 Start Voice Input", key="voice_button"):
-        voice_query = recognize_speech()
 
-        if voice_query:
-            st.session_state["messages"].append({"role": "user", "content": voice_query})
-
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-            response = loop.run_until_complete(generate_response(voice_query))
-
-            st.session_state["messages"].append({"role": "assistant", "content": response})
-            speak_response(response)
-
-            st.rerun()
-
-    st.divider()
     st.subheader("🔗 Useful Resources")
 
     col1, col2, col3 = st.columns(3)
