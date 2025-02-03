@@ -143,7 +143,7 @@ def display_link_card(title, description, image_url, link):
         f"""
         <div style="border: 1px solid #ddd; border-radius: 12px; padding: 15px; text-align: center; background-color: #f9f9f9; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); width: 100%; max-width: 300px;">
             <a href="{link}" target="_blank" style="text-decoration: none;">
-                <img src="{image_url}" width="100%" style="border-radius: 8px; margin-bottom: 10px;">
+                <img src="{image_url}" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 10px;">
                 <h4 style="margin-bottom: 5px; color: #1A5276; font-size: 16px;">{title}</h4>
                 <p style="margin: 0px; font-size: 13px; color: #555;">{description}</p>
                 <button style="background-color: #1E3A8A; color: white; padding: 6px 10px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; margin-top: 8px;">
