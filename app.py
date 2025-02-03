@@ -113,7 +113,13 @@ async def retrieve_chunks(query, top_k=3):
         return []
 
 # ✅ Function to Convert Speech to Text
+# ✅ Function to Convert Speech to Text
 def recognize_speech():
+    # Check if a microphone is available
+    if not sr.Microphone.list_microphone_names():
+        st.error("No microphone detected. Voice input is disabled.")
+        return ""
+
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         st.info("🎤 Speak now...")
@@ -130,6 +136,7 @@ def recognize_speech():
     except sr.RequestError:
         st.error("🔴 Could not request results. Check your internet connection.")
         return ""
+
 
 # ✅ Generate Response
 async def generate_response(query):
