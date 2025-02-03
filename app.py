@@ -1,32 +1,42 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import json
 import asyncio
-import streamlit as st
 import speech_recognition as sr
-import pyttsx3
-from openai import AsyncOpenAI  # <-- IMPORTANT: Keep your AsyncOpenAI import
-from pinecone import Pinecone
+import sys
+import os
 from transformers import pipeline
 from gtts import gTTS
 import time
-import streamlit.components.v1 as components
 
-# ✅ Access API keys securely from Streamlit secrets
+import streamlit as st
+import openai
+from openai import AsyncOpenAI
+from pinecone import Pinecone
+
+# ✅ Access API keys securely
 OPENAI_API_KEY = st.secrets["openai_api_key"]
 PINECONE_API_KEY = st.secrets["pinecone_api_key"]
+
+# ✅ Check if API keys are loaded correctly
+if not OPENAI_API_KEY:
+    raise ValueError("❌ OPENAI_API_KEY not found! Check your Streamlit secrets.")
+if not PINECONE_API_KEY:
+    raise ValueError("❌ PINECONE_API_KEY not found! Check your Streamlit secrets.")
 
 # ✅ Initialize OpenAI & Pinecone
 openai.api_key = OPENAI_API_KEY
 
-# <-- ADDED: define 'aclient' for embedding & chat calls
+# ✅ Define aclient for AsyncOpenAI usage
 aclient = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
-pc = Pinecone(api_key=PINECONE_API_KEY)  # ✅ Pinecone initialization
+pc = Pinecone(api_key=PINECONE_API_KEY)
+
+
 index = pc.Index("ai-powered-chatbot")
 
-st.write("✅ API keys loaded successfully!")
+print("✅ API keys loaded successfully!")
+print("✅ Pinecone and OpenAI clients initialized!")
 
 
 # ✅ Load Sentiment Analysis Model
@@ -36,25 +46,26 @@ sentiment_analyzer = pipeline(
     revision="714eb0f"
 )
 
-# ✅ Initialize Text-to-Speech Engine
-tts_engine = pyttsx3.init()
-
-import sounddevice as sd
-import soundfile as sf
-
 def speak_response(text):
     try:
+        # Generate the speech using gTTS and save it as a temporary file
         filename = f"response_{int(time.time())}.mp3"
         tts = gTTS(text=text, lang="en")
         tts.save(filename)
 
-        # ✅ Play audio inside Streamlit without opening a media player
-        data, samplerate = sf.read(filename)
-        sd.play(data, samplerate)
-        sd.wait()  # Ensure the audio fully plays before continuing
-
+        # Cross-platform audio playback
+        if sys.platform.startswith("win"):
+            os.system(f'start {filename}')  # Windows
+        elif sys.platform.startswith("linux"):
+            os.system(f'xdg-open {filename}')  # Linux
+        elif sys.platform.startswith("darwin"):
+            os.system(f'open {filename}')  # macOS
+        else:
+            print("❌ Unsupported platform for audio playback.")
     except Exception as e:
-        st.error(f"❌ Error playing response: {e}")
+        print(f"❌ Error playing response: {e}")
+
+
 
 # ✅ Generic Intent Responses
 GENERIC_INTENTS = {
