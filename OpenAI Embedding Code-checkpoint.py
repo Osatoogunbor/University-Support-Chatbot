@@ -1,109 +1,172 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[19]:
-
-
+#!/usr/bin/env python3
+import os
 import json
-import streamlit as st
-import openai
-from openai import AsyncOpenAI
-# ✅ Access API keys securely
-OPENAI_API_KEY = st.secrets["openai_api_key"]
-# ✅ Check if API keys are loaded correctly
+import time
+from datetime import date
+from dotenv import load_dotenv
+import tiktoken
+from openai import OpenAI
+from pinecone import Pinecone
+
+# --------------------------------------------------------------------------
+# 1. SETUP
+# --------------------------------------------------------------------------
+load_dotenv()  # Load from .env if present
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_ENV = os.getenv("PINECONE_ENV")
+
 if not OPENAI_API_KEY:
-    raise ValueError("❌ OPENAI_API_KEY not found! Check your Streamlit secrets.")
+    raise ValueError("❌ Missing OPENAI_API_KEY in environment or .env.")
+if not PINECONE_API_KEY:
+    raise ValueError("❌ Missing PINECONE_API_KEY in environment or .env.")
+if not PINECONE_ENV:
+    raise ValueError("❌ Missing PINECONE_ENV in environment or .env.")
 
-# ✅ Initialize OpenAI & Pinecone
-openai.api_key = OPENAI_API_KEY
+# Instantiate OpenAI and Pinecone clients
+client = OpenAI(api_key=OPENAI_API_KEY)
+pc = Pinecone(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
+index = pc.Index("ai-powered-chatbot")  # Connect to existing Pinecone index
 
-# ✅ Define aclient for AsyncOpenAI usage
-aclient = AsyncOpenAI(api_key=OPENAI_API_KEY)
+# Paths
+MERGED_JSON_PATH = "/mnt/c/Users/osato/openai_setup/merged_knowledge_base.json"
+EMBEDDINGS_OUTPUT_PATH = "/mnt/c/Users/osato/openai_setup/knowledgebase_embeddings.json"
 
-print("✅ API key loaded successfully!")
-print("✅ OpenAI client initialized!")
-# ------------------------------------------------------------------------
-# Minimal helper to handle 'answer' which may be a dict or a string
-# ------------------------------------------------------------------------
-def convert_answer_to_string(ans):
-    """Convert the 'answer' field to a string if it's a dict."""
-    if isinstance(ans, dict):
-        # Minimal approach: just turn the dict into a string
-        # (If you need a more advanced approach, build a textual summary.)
-        return str(ans)
-    else:
-        return ans if ans else ""
+# --------------------------------------------------------------------------
+# 2. LOAD MERGED KNOWLEDGE BASE
+# --------------------------------------------------------------------------
+if not os.path.isfile(MERGED_JSON_PATH):
+    raise FileNotFoundError(f"❌ File not found: {MERGED_JSON_PATH}")
 
-# ------------------------------------------------------------------------
-# Load knowledge base
-# ------------------------------------------------------------------------
-knowledgebase_file = "knowledge_base.json"
-output_embedding_file = "knowledgebase_embeddings.json"
+with open(MERGED_JSON_PATH, "r", encoding="utf-8") as f:
+    knowledgebase = json.load(f)
 
-try:
-    with open(knowledgebase_file, "r", encoding="utf-8") as f:
-        knowledgebase = json.load(f)
-    print(f"📄 Successfully loaded {knowledgebase_file}.")
-except Exception as e:
-    print(f"❌ Error loading JSON file: {e}")
-    exit()
+qa_pairs = knowledgebase.get("qa_pairs", [])
+num_qas = len(qa_pairs)
+print(f"✅ Loaded {num_qas} QA entries from: {MERGED_JSON_PATH}")
 
-# Ensure correct structure
-if "qa_pairs" not in knowledgebase:
-    print("❌ Error: 'qa_pairs' key is missing from JSON. Check file structure.")
-    exit()
+if num_qas == 0:
+    print("⚠️ No QA pairs found. Nothing to embed. Exiting.")
+    raise SystemExit
 
-qa_pairs = knowledgebase["qa_pairs"]
-embeddings_data = []
+# --------------------------------------------------------------------------
+# 3. TOKENIZER & CHUNKING UTILS
+# --------------------------------------------------------------------------
+tokenizer = tiktoken.encoding_for_model("text-embedding-ada-002")
 
-# ------------------------------------------------------------------------
-# Generate embeddings
-# ------------------------------------------------------------------------
-for idx, entry in enumerate(qa_pairs):
-    try:
-        question = entry.get("question", "").strip()
-        # answer might be a dict or string; convert to string consistently
-        answer_raw = entry.get("answer", "")
-        answer = convert_answer_to_string(answer_raw).strip()
+def count_tokens(text: str) -> int:
+    """Count tokens for text using the text-embedding-ada-002 tokenizer."""
+    return len(tokenizer.encode(text))
 
-        if not question or not answer:
-            print(f"⚠️ Skipping entry {idx} due to missing text.")
+def split_text_by_tokens(text: str, max_tokens: int = 512) -> list[str]:
+    """Naive word-split approach ensuring <= max_tokens in each chunk."""
+    words = text.split()
+    chunks = []
+    current_words = []
+
+    for word in words:
+        current_words.append(word)
+        if count_tokens(" ".join(current_words)) > max_tokens:
+            # finalize current chunk
+            current_words.pop()
+            chunk_str = " ".join(current_words).strip()
+            if chunk_str:
+                chunks.append(chunk_str)
+            current_words = [word]
+
+    # leftover words
+    if current_words:
+        leftover_str = " ".join(current_words).strip()
+        if leftover_str:
+            chunks.append(leftover_str)
+
+    return chunks
+
+# --------------------------------------------------------------------------
+# 4. EMBEDDING LOGIC (UPDATING PINECONE CORRECTLY)
+# --------------------------------------------------------------------------
+def embed_qa_pairs(pairs):
+    """
+    For each QA pair:
+      - Embed the text.
+      - Ensure answers are structured properly.
+      - Store metadata in Pinecone.
+    """
+    total = len(pairs)
+    print(f"🔵 Embedding {total} QA pairs...")
+
+    for idx, qa in enumerate(pairs):
+        doc_id = qa.get("id", f"qa_{idx}")
+        category = qa.get("category_id", "unknown")
+        source = qa.get("source", "unknown")  # "existing" or "extracted"
+        is_emergency = qa.get("is_emergency", False)
+        question = (qa.get("question") or "").strip()
+
+        # Ensure answer is a structured dictionary
+        ans_block = qa.get("answer", {})
+        if not isinstance(ans_block, dict):
+            ans_block = {
+                "main_points": [str(ans_block).strip()],
+                "examples": [],
+                "tips": [],
+                "related_topics": []
+            }
+
+        # Combine answer fields into a single string
+        main_points = " ".join(ans_block.get("main_points", []))
+        examples = " ".join(ans_block.get("examples", []))
+        tips = " ".join(ans_block.get("tips", []))
+        rel_topics = " ".join(ans_block.get("related_topics", []))
+        combined_answer = f"{main_points}\n{examples}\n{tips}\n{rel_topics}".strip()
+
+        if not question or not combined_answer:
+            print(f"⚠️ Skipping doc_id='{doc_id}' due to empty question or answer.")
             continue
 
-        combined_text = f"Q: {question}\nA: {answer}"
+        full_text = f"Q: {question}\nA: {combined_answer}"
+        full_len = count_tokens(full_text)
 
-        # Call embeddings endpoint via our OpenAI client
-        response = aclient.embeddings.create(
-            input=combined_text,
-            model="text-embedding-ada-002"
-        )
-        # NOTE: Depending on your library version, data access may vary
-        embedding = response.data[0].embedding
+        # If the text is too long, split it into chunks
+        if full_len > 8192:
+            text_chunks = split_text_by_tokens(full_text, max_tokens=512)
+        else:
+            text_chunks = [full_text]
 
-        # Store embedding
-        embeddings_data.append({
-            "id": entry.get("id", idx),
-            "question": question,
-            "answer": answer,
-            "embedding": embedding
-        })
+        print(f"   • {idx+1}/{total} => doc_id='{doc_id}', {len(text_chunks)} chunk(s), tokens={full_len}")
 
-        print(f"✅ Embedded entry {idx + 1}/{len(qa_pairs)}")
+        for c_idx, chunk_str in enumerate(text_chunks):
+            try:
+                # Generate embedding
+                resp = client.embeddings.create(
+                    model="text-embedding-ada-002",
+                    input=chunk_str
+                )
+                vector = resp.data[0].embedding
 
-    except Exception as e:
-        print(f"❌ Error embedding entry {idx}: {e}")
+                chunk_id = f"{doc_id}_chunk{c_idx}"
+                index.upsert([
+                    {
+                        "id": chunk_id,
+                        "values": vector,
+                        "metadata": {
+                            "doc_id": doc_id,
+                            "category": category,
+                            "source": source,
+                            "is_emergency": is_emergency,
+                            "text_chunk": chunk_str
+                        }
+                    }
+                ])
 
-# ------------------------------------------------------------------------
-# Save embeddings
-# ------------------------------------------------------------------------
-try:
-    with open(output_embedding_file, "w", encoding="utf-8") as f:
-        json.dump(embeddings_data, f, indent=4)
-    print(f"✅ Embeddings successfully saved to {output_embedding_file}")
-except Exception as e:
-    print(f"❌ Error saving embeddings: {e}")
+                time.sleep(0.2)  # Avoid rate limits
 
+            except Exception as e:
+                print(f"❌ Error embedding doc_id={doc_id}, chunk={c_idx}: {e}")
 
-
-
-
+# --------------------------------------------------------------------------
+# 5. MAIN - EMBED & SAVE
+# --------------------------------------------------------------------------
+if __name__ == "__main__":
+    embed_qa_pairs(qa_pairs)
+    print("✅ Embedding process completed.")
