@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "last_updated": "2025-02-03",
+    "last_updated": "2025-02-15",
     "version": "1.0",
     "language": "en",
     "source": "University Knowledge Base",
     "topics_count": 41,
-    "qa_pairs_count": 135
+    "qa_pairs_count": 158
   },
   "categories": [
     {
@@ -234,8 +234,8 @@
         "tips": [],
         "related_topics": [
           "For more tips on staying organized, see",
-          "[How can I stay organized with multiple assignments and deadlines?](https://www.notion.so/chat#how-can-i-stay-organized-with-multiple-assignments-and-deadlines)",
-          "[How do I prioritize tasks when everything feels urgent?](https://www.notion.so/chat#how-do-i-prioritize-tasks-when-everything-feels-urgent)"
+          "[How can I stay organized with multiple assignments and deadlines?](https://www.wlv.ac.uk/lib/skills-for-learning/time-management/chat#how-can-i-stay-organized-with-multiple-assignments-and-deadlines)",
+          "[How do I prioritize tasks when everything feels urgent?](https://www.wlv.ac.uk/lib/skills-for-learning/time-management/chat#how-do-I-prioritize-tasks-when-everything-feels-urgent?)"
         ]
       }
     },
@@ -284,6 +284,82 @@
     {
       "id": "time_and_task_management_004",
       "category_id": "time_and_task_management",
+      "question": "What is time management?",
+      "answer": {
+        "main_points": [
+          "Successful time management involves taking control of how you use your time rather than rushing to meet deadlines.",
+          "It requires planning ahead, setting goals for yourself, and prioritizing tasks.",
+          "The aim is to reduce pressure and help you work more effectively.",
+          "---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "time_and_task_management_005",
+      "category_id": "time_and_task_management",
+      "question": "Why is time management important?",
+      "answer": {
+        "main_points": [
+          "University study can have uneven work periods where deadlines overlap.",
+          "Working right up to deadlines leaves less time for reflection and can impact the quality of your work.",
+          "Effective time management helps balance lectures, seminars, and personal commitments (family, employment, etc.).",
+          "It can:",
+          "Help you use your time to best effect",
+          "Lessen anxiety as you feel more in control",
+          "Make you more aware of how you work",
+          "Reduce avoidance of more difficult tasks",
+          "---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "time_and_task_management_006",
+      "category_id": "time_and_task_management",
+      "question": "How can I time-manage my studies effectively?",
+      "answer": {
+        "main_points": [
+          "**Be aware of time**",
+          "Track how you currently use your time (e.g., create a time chart or log).",
+          "Identify any small pockets of free time you could use more effectively (e.g., reading notes before a lecture, on public transport, or listening to educational podcasts while driving).",
+          "**Plan ahead**",
+          "At the start of a semester, note important academic dates (lectures, exams, assignment deadlines).",
+          "Add other personal commitments so you can see high-pressure weeks in advance.",
+          "Use a wall chart, Google Calendar, or phone calendar to maintain a visual overview.",
+          "Make weekly plans to list goals and check that you’re on schedule.",
+          "A daily “to-do” list can flow from your weekly plan.",
+          "**Prioritize your tasks**",
+          "Focus first on tasks that are urgent or contribute the most to your grades.",
+          "Avoid spending excessive time on less important or more enjoyable tasks if they’re not urgent.",
+          "Match your effort to the percentage weight of each assignment.",
+          "**Study smart**",
+          "Develop effective study techniques (active reading, good note-taking, reflection).",
+          "Focus on accomplishments rather than time spent (e.g., “I will read and summarize 3 chapters” instead of “I’ll study for 3 hours”).",
+          "**Time-plan an assignment**",
+          "Break it into components (e.g., analysing the question, researching, writing, proofreading).",
+          "Work backward from the hand-in date to set mini-deadlines for each component, allowing extra buffer time for unexpected events.",
+          "Review lecture notes soon after class to save time later.",
+          "Try reading before lectures to aid understanding and critical thinking during class.",
+          "**Take regular breaks**",
+          "Working or thinking while tired is less efficient and can waste time.",
+          "Schedule study during the time of day you perform best.",
+          "Minimize distractions and gather all materials before starting.",
+          "If you set aside a whole day for study, outline clear goals and activities to avoid losing track of time.",
+          "---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "time_and_task_management_007",
+      "category_id": "time_and_task_management",
       "question": "How can I stay organized with multiple assignments and deadlines?",
       "answer": {
         "main_points": [
@@ -305,7 +381,7 @@
       }
     },
     {
-      "id": "time_and_task_management_005",
+      "id": "time_and_task_management_008",
       "category_id": "time_and_task_management",
       "question": "How can I avoid distractions while studying?",
       "answer": {
@@ -326,7 +402,7 @@
       }
     },
     {
-      "id": "time_and_task_management_006",
+      "id": "time_and_task_management_009",
       "category_id": "time_and_task_management",
       "question": "What's the best way to plan for long-term projects?",
       "answer": {
@@ -351,7 +427,7 @@
       }
     },
     {
-      "id": "time_and_task_management_007",
+      "id": "time_and_task_management_010",
       "category_id": "time_and_task_management",
       "question": "How can I maintain work-life balance while managing tasks?",
       "answer": {
@@ -372,7 +448,7 @@
       }
     },
     {
-      "id": "time_and_task_management_008",
+      "id": "time_and_task_management_011",
       "category_id": "time_and_task_management",
       "question": "How do I handle unexpected tasks or emergencies?",
       "answer": {
@@ -393,7 +469,7 @@
       }
     },
     {
-      "id": "time_and_task_management_009",
+      "id": "time_and_task_management_012",
       "category_id": "time_and_task_management",
       "question": "How can I track my productivity and improve over time?",
       "answer": {
@@ -414,7 +490,7 @@
       }
     },
     {
-      "id": "time_and_task_management_010",
+      "id": "time_and_task_management_013",
       "category_id": "time_and_task_management",
       "question": "What tools and resources can help with task management?",
       "answer": {
@@ -435,7 +511,42 @@
       }
     },
     {
-      "id": "academic_performance_011",
+      "id": "quick_tips_for_success_001",
+      "category_id": "quick_tips_for_success",
+      "question": "What are some Quick Tips for Success?",
+      "answer": {
+        "main_points": [
+          "🌅 Review your calendar and to-do list first thing in the morning",
+          "⏰ Set alarms 10 minutes before scheduled tasks to ensure timely transitions",
+          "📱 Keep your phone on **\"Do Not Disturb\"** during focused work periods",
+          "🎯 If a task takes less than **2 minutes**, do it immediately",
+          "📊 Color-code your calendar for different types of tasks",
+          "💪 Work on your most challenging task when your energy levels are highest",
+          "🔄 Work in **focused bursts (e.g., 25-minute Pomodoro sessions)**, followed by a short break",
+          "📝 Keep a *\"done list\"* alongside your to-do list to track completed tasks",
+          "🎉 Recognize small wins to maintain motivation",
+          "🌙 End each day by preparing your **next day's to-do list**",
+          "---",
+          "**💡 Remember:** Time management is a skill that improves with **consistent practice**. If certain strategies don't work immediately, **adjust and adapt** until you find what works best for you."
+        ],
+        "examples": [],
+        "tips": [
+          "**Start your day right**",
+          "**Use reminders to stay on track**",
+          "**Minimize distractions**",
+          "**Apply the 2-minute rule**",
+          "**Organize your schedule efficiently**",
+          "**Tackle tough tasks first**",
+          "**Take regular breaks**",
+          "**Track accomplishments**",
+          "**Celebrate progress**",
+          "**Plan for tomorrow**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "academic_performance_001",
       "category_id": "academic_performance",
       "question": "What are the most effective study methods for long-term retention?",
       "answer": {
@@ -457,7 +568,7 @@
       }
     },
     {
-      "id": "academic_performance_012",
+      "id": "academic_performance_002",
       "category_id": "academic_performance",
       "question": "How can I improve my exam preparation?",
       "answer": {
@@ -479,7 +590,7 @@
       }
     },
     {
-      "id": "academic_performance_013",
+      "id": "academic_performance_003",
       "category_id": "academic_performance",
       "question": "What should I do if I don't understand a topic in class?",
       "answer": {
@@ -501,7 +612,7 @@
       }
     },
     {
-      "id": "academic_performance_014",
+      "id": "academic_performance_004",
       "category_id": "academic_performance",
       "question": "How can I improve my note-taking skills?",
       "answer": {
@@ -526,7 +637,7 @@
       }
     },
     {
-      "id": "academic_performance_015",
+      "id": "academic_performance_005",
       "category_id": "academic_performance",
       "question": "How can I prepare for different types of exams?",
       "answer": {
@@ -547,7 +658,7 @@
       }
     },
     {
-      "id": "academic_performance_016",
+      "id": "academic_performance_006",
       "category_id": "academic_performance",
       "question": "How can I improve my critical thinking skills?",
       "answer": {
@@ -571,7 +682,7 @@
       }
     },
     {
-      "id": "academic_performance_017",
+      "id": "academic_performance_007",
       "category_id": "academic_performance",
       "question": "How can I effectively participate in class discussions?",
       "answer": {
@@ -592,7 +703,7 @@
       }
     },
     {
-      "id": "academic_performance_018",
+      "id": "academic_performance_008",
       "category_id": "academic_performance",
       "question": "How can I improve my research skills?",
       "answer": {
@@ -613,7 +724,7 @@
       }
     },
     {
-      "id": "academic_performance_019",
+      "id": "academic_performance_009",
       "category_id": "academic_performance",
       "question": "How can I manage test anxiety?",
       "answer": {
@@ -636,7 +747,7 @@
       }
     },
     {
-      "id": "academic_performance_020",
+      "id": "academic_performance_010",
       "category_id": "academic_performance",
       "question": "How can I develop better memory techniques?",
       "answer": {
@@ -659,7 +770,42 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_021",
+      "id": "quick_tips_for_academic_success_001",
+      "category_id": "quick_tips_for_academic_success",
+      "question": "What are some Quick Tips for Academic Success?",
+      "answer": {
+        "main_points": [
+          "📚 Review notes within **24 hours** of taking them",
+          "🎯 Create study goals that are **specific and achievable**",
+          "⏰ Test yourself **every 2-3 days** instead of just rereading notes",
+          "📝 Create **summary sheets** for each topic to simplify review",
+          "🧠 Explain concepts to **someone else** to reinforce learning",
+          "📅 Allocate time for each subject **before exam week**",
+          "💡 Combine **visual, auditory, and kinesthetic** learning",
+          "🔄 Don't cram—spread **review sessions** throughout the semester",
+          "❓ If confused, **ask questions immediately** to avoid gaps in knowledge",
+          "---",
+          "**💡 Remember:** Academic performance is built on **consistent study habits, critical thinking, and strategic exam preparation**. Find the techniques that work best for you and **keep refining your approach!** 🚀"
+        ],
+        "examples": [],
+        "tips": [
+          "**Review notes frequently**",
+          "**Set measurable study goals**",
+          "**Use active recall**",
+          "**Summarize information**",
+          "**Teach to retain information**",
+          "**Plan study sessions ahead**",
+          "**Utilize multiple study techniques**",
+          "**Review and revise regularly**",
+          "**Ask for clarification when needed**",
+          "**Practice testing often**",
+          "Use **past papers, quizzes, and mock exams** to simulate real test conditions"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "mental_health_and_wellness_001",
       "category_id": "mental_health_and_wellness",
       "question": "What are effective strategies for managing academic stress?",
       "answer": {
@@ -675,8 +821,8 @@
           "If you're feeling overwhelmed, try a **10-minute mindfulness meditation session**.",
           "Apps like **Headspace** or **Calm** can guide you through the process.",
           "📎 **Related Topics**:",
-          "[What are some healthy snacks for studying?](https://www.notion.so/chat#what-are-some-healthy-snacks-for-studying)",
-          "[How can I maintain a healthy sleep schedule?](https://www.notion.so/chat#how-can-i-maintain-a-healthy-sleep-schedule)",
+          "[What are some healthy snacks for studying?](https://info.lse.ac.uk/current-students/Assets/Articles/8-super-study-snackschat#what-are-some-healthy-snacks-for-studying)",
+          "[How can I maintain a healthy sleep schedule?](https://www.healthline.com/nutrition/brain-food-for-studyingchat#how-can-i-maintain-a-healthy-sleep-schedule)",
           "---"
         ],
         "tips": [],
@@ -684,7 +830,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_022",
+      "id": "mental_health_and_wellness_002",
       "category_id": "mental_health_and_wellness",
       "question": "How can I prevent academic burnout?",
       "answer": {
@@ -706,7 +852,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_023",
+      "id": "mental_health_and_wellness_003",
       "category_id": "mental_health_and_wellness",
       "question": "How can I cope with feelings of loneliness at university?",
       "answer": {
@@ -728,7 +874,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_024",
+      "id": "mental_health_and_wellness_004",
       "category_id": "mental_health_and_wellness",
       "question": "What should I do if I'm experiencing anxiety about my studies?",
       "answer": {
@@ -750,7 +896,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_025",
+      "id": "mental_health_and_wellness_005",
       "category_id": "mental_health_and_wellness",
       "question": "How do I deal with imposter syndrome?",
       "answer": {
@@ -771,7 +917,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_026",
+      "id": "mental_health_and_wellness_006",
       "category_id": "mental_health_and_wellness",
       "question": "How can I maintain a healthy work-life balance?",
       "answer": {
@@ -792,7 +938,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_027",
+      "id": "mental_health_and_wellness_007",
       "category_id": "mental_health_and_wellness",
       "question": "What are effective ways to manage perfectionism?",
       "answer": {
@@ -813,7 +959,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_028",
+      "id": "mental_health_and_wellness_008",
       "category_id": "mental_health_and_wellness",
       "question": "How can I build emotional resilience?",
       "answer": {
@@ -836,7 +982,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_029",
+      "id": "mental_health_and_wellness_009",
       "category_id": "mental_health_and_wellness",
       "question": "How can I manage social media-related stress?",
       "answer": {
@@ -858,7 +1004,7 @@
       }
     },
     {
-      "id": "mental_health_and_wellness_030",
+      "id": "mental_health_and_wellness_010",
       "category_id": "mental_health_and_wellness",
       "question": "How can I practice self-care during exam periods?",
       "answer": {
@@ -879,7 +1025,42 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_031",
+      "id": "quick_tips_for_mental_wellness_001",
+      "category_id": "quick_tips_for_mental_wellness",
+      "question": "What are some Quick Tips for Mental Wellness?",
+      "answer": {
+        "main_points": [
+          "🧘‍♀️ Practice **5-minute meditation** breaks between study sessions",
+          "💪 Stay active with **short walks or exercise**",
+          "🌙 Go to bed and wake up **at the same time daily**",
+          "🎯 Break large tasks into **smaller, achievable steps**",
+          "❤️ Reflect on **3 things you're grateful for each day**",
+          "🤝 Reach out to **one person daily** for social interaction",
+          "🌿 Step outside for **fresh air and a mental reset**",
+          "📱 Schedule specific **digital detox times**",
+          "🎨 Engage in **painting, writing, or music**",
+          "💭 Reframe self-doubt with **positive affirmations**",
+          "---",
+          "**💡 Remember:** Mental health is just as important as academic success. **Don't hesitate to seek professional help when needed**, and remember that **taking care of yourself is a crucial part of your academic journey**. 💙"
+        ],
+        "examples": [],
+        "tips": [
+          "**Take short meditation breaks**",
+          "**Incorporate movement into your day**",
+          "**Stick to a consistent sleep schedule**",
+          "**Set realistic daily goals**",
+          "**Practice daily gratitude**",
+          "**Stay connected with others**",
+          "**Take breaks in nature**",
+          "**Limit social media distractions**",
+          "**Make time for creative hobbies**",
+          "**Challenge negative self-talk**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "physical_health_and_wellness_001",
       "category_id": "physical_health_and_wellness",
       "question": "How does exercise help with academic stress?",
       "answer": {
@@ -901,7 +1082,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_032",
+      "id": "physical_health_and_wellness_002",
       "category_id": "physical_health_and_wellness",
       "question": "What are some healthy snacks for studying?",
       "answer": {
@@ -923,7 +1104,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_033",
+      "id": "physical_health_and_wellness_003",
       "category_id": "physical_health_and_wellness",
       "question": "How can I maintain a healthy sleep schedule?",
       "answer": {
@@ -945,7 +1126,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_034",
+      "id": "physical_health_and_wellness_004",
       "category_id": "physical_health_and_wellness",
       "question": "How can I incorporate more movement into my study routine?",
       "answer": {
@@ -966,7 +1147,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_035",
+      "id": "physical_health_and_wellness_005",
       "category_id": "physical_health_and_wellness",
       "question": "What are some quick and healthy meal ideas for busy students?",
       "answer": {
@@ -987,7 +1168,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_036",
+      "id": "physical_health_and_wellness_006",
       "category_id": "physical_health_and_wellness",
       "question": "How can I maintain proper posture while studying?",
       "answer": {
@@ -1008,7 +1189,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_037",
+      "id": "physical_health_and_wellness_007",
       "category_id": "physical_health_and_wellness",
       "question": "How can I stay hydrated throughout the day?",
       "answer": {
@@ -1029,7 +1210,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_038",
+      "id": "physical_health_and_wellness_008",
       "category_id": "physical_health_and_wellness",
       "question": "What are effective ways to manage eye strain from screen time?",
       "answer": {
@@ -1050,7 +1231,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_039",
+      "id": "physical_health_and_wellness_009",
       "category_id": "physical_health_and_wellness",
       "question": "How can I boost my energy naturally during study sessions?",
       "answer": {
@@ -1071,7 +1252,7 @@
       }
     },
     {
-      "id": "physical_health_and_wellness_040",
+      "id": "physical_health_and_wellness_010",
       "category_id": "physical_health_and_wellness",
       "question": "How can I create a healthy study environment?",
       "answer": {
@@ -1092,7 +1273,44 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_041",
+      "id": "quick_tips_for_physical_wellness_001",
+      "category_id": "quick_tips_for_physical_wellness",
+      "question": "What are some Quick Tips for Physical Wellness?",
+      "answer": {
+        "main_points": [
+          "🏃‍♀️ Stand up, stretch, or go for a **short walk** between study sessions.",
+          "💧 Keep a **water bottle** at your desk and sip throughout the day.",
+          "🥗 Keep **nutritious snacks** like nuts, yogurt, and fruit readily available.",
+          "👀 Follow the **20-20-20 rule**—every **20 minutes**, look at something **20 feet away** for **20 seconds**.",
+          "🪑 Adjust your chair, desk, and screen to **reduce back and neck strain**.",
+          "🌞 Open a window or **take breaks outside** to refresh your mind.",
+          "😴 Aim for **7-9 hours of sleep** each night to **maintain energy levels**.",
+          "🧘‍♀️ Take **deep breaths** or stretch between study sessions to stay relaxed.",
+          "🥪 Batch-cook meals on the weekend to **save time** during busy study periods.",
+          "🚶‍♂️ Walk while **listening to study materials** or use a standing desk.",
+          "---",
+          "**💡 Remember:** Your **physical health directly impacts academic performance**.",
+          "Small, **consistent habits** can make a **big difference** in your **overall well-being** and **study effectiveness**.",
+          "Prioritize **movement, hydration, sleep, and nutrition** to keep your **mind and body in top shape**! 💙"
+        ],
+        "examples": [],
+        "tips": [
+          "**Take movement breaks every hour**",
+          "**Stay hydrated**",
+          "**Prepare healthy snacks in advance**",
+          "**Reduce eye strain**",
+          "**Check your posture regularly**",
+          "**Get exposure to natural light**",
+          "**Stick to a consistent sleep schedule**",
+          "**Practice relaxation techniques**",
+          "**Plan meals ahead of time**",
+          "**Stay active while studying**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "group_work_and_collaboration_001",
       "category_id": "group_work_and_collaboration",
       "question": "How can I be an effective team member in group projects?",
       "answer": {
@@ -1114,7 +1332,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_042",
+      "id": "group_work_and_collaboration_002",
       "category_id": "group_work_and_collaboration",
       "question": "What should I do if there's conflict in my group?",
       "answer": {
@@ -1136,7 +1354,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_043",
+      "id": "group_work_and_collaboration_003",
       "category_id": "group_work_and_collaboration",
       "question": "How can I improve group communication?",
       "answer": {
@@ -1157,7 +1375,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_044",
+      "id": "group_work_and_collaboration_004",
       "category_id": "group_work_and_collaboration",
       "question": "How can I manage group project deadlines effectively?",
       "answer": {
@@ -1178,7 +1396,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_045",
+      "id": "group_work_and_collaboration_005",
       "category_id": "group_work_and_collaboration",
       "question": "How can I encourage equal participation in group work?",
       "answer": {
@@ -1199,7 +1417,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_046",
+      "id": "group_work_and_collaboration_006",
       "category_id": "group_work_and_collaboration",
       "question": "How can I give and receive feedback in group settings?",
       "answer": {
@@ -1220,7 +1438,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_047",
+      "id": "group_work_and_collaboration_007",
       "category_id": "group_work_and_collaboration",
       "question": "How can I handle different working styles in a group?",
       "answer": {
@@ -1241,7 +1459,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_048",
+      "id": "group_work_and_collaboration_008",
       "category_id": "group_work_and_collaboration",
       "question": "How can I facilitate effective group meetings?",
       "answer": {
@@ -1262,7 +1480,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_049",
+      "id": "group_work_and_collaboration_009",
       "category_id": "group_work_and_collaboration",
       "question": "How can I handle remote group collaboration?",
       "answer": {
@@ -1283,7 +1501,7 @@
       }
     },
     {
-      "id": "group_work_and_collaboration_050",
+      "id": "group_work_and_collaboration_010",
       "category_id": "group_work_and_collaboration",
       "question": "How can I ensure quality in group work?",
       "answer": {
@@ -1304,7 +1522,45 @@
       }
     },
     {
-      "id": "university_support_services_051",
+      "id": "quick_tips_for_group_work_success_001",
+      "category_id": "quick_tips_for_group_work_success",
+      "question": "What are some Quick Tips for Group Work Success?",
+      "answer": {
+        "main_points": [
+          "👥 Build **trust** and **rapport** among team members before diving into tasks.",
+          "📅 Schedule meetings and deadlines using **Google Calendar** or **Outlook**.",
+          "📝 Assign a **note-taker** to record key discussions and action points.",
+          "🎯 Ensure **goals are Specific, Measurable, Achievable, Relevant, and Time-bound**.",
+          "🤝 Define **roles, expectations, and communication methods** at the start.",
+          "💬 Use platforms like **Slack, Teams, or WhatsApp** to stay connected.",
+          "⏰ Keep **meetings concise** and **stick to deadlines**.",
+          "📊 Use **Kanban boards** like **Trello** to visualize task completion.",
+          "🔄 Provide **constructive feedback** to enhance collaboration.",
+          "🎉 Acknowledge **milestones** and **appreciate team members' efforts**.",
+          "---",
+          "**💡 Remember:**",
+          "Effective **group work** requires **commitment** from all members.",
+          "Success comes from **clear communication**, **mutual respect**, and **shared responsibility**.",
+          "Working **collaboratively** will not only improve project outcomes but also build **essential teamwork skills** for the future! 🚀💡"
+        ],
+        "examples": [],
+        "tips": [
+          "**Start with team-building activities**",
+          "**Use shared calendars for coordination**",
+          "**Keep meeting minutes**",
+          "**Set SMART goals for the team**",
+          "**Establish group norms early**",
+          "**Maintain open communication channels**",
+          "**Respect everyone’s time**",
+          "**Track progress visually**",
+          "**Share feedback regularly**",
+          "**Celebrate team successes**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_support_services_001",
       "category_id": "university_support_services",
       "question": "How can I access mental health support at the University?",
       "answer": {
@@ -1325,7 +1581,7 @@
       }
     },
     {
-      "id": "university_support_services_052",
+      "id": "university_support_services_002",
       "category_id": "university_support_services",
       "question": "What should I do if I need immediate help?",
       "answer": {
@@ -1346,7 +1602,7 @@
       }
     },
     {
-      "id": "university_support_services_053",
+      "id": "university_support_services_003",
       "category_id": "university_support_services",
       "question": "How can I access academic support services?",
       "answer": {
@@ -1367,7 +1623,7 @@
       }
     },
     {
-      "id": "university_support_services_054",
+      "id": "university_support_services_004",
       "category_id": "university_support_services",
       "question": "What financial support services are available?",
       "answer": {
@@ -1388,7 +1644,7 @@
       }
     },
     {
-      "id": "university_support_services_055",
+      "id": "university_support_services_005",
       "category_id": "university_support_services",
       "question": "How can I access disability support services?",
       "answer": {
@@ -1409,7 +1665,7 @@
       }
     },
     {
-      "id": "university_support_services_056",
+      "id": "university_support_services_006",
       "category_id": "university_support_services",
       "question": "What career development services are offered?",
       "answer": {
@@ -1430,7 +1686,7 @@
       }
     },
     {
-      "id": "university_support_services_057",
+      "id": "university_support_services_007",
       "category_id": "university_support_services",
       "question": "How can I access international student support?",
       "answer": {
@@ -1451,7 +1707,7 @@
       }
     },
     {
-      "id": "university_support_services_058",
+      "id": "university_support_services_008",
       "category_id": "university_support_services",
       "question": "What housing support services are available?",
       "answer": {
@@ -1472,7 +1728,7 @@
       }
     },
     {
-      "id": "university_support_services_059",
+      "id": "university_support_services_009",
       "category_id": "university_support_services",
       "question": "How can I access IT support services?",
       "answer": {
@@ -1493,7 +1749,7 @@
       }
     },
     {
-      "id": "university_support_services_060",
+      "id": "university_support_services_010",
       "category_id": "university_support_services",
       "question": "What wellness and recreation services are available?",
       "answer": {
@@ -1514,7 +1770,45 @@
       }
     },
     {
-      "id": "support_services_q_a_061",
+      "id": "quick_tips_for_accessing_support_services_001",
+      "category_id": "quick_tips_for_accessing_support_services",
+      "question": "What are some Quick Tips for Accessing Support Services?",
+      "answer": {
+        "main_points": [
+          "📱 Keep the **university’s emergency services** and **crisis helpline** handy.",
+          "📅 Secure slots for **tutoring, financial aid, and career services** in advance.",
+          "📝 Make **notes on key issues** before speaking with **support staff**.",
+          "🔍 Check the **university website** for **service details and FAQs**.",
+          "📧 Flag **important messages** from university services for **quick reference**.",
+          "🗺️ Locate **academic, career, and wellness centers** on campus maps.",
+          "⏰ Avoid **missed appointments** by checking **office hours** in advance.",
+          "📋 Keep **copies of financial aid forms, housing contracts, and academic plans**.",
+          "🤝 University staff **are there to assist you**—reach out when needed.",
+          "📢 Help improve **student services** by giving **constructive feedback**.",
+          "---",
+          "**💡 Remember:**",
+          "University **support services** are here to **help you succeed**.",
+          "Early engagement with **academic, mental health, and career support** can prevent **small challenges from becoming larger issues**.",
+          "Take advantage of the **resources available** to make the most of your university experience! 🚀🎓"
+        ],
+        "examples": [],
+        "tips": [
+          "**Save emergency contact numbers in your phone**",
+          "**Book appointments early to ensure availability**",
+          "**Document specific concerns before meetings**",
+          "**Research available services online first**",
+          "**Keep important service emails accessible**",
+          "**Know service office locations**",
+          "**Note service operating hours**",
+          "**Maintain copies of important documents**",
+          "**Don’t hesitate to ask for help**",
+          "**Provide feedback about services used**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "support_services_q_a_001",
       "category_id": "support_services_q_a",
       "question": "What local support services are available?",
       "answer": {
@@ -1533,7 +1827,7 @@
       }
     },
     {
-      "id": "support_services_q_a_062",
+      "id": "support_services_q_a_002",
       "category_id": "support_services_q_a",
       "question": "How can I access support as an international student?",
       "answer": {
@@ -1552,7 +1846,7 @@
       }
     },
     {
-      "id": "support_services_q_a_063",
+      "id": "support_services_q_a_003",
       "category_id": "support_services_q_a",
       "question": "What financial support services are available?",
       "answer": {
@@ -1571,7 +1865,7 @@
       }
     },
     {
-      "id": "support_services_q_a_064",
+      "id": "support_services_q_a_004",
       "category_id": "support_services_q_a",
       "question": "What disability support services can I access?",
       "answer": {
@@ -1590,7 +1884,7 @@
       }
     },
     {
-      "id": "support_services_q_a_065",
+      "id": "support_services_q_a_005",
       "category_id": "support_services_q_a",
       "question": "Where can I find academic support services?",
       "answer": {
@@ -1609,7 +1903,7 @@
       }
     },
     {
-      "id": "support_services_q_a_066",
+      "id": "support_services_q_a_006",
       "category_id": "support_services_q_a",
       "question": "What mental health support is available?",
       "answer": {
@@ -1628,7 +1922,7 @@
       }
     },
     {
-      "id": "support_services_q_a_067",
+      "id": "support_services_q_a_007",
       "category_id": "support_services_q_a",
       "question": "How can I access career development support?",
       "answer": {
@@ -1647,7 +1941,7 @@
       }
     },
     {
-      "id": "support_services_q_a_068",
+      "id": "support_services_q_a_008",
       "category_id": "support_services_q_a",
       "question": "What housing support services are available?",
       "answer": {
@@ -1666,7 +1960,7 @@
       }
     },
     {
-      "id": "support_services_q_a_069",
+      "id": "support_services_q_a_009",
       "category_id": "support_services_q_a",
       "question": "Where can I find IT support services?",
       "answer": {
@@ -1685,7 +1979,7 @@
       }
     },
     {
-      "id": "support_services_q_a_070",
+      "id": "support_services_q_a_010",
       "category_id": "support_services_q_a",
       "question": "What faith and spiritual support is available?",
       "answer": {
@@ -1704,7 +1998,7 @@
       }
     },
     {
-      "id": "career_professional_development_071",
+      "id": "career_professional_development_001",
       "category_id": "career_professional_development",
       "question": "How can I build a strong LinkedIn profile?",
       "answer": {
@@ -1725,7 +2019,7 @@
       }
     },
     {
-      "id": "career_professional_development_072",
+      "id": "career_professional_development_002",
       "category_id": "career_professional_development",
       "question": "What strategies help with effective networking?",
       "answer": {
@@ -1746,7 +2040,7 @@
       }
     },
     {
-      "id": "career_professional_development_073",
+      "id": "career_professional_development_003",
       "category_id": "career_professional_development",
       "question": "How do I find internships or entry-level positions?",
       "answer": {
@@ -1767,7 +2061,7 @@
       }
     },
     {
-      "id": "career_professional_development_074",
+      "id": "career_professional_development_004",
       "category_id": "career_professional_development",
       "question": "What should I include in a cover letter?",
       "answer": {
@@ -1788,7 +2082,7 @@
       }
     },
     {
-      "id": "career_professional_development_075",
+      "id": "career_professional_development_005",
       "category_id": "career_professional_development",
       "question": "How do I negotiate a salary or job offer?",
       "answer": {
@@ -1809,7 +2103,29 @@
       }
     },
     {
-      "id": "research_dissertation_writing_076",
+      "id": "quick_tips_for_career_professional_development_001",
+      "category_id": "quick_tips_for_career_professional_development",
+      "question": "What are some Quick Tips for Career & Professional Development?",
+      "answer": {
+        "main_points": [],
+        "examples": [],
+        "tips": [
+          "**Attend seminars regularly**",
+          "**Keep business cards** of people you meet",
+          "**Maintain a personal website or portfolio**",
+          "**Update your CV every semester**",
+          "**Practice mock interviews** with peers or career services",
+          "**Set LinkedIn alerts** for targeted job titles or companies",
+          "**Follow industry influencers** on social media for insights",
+          "**Track your accomplishments** in a personal log or journal",
+          "**Explore volunteering** to gain extra experience and references",
+          "**Send thank-you emails** after interviews or networking events"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "research_dissertation_writing_001",
       "category_id": "research_dissertation_writing",
       "question": "How do I choose a dissertation topic?",
       "answer": {
@@ -1830,7 +2146,7 @@
       }
     },
     {
-      "id": "research_dissertation_writing_077",
+      "id": "research_dissertation_writing_002",
       "category_id": "research_dissertation_writing",
       "question": "How can I structure my literature review?",
       "answer": {
@@ -1851,7 +2167,7 @@
       }
     },
     {
-      "id": "research_dissertation_writing_078",
+      "id": "research_dissertation_writing_003",
       "category_id": "research_dissertation_writing",
       "question": "What are best practices for writing a strong methodology chapter?",
       "answer": {
@@ -1872,7 +2188,7 @@
       }
     },
     {
-      "id": "research_dissertation_writing_079",
+      "id": "research_dissertation_writing_004",
       "category_id": "research_dissertation_writing",
       "question": "How can I manage references efficiently?",
       "answer": {
@@ -1893,7 +2209,7 @@
       }
     },
     {
-      "id": "research_dissertation_writing_080",
+      "id": "research_dissertation_writing_005",
       "category_id": "research_dissertation_writing",
       "question": "How do I approach data analysis in my dissertation?",
       "answer": {
@@ -1914,7 +2230,40 @@
       }
     },
     {
-      "id": "online_learning_digital_skills_081",
+      "id": "quick_tips_for_research_dissertation_writing_001",
+      "category_id": "quick_tips_for_research_dissertation_writing",
+      "question": "What are some Quick Tips for Research & Dissertation Writing?",
+      "answer": {
+        "main_points": [
+          "Keep your research question focused and feasible",
+          "Break down tasks by chapters or phases",
+          "Store your work on at least two platforms (Dropbox, Google Drive, GitHub, etc.)",
+          "Keep a separate folder for each chapter’s drafts and references",
+          "Apply one style for headings, citations, and numbering",
+          "Participate in discussion forums, research groups, or local meetups",
+          "Don’t wait until the end to gather references",
+          "Let your supervisor review proposals and outlines to guide you early on",
+          "Follow official requirements for structure, length, and submission format",
+          "Avoid burnout by scheduling short mental resets"
+        ],
+        "examples": [],
+        "tips": [
+          "**Define your scope early**",
+          "**Set milestones and deadlines**",
+          "**Create a backup plan**",
+          "**Stay organized**",
+          "**Be consistent with formatting**",
+          "**Join research communities**",
+          "**Track sources as you read**",
+          "**Seek early feedback**",
+          "**Know your university guidelines**",
+          "**Take regular breaks**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "online_learning_digital_skills_001",
       "category_id": "online_learning_digital_skills",
       "question": "How can I stay motivated in online courses?",
       "answer": {
@@ -1935,7 +2284,7 @@
       }
     },
     {
-      "id": "online_learning_digital_skills_082",
+      "id": "online_learning_digital_skills_002",
       "category_id": "online_learning_digital_skills",
       "question": "What are effective ways to avoid digital overload?",
       "answer": {
@@ -1956,7 +2305,7 @@
       }
     },
     {
-      "id": "online_learning_digital_skills_083",
+      "id": "online_learning_digital_skills_003",
       "category_id": "online_learning_digital_skills",
       "question": "How can I effectively collaborate with peers in online classes?",
       "answer": {
@@ -1977,7 +2326,7 @@
       }
     },
     {
-      "id": "online_learning_digital_skills_084",
+      "id": "online_learning_digital_skills_004",
       "category_id": "online_learning_digital_skills",
       "question": "Which digital tools help with organization and note-taking?",
       "answer": {
@@ -1998,7 +2347,7 @@
       }
     },
     {
-      "id": "online_learning_digital_skills_085",
+      "id": "online_learning_digital_skills_005",
       "category_id": "online_learning_digital_skills",
       "question": "How do I handle technical issues or connectivity problems?",
       "answer": {
@@ -2019,7 +2368,40 @@
       }
     },
     {
-      "id": "personal_finance_and_budgeting_advice_for_students_086",
+      "id": "quick_tips_for_online_learning_digital_skills_001",
+      "category_id": "quick_tips_for_online_learning_digital_skills",
+      "question": "What are some Quick Tips for Online Learning & Digital Skills?",
+      "answer": {
+        "main_points": [
+          "Dedicate specific hours each day to study or watch lectures",
+          "Test your microphone, camera, and Wi-Fi before important sessions",
+          "Avoid using social media during study blocks",
+          "Ask questions and engage with classmates for deeper understanding",
+          "Watch video tutorials, read e-books, and join webinars",
+          "Join online study groups or Slack channels for peer support",
+          "Keep separate folders for each course to stay organized",
+          "Save learning portals and library pages for quick access",
+          "Borrow e-books or articles from academic databases",
+          "Turn off unnecessary notifications and focus on your goals"
+        ],
+        "examples": [],
+        "tips": [
+          "**Maintain a routine**",
+          "**Check your hardware**",
+          "**Set digital boundaries**",
+          "**Leverage discussion boards**",
+          "**Use multiple resources**",
+          "**Stay connected**",
+          "**Manage your files**",
+          "**Bookmark essential links**",
+          "**Explore e-libraries**",
+          "**Practice self-discipline**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "personal_finance_and_budgeting_advice_for_students_001",
       "category_id": "personal_finance_and_budgeting_advice_for_students",
       "question": "How can I create and stick to a student budget?",
       "answer": {
@@ -2040,7 +2422,7 @@
       }
     },
     {
-      "id": "personal_finance_and_budgeting_advice_for_students_087",
+      "id": "personal_finance_and_budgeting_advice_for_students_002",
       "category_id": "personal_finance_and_budgeting_advice_for_students",
       "question": "What are some ways to save money on textbooks?",
       "answer": {
@@ -2061,7 +2443,7 @@
       }
     },
     {
-      "id": "personal_finance_and_budgeting_advice_for_students_088",
+      "id": "personal_finance_and_budgeting_advice_for_students_003",
       "category_id": "personal_finance_and_budgeting_advice_for_students",
       "question": "How can I build an emergency fund as a student?",
       "answer": {
@@ -2082,7 +2464,7 @@
       }
     },
     {
-      "id": "personal_finance_and_budgeting_advice_for_students_089",
+      "id": "personal_finance_and_budgeting_advice_for_students_004",
       "category_id": "personal_finance_and_budgeting_advice_for_students",
       "question": "Are credit cards beneficial or risky for students?",
       "answer": {
@@ -2103,7 +2485,7 @@
       }
     },
     {
-      "id": "personal_finance_and_budgeting_advice_for_students_090",
+      "id": "personal_finance_and_budgeting_advice_for_students_005",
       "category_id": "personal_finance_and_budgeting_advice_for_students",
       "question": "Where can I find student discounts for daily expenses?",
       "answer": {
@@ -2124,7 +2506,40 @@
       }
     },
     {
-      "id": "digital_literacy_tools_091",
+      "id": "quick_tips_for_personal_finance_and_budgeting_001",
+      "category_id": "quick_tips_for_personal_finance_and_budgeting",
+      "question": "What are some Quick Tips for Personal Finance and Budgeting?",
+      "answer": {
+        "main_points": [
+          "List all income sources and fixed/variable expenses",
+          "It helps you visualize and limit impulse buys",
+          "Reduces last-minute takeout and grocery wastage",
+          "Stick to it to avoid unplanned purchases",
+          "Cafeterias, gym facilities, and free events can save money",
+          "Avoid late fees and maintain a good credit score",
+          "Check multiple stores or websites before buying higher-value items",
+          "Homemade meals are often cheaper and healthier",
+          "Cancel or share streaming accounts if not in active use",
+          "Be cautious with payday loans or high-interest credit options"
+        ],
+        "examples": [],
+        "tips": [
+          "**Create a budget spreadsheet**",
+          "**Use cash for discretionary spending**",
+          "**Plan meals ahead of time**",
+          "**Shop with a list**",
+          "**Utilize campus resources**",
+          "**Pay bills on time**",
+          "**Compare prices**",
+          "**Learn basic cooking**",
+          "**Limit subscription services**",
+          "**Avoid debt traps**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "digital_literacy_tools_001",
       "category_id": "digital_literacy_tools",
       "question": "Which tools can help me organize my notes and assignments?",
       "answer": {
@@ -2145,7 +2560,7 @@
       }
     },
     {
-      "id": "digital_literacy_tools_092",
+      "id": "digital_literacy_tools_002",
       "category_id": "digital_literacy_tools",
       "question": "How can I ensure cybersecurity as a student?",
       "answer": {
@@ -2166,7 +2581,7 @@
       }
     },
     {
-      "id": "digital_literacy_tools_093",
+      "id": "digital_literacy_tools_003",
       "category_id": "digital_literacy_tools",
       "question": "What are some free or discounted software resources for students?",
       "answer": {
@@ -2187,7 +2602,7 @@
       }
     },
     {
-      "id": "digital_literacy_tools_094",
+      "id": "digital_literacy_tools_004",
       "category_id": "digital_literacy_tools",
       "question": "How do I manage version control for academic projects?",
       "answer": {
@@ -2208,7 +2623,7 @@
       }
     },
     {
-      "id": "digital_literacy_tools_095",
+      "id": "digital_literacy_tools_005",
       "category_id": "digital_literacy_tools",
       "question": "What practices improve email and online communication etiquette?",
       "answer": {
@@ -2229,7 +2644,40 @@
       }
     },
     {
-      "id": "advice_for_freshers_096",
+      "id": "quick_tips_for_digital_literacy_tools_001",
+      "category_id": "quick_tips_for_digital_literacy_tools",
+      "question": "What are some Quick Tips for Digital Literacy & Tools?",
+      "answer": {
+        "main_points": [
+          "Helps prevent unauthorized access to your accounts",
+          "Store frequently accessed websites in Chrome, Edge, or Safari for quick retrieval",
+          "Ensures you have the latest security patches and features",
+          "Extensions like **Grammarly** or **AdBlock** can enhance your workflow",
+          "Helps with tasks like Git, Python scripts, or environment setup",
+          "Label course materials or project files clearly",
+          "Sync notes across devices so you never lose them",
+          "Use Google Docs or Office 365 for real-time group editing",
+          "Store essential files on external drives or cloud storage",
+          "Watch tutorials on new tools or software to stay tech-savvy"
+        ],
+        "examples": [],
+        "tips": [
+          "**Regularly change passwords**",
+          "**Use bookmarking tools**",
+          "**Keep software updated**",
+          "**Explore browser extensions**",
+          "**Learn basic command-line skills**",
+          "**Stay organized with folders**",
+          "**Practice digital note-taking**",
+          "**Leverage cloud collaboration**",
+          "**Backup important data**",
+          "**Keep learning**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "advice_for_freshers_001",
       "category_id": "advice_for_freshers",
       "question": "How should I prepare for my first week of university?",
       "answer": {
@@ -2250,7 +2698,7 @@
       }
     },
     {
-      "id": "advice_for_freshers_097",
+      "id": "advice_for_freshers_002",
       "category_id": "advice_for_freshers",
       "question": "How can I make friends quickly in my first semester?",
       "answer": {
@@ -2271,7 +2719,7 @@
       }
     },
     {
-      "id": "advice_for_freshers_098",
+      "id": "advice_for_freshers_003",
       "category_id": "advice_for_freshers",
       "question": "What should I do if I'm feeling homesick?",
       "answer": {
@@ -2292,7 +2740,7 @@
       }
     },
     {
-      "id": "advice_for_freshers_099",
+      "id": "advice_for_freshers_004",
       "category_id": "advice_for_freshers",
       "question": "How can I balance my social life and academic workload as a fresher?",
       "answer": {
@@ -2313,7 +2761,7 @@
       }
     },
     {
-      "id": "advice_for_freshers_100",
+      "id": "advice_for_freshers_005",
       "category_id": "advice_for_freshers",
       "question": "What are good ways to get involved and feel part of the campus community?",
       "answer": {
@@ -2334,7 +2782,40 @@
       }
     },
     {
-      "id": "international_students_cultural_adaptation_101",
+      "id": "quick_tips_for_freshers_001",
+      "category_id": "quick_tips_for_freshers",
+      "question": "What are some Quick Tips for Freshers?",
+      "answer": {
+        "main_points": [
+          "Explore campus resources like the library, labs, and career center",
+          "Ask questions if you’re unsure about any process or requirement",
+          "Note important academic dates and manage your to-do list",
+          "You’ll meet people from different cultures and backgrounds—embrace it",
+          "Learn campus security phone numbers and best practices",
+          "Keep track of expenses; living on your own can be a financial challenge",
+          "They often cover valuable information on systems (e.g., online portals)",
+          "From counseling to academic workshops, they’re usually free for students",
+          "Regular check-ins can ease stress and combat homesickness",
+          "University is a transition—be willing to adapt and learn from new experiences"
+        ],
+        "examples": [],
+        "tips": [
+          "**Stay curious**",
+          "**Be proactive**",
+          "**Get organized early**",
+          "**Respect diversity**",
+          "**Stay safe**",
+          "**Budget wisely**",
+          "**Attend induction sessions**",
+          "**Take advantage of free resources**",
+          "**Call home (or friends)**",
+          "**Be open to change**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "international_students_cultural_adaptation_001",
       "category_id": "international_students_cultural_adaptation",
       "question": "How do I handle culture shock when studying abroad?",
       "answer": {
@@ -2355,7 +2836,7 @@
       }
     },
     {
-      "id": "international_students_cultural_adaptation_102",
+      "id": "international_students_cultural_adaptation_002",
       "category_id": "international_students_cultural_adaptation",
       "question": "Where can I find language support to improve my English (or local language)?",
       "answer": {
@@ -2376,7 +2857,7 @@
       }
     },
     {
-      "id": "international_students_cultural_adaptation_103",
+      "id": "international_students_cultural_adaptation_003",
       "category_id": "international_students_cultural_adaptation",
       "question": "How can I make local friends and understand the culture better?",
       "answer": {
@@ -2397,7 +2878,7 @@
       }
     },
     {
-      "id": "international_students_cultural_adaptation_104",
+      "id": "international_students_cultural_adaptation_004",
       "category_id": "international_students_cultural_adaptation",
       "question": "How do I manage visa and immigration requirements?",
       "answer": {
@@ -2418,7 +2899,7 @@
       }
     },
     {
-      "id": "international_students_cultural_adaptation_105",
+      "id": "international_students_cultural_adaptation_005",
       "category_id": "international_students_cultural_adaptation",
       "question": "Any tips for staying safe and healthy in a new country?",
       "answer": {
@@ -2439,7 +2920,40 @@
       }
     },
     {
-      "id": "academic_integrity_plagiarism_106",
+      "id": "quick_tips_for_international_students_cultural_adaptation_001",
+      "category_id": "quick_tips_for_international_students_cultural_adaptation",
+      "question": "What are some Quick Tips for International Students & Cultural Adaptation?",
+      "answer": {
+        "main_points": [
+          "A few local words can ease communication",
+          "Great for meeting staff, other students, and getting practical info",
+          "They offer peer support and cultural exchange",
+          "Observe how locals greet, queue, or behave in public",
+          "Professors or campus staff expect queries—don’t be shy",
+          "Passport, visa, student ID—organize them in a secure folder",
+          "Counseling, career services, and language labs are often free",
+          "Small frustrations may happen—maintaining a good attitude helps",
+          "Discover local cafes, parks, museums, and campus spots",
+          "Don’t overload yourself academically—give time to adapt"
+        ],
+        "examples": [],
+        "tips": [
+          "**Learn basic phrases**",
+          "**Attend orientation events**",
+          "**Join international student groups**",
+          "**Respect cultural norms**",
+          "**Ask questions**",
+          "**Keep essential docs handy**",
+          "**Use campus resources**",
+          "**Stay positive**",
+          "**Explore your surroundings**",
+          "**Set realistic goals**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "academic_integrity_plagiarism_001",
       "category_id": "academic_integrity_plagiarism",
       "question": "What exactly is plagiarism and how do I avoid it?",
       "answer": {
@@ -2460,7 +2974,7 @@
       }
     },
     {
-      "id": "academic_integrity_plagiarism_107",
+      "id": "academic_integrity_plagiarism_002",
       "category_id": "academic_integrity_plagiarism",
       "question": "How do I properly cite sources in my assignments?",
       "answer": {
@@ -2481,7 +2995,7 @@
       }
     },
     {
-      "id": "academic_integrity_plagiarism_108",
+      "id": "academic_integrity_plagiarism_003",
       "category_id": "academic_integrity_plagiarism",
       "question": "What are some tools for checking plagiarism?",
       "answer": {
@@ -2502,7 +3016,7 @@
       }
     },
     {
-      "id": "academic_integrity_plagiarism_109",
+      "id": "academic_integrity_plagiarism_004",
       "category_id": "academic_integrity_plagiarism",
       "question": "Is it plagiarism to reuse my past work (self-plagiarism)?",
       "answer": {
@@ -2523,7 +3037,7 @@
       }
     },
     {
-      "id": "academic_integrity_plagiarism_110",
+      "id": "academic_integrity_plagiarism_005",
       "category_id": "academic_integrity_plagiarism",
       "question": "How do I avoid accidental plagiarism when paraphrasing?",
       "answer": {
@@ -2544,7 +3058,40 @@
       }
     },
     {
-      "id": "student_engagement_extracurricular_activities_111",
+      "id": "quick_tips_for_academic_integrity_plagiarism_001",
+      "category_id": "quick_tips_for_academic_integrity_plagiarism",
+      "question": "What are some Quick Tips for Academic Integrity & Plagiarism?",
+      "answer": {
+        "main_points": [
+          "Note down each source as soon as you use it",
+          "Different assignments may have different citation or referencing needs",
+          "Catch unintentional copying before you submit",
+          "Professors or librarians can guide you on referencing rules",
+          "Don’t just change a few words—truly reframe the content",
+          "Label quotes, paraphrases, and summaries in your notes",
+          "They often teach citation, referencing, and research skills",
+          "Rushing can lead to mistakes or “copy-paste” temptations",
+          "Look at sample references or style guides (APA, MLA) for clarity",
+          "It’s safer to over-cite than risk accidental plagiarism"
+        ],
+        "examples": [],
+        "tips": [
+          "**Maintain a reference log**",
+          "**Read instructions carefully**",
+          "**Use plagiarism-check software**",
+          "**Ask for clarification**",
+          "**Paraphrase properly**",
+          "**Stay organized**",
+          "**Attend library workshops**",
+          "**Don’t procrastinate**",
+          "**Review examples**",
+          "**When in doubt, cite**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "student_engagement_extracurricular_activities_001",
       "category_id": "student_engagement_extracurricular_activities",
       "question": "How do I find clubs or organizations that match my interests?",
       "answer": {
@@ -2565,7 +3112,7 @@
       }
     },
     {
-      "id": "student_engagement_extracurricular_activities_112",
+      "id": "student_engagement_extracurricular_activities_002",
       "category_id": "student_engagement_extracurricular_activities",
       "question": "How do I balance extracurricular activities with academic workload?",
       "answer": {
@@ -2586,7 +3133,7 @@
       }
     },
     {
-      "id": "student_engagement_extracurricular_activities_113",
+      "id": "student_engagement_extracurricular_activities_003",
       "category_id": "student_engagement_extracurricular_activities",
       "question": "Are extracurriculars beneficial for my future career?",
       "answer": {
@@ -2607,7 +3154,7 @@
       }
     },
     {
-      "id": "student_engagement_extracurricular_activities_114",
+      "id": "student_engagement_extracurricular_activities_004",
       "category_id": "student_engagement_extracurricular_activities",
       "question": "How can I take on a leadership role in a campus organization?",
       "answer": {
@@ -2628,7 +3175,7 @@
       }
     },
     {
-      "id": "student_engagement_extracurricular_activities_115",
+      "id": "student_engagement_extracurricular_activities_005",
       "category_id": "student_engagement_extracurricular_activities",
       "question": "What if I can’t find a club that interests me?",
       "answer": {
@@ -2649,7 +3196,40 @@
       }
     },
     {
-      "id": "entrepreneurship_startups_for_students_116",
+      "id": "quick_tips_for_student_engagement_extracurricular_activities_001",
+      "category_id": "quick_tips_for_student_engagement_extracurricular_activities",
+      "question": "What are some Quick Tips for Student Engagement & Extracurricular Activities?",
+      "answer": {
+        "main_points": [
+          "Academics come first, but extracurriculars enrich campus life",
+          "Most clubs let you try a meeting before committing",
+          "They often know about campus events and hidden opportunities",
+          "Clubs can help hone skills like photography, writing, or coding",
+          "Regular attendance builds credibility and friendships",
+          "Color-code events and due dates to avoid clashes",
+          "Even small tasks (poster design, event setup) can help you connect",
+          "Partner with other clubs for joint projects and bigger impact",
+          "Some universities offer training for club officers",
+          "If your club wins an award or hosts a successful event, appreciate the effort!"
+        ],
+        "examples": [],
+        "tips": [
+          "**Set priorities**",
+          "**Attend open sessions**",
+          "**Network with club leaders**",
+          "**Use your talents**",
+          "**Be consistent**",
+          "**Organize your calendar**",
+          "**Volunteer occasionally**",
+          "**Collaborate**",
+          "**Attend leadership workshops**",
+          "**Celebrate achievements**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "entrepreneurship_startups_for_students_001",
       "category_id": "entrepreneurship_startups_for_students",
       "question": "What are some campus resources that support student entrepreneurs?",
       "answer": {
@@ -2670,7 +3250,7 @@
       }
     },
     {
-      "id": "entrepreneurship_startups_for_students_117",
+      "id": "entrepreneurship_startups_for_students_002",
       "category_id": "entrepreneurship_startups_for_students",
       "question": "How do I balance launching a startup with coursework?",
       "answer": {
@@ -2691,7 +3271,7 @@
       }
     },
     {
-      "id": "entrepreneurship_startups_for_students_118",
+      "id": "entrepreneurship_startups_for_students_003",
       "category_id": "entrepreneurship_startups_for_students",
       "question": "How do I secure funding for a student-led startup?",
       "answer": {
@@ -2712,7 +3292,7 @@
       }
     },
     {
-      "id": "entrepreneurship_startups_for_students_119",
+      "id": "entrepreneurship_startups_for_students_004",
       "category_id": "entrepreneurship_startups_for_students",
       "question": "What legal considerations should I keep in mind?",
       "answer": {
@@ -2733,7 +3313,7 @@
       }
     },
     {
-      "id": "entrepreneurship_startups_for_students_120",
+      "id": "entrepreneurship_startups_for_students_005",
       "category_id": "entrepreneurship_startups_for_students",
       "question": "How do I build a solid network for my startup idea?",
       "answer": {
@@ -2754,7 +3334,40 @@
       }
     },
     {
-      "id": "diversity_inclusion_121",
+      "id": "quick_tips_for_entrepreneurship_startups_001",
+      "category_id": "quick_tips_for_entrepreneurship_startups",
+      "question": "What are some Quick Tips for Entrepreneurship & Startups?",
+      "answer": {
+        "main_points": [
+          "Test a minimum viable product before going all-in",
+          "Survey potential users or run focus groups to confirm demand",
+          "Keep separate accounts for personal and business expenses",
+          "Combine different skill sets—tech, marketing, design, etc.",
+          "Keep track of meeting notes, customer feedback, and financials",
+          "Be prepared to pivot if your initial idea isn’t resonating",
+          "Advisors or experienced entrepreneurs can accelerate your learning",
+          "Patents, trademarks, or NDAs might be necessary for unique concepts",
+          "Practice your elevator pitch at events or even with friends",
+          "Acknowledge each milestone to keep morale high"
+        ],
+        "examples": [],
+        "tips": [
+          "**Start small**",
+          "**Validate your idea**",
+          "**Plan your finances**",
+          "**Build a diverse team**",
+          "**Document everything**",
+          "**Stay flexible**",
+          "**Seek mentorship**",
+          "**Protect your IP**",
+          "**Pitch often**",
+          "**Celebrate small wins**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "diversity_inclusion_001",
       "category_id": "diversity_inclusion",
       "question": "What does “diversity & inclusion” mean in a university setting?",
       "answer": {
@@ -2775,7 +3388,7 @@
       }
     },
     {
-      "id": "diversity_inclusion_122",
+      "id": "diversity_inclusion_002",
       "category_id": "diversity_inclusion",
       "question": "How can I respectfully address classmates from different backgrounds?",
       "answer": {
@@ -2796,7 +3409,7 @@
       }
     },
     {
-      "id": "diversity_inclusion_123",
+      "id": "diversity_inclusion_003",
       "category_id": "diversity_inclusion",
       "question": "What if I witness or experience discrimination on campus?",
       "answer": {
@@ -2817,7 +3430,7 @@
       }
     },
     {
-      "id": "diversity_inclusion_124",
+      "id": "diversity_inclusion_004",
       "category_id": "diversity_inclusion",
       "question": "Are there diversity-focused student organizations I can join?",
       "answer": {
@@ -2838,7 +3451,7 @@
       }
     },
     {
-      "id": "diversity_inclusion_125",
+      "id": "diversity_inclusion_005",
       "category_id": "diversity_inclusion",
       "question": "How can I contribute to an inclusive environment on campus?",
       "answer": {
@@ -2859,7 +3472,40 @@
       }
     },
     {
-      "id": "crisis_emergency_preparedness_126",
+      "id": "quick_tips_for_diversity_inclusion_001",
+      "category_id": "quick_tips_for_diversity_inclusion",
+      "question": "What are some Quick Tips for Diversity & Inclusion?",
+      "answer": {
+        "main_points": [
+          "Read articles or watch documentaries on different cultures or identities",
+          "Use language that doesn’t alienate or stereotype",
+          "If you’re unsure about something, approach it with genuine curiosity",
+          "Food fairs, performances, or awareness weeks",
+          "Some cultures have different norms about closeness or physical contact",
+          "Give credit to classmates or colleagues who share unique perspectives",
+          "Don’t assume someone’s background or beliefs based on appearance",
+          "Humor that targets certain groups can be hurtful",
+          "If you see someone isolated or struggling, offer friendship or guidance",
+          "We all have them—awareness is the first step to overcoming them"
+        ],
+        "examples": [],
+        "tips": [
+          "**Educate yourself**",
+          "**Speak inclusively**",
+          "**Ask questions respectfully**",
+          "**Attend cultural events**",
+          "**Respect personal space**",
+          "**Amplify underrepresented voices**",
+          "**Avoid assumptions**",
+          "**Be mindful of jokes**",
+          "**Offer support**",
+          "**Acknowledge your biases**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "crisis_emergency_preparedness_001",
       "category_id": "crisis_emergency_preparedness",
       "question": "Who do I contact first in a campus emergency?",
       "answer": {
@@ -2880,7 +3526,7 @@
       }
     },
     {
-      "id": "crisis_emergency_preparedness_127",
+      "id": "crisis_emergency_preparedness_002",
       "category_id": "crisis_emergency_preparedness",
       "question": "How do I stay informed about potential campus threats or alerts?",
       "answer": {
@@ -2901,7 +3547,7 @@
       }
     },
     {
-      "id": "crisis_emergency_preparedness_128",
+      "id": "crisis_emergency_preparedness_003",
       "category_id": "crisis_emergency_preparedness",
       "question": "What essentials should I keep in a dorm emergency kit?",
       "answer": {
@@ -2922,7 +3568,7 @@
       }
     },
     {
-      "id": "crisis_emergency_preparedness_129",
+      "id": "crisis_emergency_preparedness_004",
       "category_id": "crisis_emergency_preparedness",
       "question": "How can I prepare mentally for stressful emergency situations?",
       "answer": {
@@ -2943,7 +3589,7 @@
       }
     },
     {
-      "id": "crisis_emergency_preparedness_130",
+      "id": "crisis_emergency_preparedness_005",
       "category_id": "crisis_emergency_preparedness",
       "question": "What if I experience a personal crisis outside of official campus emergencies?",
       "answer": {
@@ -2964,7 +3610,40 @@
       }
     },
     {
-      "id": "housing_roommate_life_131",
+      "id": "quick_tips_for_crisis_emergency_preparedness_001",
+      "category_id": "quick_tips_for_crisis_emergency_preparedness",
+      "question": "What are some Quick Tips for Crisis & Emergency Preparedness?",
+      "answer": {
+        "main_points": [
+          "Keep them in your phone’s favorites or speed dial",
+          "Check maps in dorms, lecture halls, and labs",
+          "Opt in to campus text/email notifications",
+          "Take fire drills seriously so you know the routine",
+          "Let close friends or roommates know your general routine",
+          "Identify safe friends or family’s place if you need to leave campus",
+          "If something seems off (e.g., a suspicious bag), report it",
+          "A small kit with water, flashlight, and phone charger",
+          "Deep breaths help you think clearly under stress",
+          "Ensure classmates or roommates are safe and informed"
+        ],
+        "examples": [],
+        "tips": [
+          "**Save emergency numbers**",
+          "**Know evacuation routes**",
+          "**Sign up for alerts**",
+          "**Practice drills**",
+          "**Share schedules**",
+          "**Have a backup plan**",
+          "**Stay aware**",
+          "**Keep essentials ready**",
+          "**Stay calm**",
+          "**Look out for others**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "housing_roommate_life_001",
       "category_id": "housing_roommate_life",
       "question": "How do I find and vet potential roommates?",
       "answer": {
@@ -2985,7 +3664,7 @@
       }
     },
     {
-      "id": "housing_roommate_life_132",
+      "id": "housing_roommate_life_002",
       "category_id": "housing_roommate_life",
       "question": "What should I include in a roommate agreement?",
       "answer": {
@@ -3006,7 +3685,7 @@
       }
     },
     {
-      "id": "housing_roommate_life_133",
+      "id": "housing_roommate_life_003",
       "category_id": "housing_roommate_life",
       "question": "How can I handle conflicts with roommates politely?",
       "answer": {
@@ -3027,7 +3706,7 @@
       }
     },
     {
-      "id": "housing_roommate_life_134",
+      "id": "housing_roommate_life_004",
       "category_id": "housing_roommate_life",
       "question": "What should I know about off-campus housing or leases?",
       "answer": {
@@ -3048,7 +3727,7 @@
       }
     },
     {
-      "id": "housing_roommate_life_135",
+      "id": "housing_roommate_life_005",
       "category_id": "housing_roommate_life",
       "question": "How can I budget effectively for rent and bills as a student?",
       "answer": {
@@ -3064,6 +3743,66 @@
           "If you have 3 roommates, set up a **group fund** where each contributes monthly for electricity and water. Adjust the amount each semester if usage changes.",
           "---"
         ],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "quick_tips_for_housing_roommate_life_001",
+      "category_id": "quick_tips_for_housing_roommate_life",
+      "question": "What are some Quick Tips for Housing & Roommate Life?",
+      "answer": {
+        "main_points": [
+          "Discuss habits or preferences before issues arise",
+          "Keep noise low if someone has an early class or night shift",
+          "Decide if “clean” means spotless daily or a quick weekly vacuum",
+          "Note due dates for rent, utilities, or cleaning schedules",
+          "Ask before borrowing items; knock before entering rooms",
+          "Everyone has different rhythms and stress points",
+          "Agree on splitting bills fairly to avoid tension",
+          "Cooking, taking out trash, cleaning bathrooms—rotate tasks",
+          "Store lease copies, payment receipts, and roommate agreements",
+          "A 10-minute talk every week can prevent bigger conflicts later"
+        ],
+        "examples": [],
+        "tips": [
+          "**Communicate early**",
+          "**Be considerate**",
+          "**Set cleaning standards**",
+          "**Use a shared calendar**",
+          "**Respect personal space**",
+          "**Stay flexible**",
+          "**Budget together**",
+          "**Rotate chores**",
+          "**Keep documents safe**",
+          "**Plan regular check-ins**"
+        ],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "additional_resources_tips_001",
+      "category_id": "additional_resources_tips",
+      "question": "What are some Additional Resources & Tips?",
+      "answer": {
+        "main_points": [
+          "This section contains extra tips, related topics, and examples to help you navigate university life effectively.",
+          "### 📌 Examples of How Support Services Can Help:",
+          "📜 **Legal or financial advice** → Contact **Citizens Advice** for free, confidential support.",
+          "🌎 **International students struggling with language barriers** → Join **language support workshops**.",
+          "💰 **Students facing financial hardship** → Apply for **emergency support** through the **Student Finance Office**.",
+          "♿ **Students with disabilities** → Arrange **exam accommodations** through the **Disability Support Team**.",
+          "🎓 **Career guidance** → Book **one-to-one sessions** with **career advisers**.",
+          "---",
+          "### 🔗 Related Topics:",
+          "**Student Wellbeing Services**",
+          "**Academic Support Resources**",
+          "**Financial Aid and Scholarships**",
+          "**International Student Services**",
+          "**Housing and Accommodation**",
+          "---"
+        ],
+        "examples": [],
         "tips": [],
         "related_topics": []
       }

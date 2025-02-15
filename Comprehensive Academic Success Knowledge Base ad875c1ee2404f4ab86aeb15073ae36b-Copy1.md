@@ -12,8 +12,8 @@
 
 📌 **Related Topics**:  
 For more tips on staying organized, see  
-- [How can I stay organized with multiple assignments and deadlines?](https://www.notion.so/chat#how-can-i-stay-organized-with-multiple-assignments-and-deadlines)  
-- [How do I prioritize tasks when everything feels urgent?](https://www.notion.so/chat#how-do-i-prioritize-tasks-when-everything-feels-urgent)
+- [How can I stay organized with multiple assignments and deadlines?](https://www.wlv.ac.uk/lib/skills-for-learning/time-management/chat#how-can-i-stay-organized-with-multiple-assignments-and-deadlines)  
+- [How do I prioritize tasks when everything feels urgent?](https://www.wlv.ac.uk/lib/skills-for-learning/time-management/chat#how-do-I-prioritize-tasks-when-everything-feels-urgent?)
 
 📌 **Example**:  
 If you have three assignments due in a week, break each one into smaller tasks (e.g., research, outline, draft, edit) and allocate specific time blocks for each task in your calendar.  
@@ -50,6 +50,64 @@ This helps maintain focus and prevents burnout.
 If you have an exam tomorrow (**urgent and important**), a group project due next week (**important but not urgent**), and a non-essential email to reply to (**not urgent or important**), prioritize studying for the exam and schedule time for the group project later.
 
 ---
+
+### Q: What is time management?
+**A:**  
+- Successful time management involves taking control of how you use your time rather than rushing to meet deadlines.  
+- It requires planning ahead, setting goals for yourself, and prioritizing tasks.  
+- The aim is to reduce pressure and help you work more effectively.  
+
+---
+
+### Q: Why is time management important?
+**A:**  
+- University study can have uneven work periods where deadlines overlap.  
+- Working right up to deadlines leaves less time for reflection and can impact the quality of your work.  
+- Effective time management helps balance lectures, seminars, and personal commitments (family, employment, etc.).  
+- It can:  
+  - Help you use your time to best effect  
+  - Lessen anxiety as you feel more in control  
+  - Make you more aware of how you work  
+  - Reduce avoidance of more difficult tasks  
+
+---
+
+### Q: How can I time-manage my studies effectively?
+**A:**  
+- **Be aware of time**  
+  - Track how you currently use your time (e.g., create a time chart or log).  
+  - Identify any small pockets of free time you could use more effectively (e.g., reading notes before a lecture, on public transport, or listening to educational podcasts while driving).  
+
+- **Plan ahead**  
+  - At the start of a semester, note important academic dates (lectures, exams, assignment deadlines).  
+  - Add other personal commitments so you can see high-pressure weeks in advance.  
+  - Use a wall chart, Google Calendar, or phone calendar to maintain a visual overview.  
+  - Make weekly plans to list goals and check that you’re on schedule.  
+  - A daily “to-do” list can flow from your weekly plan.  
+
+- **Prioritize your tasks**  
+  - Focus first on tasks that are urgent or contribute the most to your grades.  
+  - Avoid spending excessive time on less important or more enjoyable tasks if they’re not urgent.  
+  - Match your effort to the percentage weight of each assignment.  
+
+- **Study smart**  
+  - Develop effective study techniques (active reading, good note-taking, reflection).  
+  - Focus on accomplishments rather than time spent (e.g., “I will read and summarize 3 chapters” instead of “I’ll study for 3 hours”).  
+
+- **Time-plan an assignment**  
+  - Break it into components (e.g., analysing the question, researching, writing, proofreading).  
+  - Work backward from the hand-in date to set mini-deadlines for each component, allowing extra buffer time for unexpected events.  
+  - Review lecture notes soon after class to save time later.  
+  - Try reading before lectures to aid understanding and critical thinking during class.  
+
+- **Take regular breaks**  
+  - Working or thinking while tired is less efficient and can waste time.  
+  - Schedule study during the time of day you perform best.  
+  - Minimize distractions and gather all materials before starting.  
+  - If you set aside a whole day for study, outline clear goals and activities to avoid losing track of time.  
+
+---
+
 
 ### Q: How can I stay organized with multiple assignments and deadlines?
 
@@ -417,8 +475,8 @@ If you're feeling overwhelmed, try a **10-minute mindfulness meditation session*
 Apps like **Headspace** or **Calm** can guide you through the process.  
 
 📎 **Related Topics**:  
-- [What are some healthy snacks for studying?](https://www.notion.so/chat#what-are-some-healthy-snacks-for-studying)  
-- [How can I maintain a healthy sleep schedule?](https://www.notion.so/chat#how-can-i-maintain-a-healthy-sleep-schedule)
+- [What are some healthy snacks for studying?](https://info.lse.ac.uk/current-students/Assets/Articles/8-super-study-snackschat#what-are-some-healthy-snacks-for-studying)  
+- [How can I maintain a healthy sleep schedule?](https://www.healthline.com/nutrition/brain-food-for-studyingchat#how-can-i-maintain-a-healthy-sleep-schedule)
 
 ---
 
@@ -2606,7 +2664,6 @@ This section contains extra tips, related topics, and examples to help you navig
 ---
 
 ### **Final Reminder:**
-🚀 This **knowledge base** is **regularly updated** to ensure **accurate and relevant information** for all students.  
 
 For **the most current details**, contact the appropriate **support services**.  
 

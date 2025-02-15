@@ -1,240 +1,195 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-
-import asyncio
-import os
-import sys
-import pyaudio
-import nest_asyncio
-import speech_recognition as sr
-from gtts import gTTS
 from transformers import pipeline
+import asyncio
 import streamlit as st
 import openai
 from openai import AsyncOpenAI
 from pinecone import Pinecone
 
-# ✅ Access API keys securely
+
+
 OPENAI_API_KEY = st.secrets["openai_api_key"]
 PINECONE_API_KEY = st.secrets["pinecone_api_key"]
+PINECONE_ENV = st.secrets["pinecone_env"]
 
-# ✅ Check if API keys are loaded correctly
 if not OPENAI_API_KEY:
-    raise ValueError("❌ OPENAI_API_KEY not found! Check your Streamlit secrets.")
+    raise ValueError("❌ Missing OPENAI_API_KEY in st.secrets.")
 if not PINECONE_API_KEY:
-    raise ValueError("❌ PINECONE_API_KEY not found! Check your Streamlit secrets.")
+    raise ValueError("❌ Missing PINECONE_API_KEY in st.secrets.")
+if not PINECONE_ENV:
+    raise ValueError("❌ Missing PINECONE_ENV in st.secrets.")
 
-# ✅ Initialize OpenAI & Pinecone
 openai.api_key = OPENAI_API_KEY
-
-# ✅ Define aclient for AsyncOpenAI usage
-aclient = AsyncOpenAI(api_key=OPENAI_API_KEY)
-
-pc = Pinecone(api_key=PINECONE_API_KEY)
-
+client = AsyncOpenAI(api_key=OPENAI_API_KEY)
+pc = Pinecone(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
 index = pc.Index("ai-powered-chatbot")
 
-print("✅ API keys loaded successfully!")
-print("✅ Pinecone and OpenAI clients initialized!")
+print("✅ Pinecone index connected successfully!\n")
 
 # ✅ Load Sentiment Analysis Model
-sentiment_analyzer = pipeline("sentiment-analysis")
+sentiment_analyzer = pipeline(
+    "sentiment-analysis",
+    model="distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    revision="714eb0f"
+)
 
-def speak_response(text):
-    try:
-        audio = pyaudio.PyAudio()
-        if audio.get_default_input_device_info():
-            # Proceed with microphone input
-            recognizer = sr.Recognizer()
-            with sr.Microphone() as source:
-                recognizer.adjust_for_ambient_noise(source)
-                audio_data = recognizer.listen(source)
-                text = recognizer.recognize_google(audio_data)
-        else:
-            print("No default input device available. Please check your microphone.")
-    except OSError as e:
-        print(f"Error accessing the microphone: {e}")
-
-# ✅ Generic Intent Responses
+# --------------------------------------------------------------------------
+# 3. DETECT GENERIC GREETINGS (INTENTS)
+# --------------------------------------------------------------------------
 GENERIC_INTENTS = {
     "hello": "Hello! How can I assist you today?",
-    "hi": "Hi! How can I help you?",
-    "how are you": "I'm just a chatbot, but I'm here to help you! What can I do for you?",
+    "hi": "Hi! How can I help?",
+    "hey": "Hey! What do you need help with?",
+    "good morning": "Good morning! How can I assist?",
     "bye": "Goodbye! Have a great day!",
-    "exit": "Goodbye! Have a great day!",
-    "quit": "Goodbye! Have a great day!",
+    "exit": "Goodbye! Take care!",
+    "quit": "Goodbye! See you next time!"
 }
-def detect_generic_intent(query):
-    query = query.lower().strip()
-    for intent, response in GENERIC_INTENTS.items():
-        if intent in query:
-            return response
-    return None
 
-# ------------------------------------------------------------
-# 2. SENTIMENT ANALYSIS
-# ------------------------------------------------------------
+def detect_generic_intent(query: str) -> str | None:
+    return GENERIC_INTENTS.get(query.strip().lower())
+
+# ✅ Function to Detect Sentiment
 def detect_sentiment(query):
     result = sentiment_analyzer(query)[0]
-    return result['label'].lower()  # e.g. "positive", "negative", or "neutral"
+    return result['label'].lower()
 
-# ------------------------------------------------------------
-# 3. RETRIEVE CHUNKS FROM PINECONE
-# ------------------------------------------------------------
-async def retrieve_chunks(query, top_k=2):
+# --------------------------------------------------------------------------
+# 4. IMPROVED RETRIEVAL PROCESS WITH RERANKING
+# --------------------------------------------------------------------------
+async def retrieve_chunks(query: str, top_k: int = 5) -> list[dict]:
+    """
+    1. Embed the user's query.
+    2. Query Pinecone for top_k matches.
+    3. Extract relevant text and emergency status.
+    4. Apply reranking for better retrieval.
+    """
     try:
-        response = await aclient.embeddings.create(
+        # Embed the query
+        embedding_response = await client.embeddings.create(
             model="text-embedding-ada-002",
-            input=[query]
+            input=query
         )
-        query_embedding = response.data[0].embedding
+        query_vector = embedding_response.data[0].embedding
 
         # Query Pinecone
-        result = index.query(
-            vector=query_embedding,
-            top_k=top_k,
-            include_metadata=True
-        )
+        result = index.query(vector=query_vector, top_k=top_k, include_metadata=True)
 
-        # Extract answers from matches
-        return [match.metadata.get("answer", "") for match in result.matches]
+        if not result.matches:
+            print("⚠️ No relevant matches found in Pinecone.")
+            return []
+
+        retrieved_chunks = []
+        for match in result.matches:
+            meta = match.metadata or {}
+            chunk_text = meta.get("text_chunk", "").strip()
+            category = meta.get("category", "unknown").strip()
+            source = meta.get("source", "unknown")
+            is_emergency = meta.get("is_emergency", False)
+
+            if chunk_text:
+                retrieved_chunks.append({
+                    "text": chunk_text,
+                    "category": category,
+                    "source": source,
+                    "is_emergency": is_emergency,
+                    "score": match.score  # Use similarity score for reranking
+                })
+
+        # Prioritize emergency responses if found
+        emergency_chunks = [c for c in retrieved_chunks if c["is_emergency"]]
+        if emergency_chunks:
+            print("⚠️ Emergency-related query detected! Prioritizing emergency responses.")
+            return sorted(emergency_chunks, key=lambda x: -x["score"])
+
+        # Reranking: Sort by score and source balance
+        sorted_chunks = sorted(retrieved_chunks, key=lambda x: -x["score"])
+        print(f"✅ Retrieved {len(sorted_chunks)} chunks from Pinecone after reranking.")
+        return sorted_chunks
+
     except Exception as e:
-        print(f"❌ Error retrieving chunks: {e}")
+        print(f"❌ Retrieval Error: {e}")
         return []
 
-# ------------------------------------------------------------
-# 4. SPEECH-TO-TEXT
-# ------------------------------------------------------------
-def recognize_speech():
-    recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("\n🎤 Speak now...")
-        recognizer.adjust_for_ambient_noise(source)
-        audio = recognizer.listen(source)
-    
-    try:
-        text = recognizer.recognize_google(audio)  # Uses Google STT
-        print(f"🟢 You said: {text}")
-        return text
-    except sr.UnknownValueError:
-        print("🔴 Sorry, I could not understand the speech.")
-        return ""
-    except sr.RequestError:
-        print("🔴 Could not request results. Check your internet connection.")
-        return ""
+# --------------------------------------------------------------------------
+# 5. GENERATE A CHATBOT RESPONSE WITH IMPROVED CONTEXT
+# --------------------------------------------------------------------------
+async def generate_response(user_query: str, top_k: int = 5) -> str:
+    """
+    - Checks for generic greetings first.
+    - Retrieves and reranks context.
+    - Uses improved GPT prompting.
+    """
 
-# ------------------------------------------------------------
-# 5. TEXT-TO-SPEECH
-# ------------------------------------------------------------
-def speak_response(text):
-    tts = gTTS(text=text, lang="en")
-    tts.save("response.mp3")
-    os.system("start response.mp3")  # Windows-specific approach
-    
-    # Alternative offline method using pyttsx3:
-    # tts_engine.say(text)
-    # tts_engine.runAndWait()
+    # A. Handle generic greetings
+    greeting_reply = detect_generic_intent(user_query)
+    if greeting_reply:
+        return greeting_reply
 
-# ------------------------------------------------------------
-# 6. GENERATE CHATBOT RESPONSE
-# ------------------------------------------------------------
-async def generate_response(query):
-    # Step 1: Check for generic intents
-    generic_response = detect_generic_intent(query)
-    if generic_response:
-        return generic_response  # No sentiment analysis needed
+    # B. Retrieve and rerank context
+    context_chunks = await retrieve_chunks(user_query, top_k=top_k)
+    if not context_chunks:
+        return "I couldn't find relevant info. Could you try rephrasing your question?"
 
-    # Step 2: Detect sentiment (optional usage)
-    sentiment = detect_sentiment(query)
-    # (You could do something with 'sentiment' if desired.)
+    # Remove duplicate or overly generic responses
+    unique_chunks = list({c["text"]: c for c in context_chunks}.values())
 
-    # Step 3: Retrieve relevant chunks
-    retrieved_chunks = await retrieve_chunks(query)
-    if not retrieved_chunks:
-        return "Unfortunately, I couldn't find relevant information. Please try rephrasing your question."
+    # Combine for GPT prompt
+    combined_context = "\n\n---\n\n".join([c["text"] for c in unique_chunks])
 
-    # Step 4: Create GPT prompt
-    context = "\n".join(retrieved_chunks)
-    prompt = f"User's question: {query}\n\nRelevant information:\n{context}\n\nAnswer:"
+    # C. Construct a more effective prompt for GPT
+    system_message = (
+        "You are a University Student Support Chatbot. Use the retrieved information below "
+        "to answer the question accurately and concisely. Do NOT make up answers. "
+        "Prioritize emergency responses when necessary. Avoid repetition."
+    )
+
+    user_prompt = (
+        f"User's question:\n\n{user_query}\n\n"
+        f"Relevant context:\n\n{combined_context}\n\n"
+        "Please provide a clear, concise, and relevant response."
+    )
 
     try:
-        gpt_response = await aclient.chat.completions.create(
+        chat_response = await client.chat.completions.create(
             model="gpt-4",
             messages=[
-                {"role": "system", "content": "You are a helpful and concise assistant."},
-                {"role": "user", "content": prompt}
+                {"role": "system", "content": system_message},
+                {"role": "user", "content": user_prompt}
             ],
-            max_tokens=200,
-            temperature=0.6
+            max_tokens=500,
+            temperature=0.8,  # Slightly higher temperature to encourage more natural responses
+            top_p=0.5  # Adjust top-p to allow for slight randomness and avoid repetitive responses
         )
-
-        gpt_reply = gpt_response.choices[0].message.content.strip()
-
-        # 🔹 Check for potential cut-off
-        if gpt_reply.endswith(("I'm", "but", "and", "because", "These")):
-            print("🔹 Response may be cut off. Generating continuation...")
-            follow_up = await aclient.chat.completions.create(
-                model="gpt-4",
-                messages=[
-                    {"role": "system", "content": "Continue the previous response in a concise manner."},
-                    {"role": "user", "content": "Continue from where you left off."}
-                ],
-                max_tokens=200,
-                temperature=0.6
-            )
-            gpt_reply += " " + follow_up.choices[0].message.content.strip()
-
-        return gpt_reply
+        final_answer = chat_response.choices[0].message.content.strip()
+        return final_answer
 
     except Exception as e:
-        print(f"❌ Error generating response: {e}")
-        return "Unfortunately, I couldn't generate a response. Please try again."
+        print(f"❌ Error generating GPT response: {e}")
+        return "Oops, something went wrong."
 
-# ------------------------------------------------------------
-# 7. MAIN FUNCTION: VOICE & TEXT SUPPORT
-# ------------------------------------------------------------
-async def test_chatbot():
-    print("\n🔵 Welcome to the University Student Support Service!")
-    print("🔹 Speak or type your queries. Say 'exit' or 'quit' to end the conversation.\n")
+# --------------------------------------------------------------------------
+# 6. MAIN CHATBOT LOOP
+# --------------------------------------------------------------------------
+async def main_chat_loop():
+    print("\n🔵 Welcome to the University Student Support Chatbot!")
+    print("🔹 Type your questions below. Type 'exit' or 'quit' to end.\n")
 
     while True:
-        use_voice = input("\n🟢 Press Enter to speak or type your message: ")
-        if use_voice == "":
-            query = recognize_speech()
-            voice_mode = True
-        else:
-            query = use_voice
-            voice_mode = False  # user typed manually
-        
-        if query.lower() in ["exit", "quit"]:
+        user_input = input("\n🟢 Your message: ").strip()
+        if not user_input:
+            print("⚠️ No input detected. Please try again.")
+            continue
+
+        if user_input.lower() in ["exit", "quit"]:
             print("🔴 Chatbot: Goodbye!")
             break
 
-        response = await generate_response(query)
-        print(f"\n🔵 Chatbot: {response}")
+        # Generate an answer
+        answer = await generate_response(user_input, top_k=5)
+        print(f"\n🔵 Chatbot: {answer}")
 
-        # 🔹 Speak the response aloud **ONLY if the user spoke**
-        if voice_mode:
-            speak_response(response)
-
-# ------------------------------------------------------------
-# 8. ASYNC LOOP SETUP
-# ------------------------------------------------------------
-nest_asyncio.apply()  # Fixes async loop issues in some environments
-
+# --------------------------------------------------------------------------
+# 7. RUN (ASYNC)
+# --------------------------------------------------------------------------
 if __name__ == "__main__":
-    if sys.platform.startswith("win"):  # Windows fix
-        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-
-    try:
-        asyncio.get_running_loop().run_until_complete(test_chatbot())
-    except RuntimeError:
-        asyncio.run(test_chatbot())
-
-
-# In[ ]:
-
-
-
-
+    asyncio.run(main_chat_loop())

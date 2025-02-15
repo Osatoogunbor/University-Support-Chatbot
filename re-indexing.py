@@ -1,17 +1,25 @@
+
 import json
 import os
 import time
+import streamlit as st
 from openai import OpenAI
 from pinecone import Pinecone
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Retrieve secrets from Streamlit
+OPENAI_API_KEY = st.secrets["openai_api_key"]
+PINECONE_API_KEY = st.secrets["pinecone_api_key"]
+# If you need Pinecone ENV, add it:
+PINECONE_ENV = st.secrets["pinecone_env"]
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_ENV = os.getenv("PINECONE_ENV")
+if not OPENAI_API_KEY:
+    raise ValueError("❌ OPENAI_API_KEY not found in st.secrets.")
+if not PINECONE_API_KEY:
+    raise ValueError("❌ PINECONE_API_KEY not found in st.secrets.")
+if not PINECONE_ENV:
+    raise ValueError("❌ PINECONE_ENV not found in st.secrets.")
 
+# Initialize OpenAI & Pinecone
 client = OpenAI(api_key=OPENAI_API_KEY)
 pc = Pinecone(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
 index = pc.Index("ai-powered-chatbot")
