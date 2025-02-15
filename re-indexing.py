@@ -9,19 +9,15 @@ from pinecone import Pinecone
 # Retrieve secrets from Streamlit
 OPENAI_API_KEY = st.secrets["openai_api_key"]
 PINECONE_API_KEY = st.secrets["pinecone_api_key"]
-# If you need Pinecone ENV, add it:
-PINECONE_ENV = st.secrets["pinecone_env"]
 
 if not OPENAI_API_KEY:
     raise ValueError("❌ OPENAI_API_KEY not found in st.secrets.")
 if not PINECONE_API_KEY:
     raise ValueError("❌ PINECONE_API_KEY not found in st.secrets.")
-if not PINECONE_ENV:
-    raise ValueError("❌ PINECONE_ENV not found in st.secrets.")
 
 # Initialize OpenAI & Pinecone
 client = OpenAI(api_key=OPENAI_API_KEY)
-pc = Pinecone(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
+pc = Pinecone(api_key=PINECONE_API_KEY)
 index = pc.Index("ai-powered-chatbot")
 
 
