@@ -7,10 +7,6 @@ from openai import AsyncOpenAI
 from pinecone import Pinecone
 from transformers import pipeline
 
-# No dotenv usage here
-# from dotenv import load_dotenv
-# load_dotenv()
-
 # Grab secrets from st.secrets
 OPENAI_API_KEY = st.secrets["openai_api_key"]
 PINECONE_API_KEY = st.secrets["pinecone_api_key"]
