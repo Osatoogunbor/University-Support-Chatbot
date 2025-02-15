@@ -1,33 +1,32 @@
 #!/usr/bin/env python3
-import os
-import json
-import time
-from datetime import date
-from dotenv import load_dotenv
-import tiktoken
-from openai import OpenAI
+from typing import Optional, List
+import asyncio
+import streamlit as st
+import openai
+from openai import AsyncOpenAI
 from pinecone import Pinecone
+from transformers import pipeline
 
-# --------------------------------------------------------------------------
-# 1. SETUP
-# --------------------------------------------------------------------------
-load_dotenv()  # Load from .env if present
+# No dotenv usage here
+# from dotenv import load_dotenv
+# load_dotenv()
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_ENV = os.getenv("PINECONE_ENV")
+# Grab secrets from st.secrets
+OPENAI_API_KEY = st.secrets["openai_api_key"]
+PINECONE_API_KEY = st.secrets["pinecone_api_key"]
+PINECONE_ENV = st.secrets["pinecone_env"]
 
 if not OPENAI_API_KEY:
-    raise ValueError("❌ Missing OPENAI_API_KEY in environment or .env.")
+    raise ValueError("❌ Missing OPENAI_API_KEY in st.secrets.")
 if not PINECONE_API_KEY:
-    raise ValueError("❌ Missing PINECONE_API_KEY in environment or .env.")
+    raise ValueError("❌ Missing PINECONE_API_KEY in st.secrets.")
 if not PINECONE_ENV:
-    raise ValueError("❌ Missing PINECONE_ENV in environment or .env.")
+    raise ValueError("❌ Missing PINECONE_ENV in st.secrets.")
 
-# Instantiate OpenAI and Pinecone clients
-client = OpenAI(api_key=OPENAI_API_KEY)
+openai.api_key = OPENAI_API_KEY
+client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 pc = Pinecone(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
-index = pc.Index("ai-powered-chatbot")  # Connect to existing Pinecone index
+index = pc.Index("ai-powered-chatbot")
 
 # Paths
 MERGED_JSON_PATH = "/mnt/c/Users/osato/openai_setup/merged_knowledge_base.json"
