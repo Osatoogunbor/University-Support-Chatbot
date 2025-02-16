@@ -284,8 +284,8 @@
       "subcategories": []
     },
     {
-      "id": "enrolment_faqs",
-      "title": "Enrolment FAQs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton",
+      "title": "Enrolment FAQs at University of wolverhampton",
       "subcategories": []
     },
     {
@@ -294,8 +294,8 @@
       "subcategories": []
     },
     {
-      "id": "extensions_and_late_submissions",
-      "title": "Extensions and Late Submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton",
+      "title": "Extensions and Late Submissions at University of Wolverhampton",
       "subcategories": []
     },
     {
@@ -389,13 +389,13 @@
       "subcategories": []
     },
     {
-      "id": "tutor_awareness_sheet_tas",
-      "title": "Tutor Awareness Sheet (TAS)",
+      "id": "tutor_awareness_sheet_tas_for_university_of_wolverhampton",
+      "title": "Tutor Awareness Sheet (TAS) for university of wolverhampton",
       "subcategories": []
     },
     {
-      "id": "disability_inclusion",
-      "title": "Disability & Inclusion",
+      "id": "disability_inclusion_at_university_of_wolverhampton",
+      "title": "Disability & Inclusion at university of wolverhampton",
       "subcategories": []
     },
     {
@@ -414,8 +414,8 @@
       "subcategories": []
     },
     {
-      "id": "extenuating_circumstances",
-      "title": "Extenuating Circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton",
+      "title": "Extenuating Circumstances at University of Wolverhampton",
       "subcategories": []
     },
     {
@@ -4558,8 +4558,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_001",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_001",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "What information do I need for my enrolment task?",
       "answer": {
         "main_points": [
@@ -4572,8 +4572,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_002",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_002",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "The course details in my enrolment task are wrong—what do I do?",
       "answer": {
         "main_points": [
@@ -4586,8 +4586,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_003",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_003",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "I’ve received an enrolment reminder—what should I do?",
       "answer": {
         "main_points": [
@@ -4600,8 +4600,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_004",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_004",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "I missed my enrolment deadline and the task is asking about late enrolment—what does this mean?",
       "answer": {
         "main_points": [
@@ -4614,8 +4614,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_005",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_005",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "I need to complete the identity check—what do I do?",
       "answer": {
         "main_points": [
@@ -4628,8 +4628,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_006",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_006",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "I didn’t enrol onto my course and missed the late enrolment task—what do I do?",
       "answer": {
         "main_points": [
@@ -4642,8 +4642,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_007",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_007",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "The Fees section says my fees are “Home”—what does that mean?",
       "answer": {
         "main_points": [
@@ -4656,8 +4656,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_008",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_008",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "What is the confirmation part of the enrolment task?",
       "answer": {
         "main_points": [
@@ -4670,8 +4670,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_009",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_009",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "When am I required to complete the enrolment task?",
       "answer": {
         "main_points": [
@@ -4684,8 +4684,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_010",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_010",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "I have been contacted by Profile Advantage—who are they?",
       "answer": {
         "main_points": [
@@ -4698,8 +4698,8 @@
       "source": "extracted"
     },
     {
-      "id": "enrolment_faqs_011",
-      "category_id": "enrolment_faqs",
+      "id": "enrolment_faqs_at_university_of_wolverhampton_011",
+      "category_id": "enrolment_faqs_at_university_of_wolverhampton",
       "question": "Where can I get technical support with my DBS applications?",
       "answer": {
         "main_points": [
@@ -4754,8 +4754,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_015",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_015",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "What is an extension?",
       "answer": {
         "main_points": [
@@ -4768,8 +4768,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_016",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_016",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "What is the difference between an evidence-based extension and a self-certification extension?",
       "answer": {
         "main_points": [
@@ -4782,8 +4782,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_017",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_017",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "Where can I apply for an extension?",
       "answer": {
         "main_points": [
@@ -4796,8 +4796,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_018",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_018",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "When can I apply for an extension?",
       "answer": {
         "main_points": [
@@ -4810,8 +4810,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_019",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_019",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "Are there times when I cannot make an extension claim?",
       "answer": {
         "main_points": [
@@ -4824,8 +4824,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_020",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_020",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "Which types of assessments can extensions apply to?",
       "answer": {
         "main_points": [
@@ -4838,8 +4838,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_021",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_021",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "What evidence do I need for my extension claim to be granted?",
       "answer": {
         "main_points": [
@@ -4852,8 +4852,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_022",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_022",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "How long will it take to get a decision on my extension claim?",
       "answer": {
         "main_points": [
@@ -4866,8 +4866,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_023",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_023",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "The assessment I wish to apply for extension for is not showing—what do I do?",
       "answer": {
         "main_points": [
@@ -4880,8 +4880,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_024",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_024",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "My deadline has passed, but I still haven’t received a decision regarding my extension claim—what do I do?",
       "answer": {
         "main_points": [
@@ -4894,8 +4894,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_025",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_025",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "I applied for an evidence-based extension but would prefer a self-certification extension. Can this be changed?",
       "answer": {
         "main_points": [
@@ -4908,8 +4908,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_026",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_026",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "I have an automatic 7-day extension through my Tutor Awareness Sheet (TAS). What does this mean?",
       "answer": {
         "main_points": [
@@ -4922,8 +4922,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_027",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_027",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "If I have a TAS extension, can I apply for another extension?",
       "answer": {
         "main_points": [
@@ -4936,8 +4936,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_028",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_028",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "If I submit my work late with no extension, what happens?",
       "answer": {
         "main_points": [
@@ -4950,8 +4950,8 @@
       "source": "extracted"
     },
     {
-      "id": "extensions_and_late_submissions_029",
-      "category_id": "extensions_and_late_submissions",
+      "id": "extensions_and_late_submissions_at_university_of_wolverhampton_029",
+      "category_id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "question": "My claim has been set to pending—what does this mean?",
       "answer": {
         "main_points": [
@@ -6983,8 +6983,8 @@
       "source": "extracted"
     },
     {
-      "id": "tutor_awareness_sheet_tas_019",
-      "category_id": "tutor_awareness_sheet_tas",
+      "id": "tutor_awareness_sheet_tas_for_university_of_wolverhampton_019",
+      "category_id": "tutor_awareness_sheet_tas_for_university_of_wolverhampton",
       "question": "What is a Tutor Awareness Sheet (TAS)?",
       "answer": {
         "main_points": [
@@ -6997,8 +6997,8 @@
       "source": "extracted"
     },
     {
-      "id": "disability_inclusion_020",
-      "category_id": "disability_inclusion",
+      "id": "disability_inclusion_at_university_of_wolverhampton_020",
+      "category_id": "disability_inclusion_at_university_of_wolverhampton",
       "question": "I have a disability and I don't know where to go for support",
       "answer": {
         "main_points": [
@@ -7123,8 +7123,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_029",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_029",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "What are extenuating circumstances?",
       "answer": {
         "main_points": [
@@ -7137,8 +7137,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_030",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_030",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "Where can I apply for extenuating circumstances?",
       "answer": {
         "main_points": [
@@ -7151,8 +7151,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_031",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_031",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "When can I apply for extenuating circumstances?",
       "answer": {
         "main_points": [
@@ -7165,8 +7165,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_032",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_032",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "For which assessments can I apply for extenuating circumstances?",
       "answer": {
         "main_points": [
@@ -7179,8 +7179,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_033",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_033",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "Can I apply for Extenuating Circumstances for modules involving placement learning or practical assessments?",
       "answer": {
         "main_points": [
@@ -7193,8 +7193,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_034",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_034",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "The assessment I wish to apply for is not showing. What do I do?",
       "answer": {
         "main_points": [
@@ -7207,8 +7207,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_035",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_035",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "What evidence do I need for my extenuating circumstances claim to be granted?",
       "answer": {
         "main_points": [
@@ -7221,8 +7221,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_036",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_036",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "I am known to the University's Mental Health and Wellbeing Team. Can they write a letter of support for my Extenuating Circumstances claim?",
       "answer": {
         "main_points": [
@@ -7235,8 +7235,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_037",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_037",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "I have a disclosed disability and receive support/adjustments. Can I use my disability as a reason for Extenuating Circumstances?",
       "answer": {
         "main_points": [
@@ -7249,8 +7249,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_038",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_038",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "How long does it take to get a decision on my extenuating circumstances claim?",
       "answer": {
         "main_points": [
@@ -7263,8 +7263,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_039",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_039",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "My deadline has passed, but I still haven't received a decision. What do I do?",
       "answer": {
         "main_points": [
@@ -7277,8 +7277,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_040",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_040",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "My deadline has passed, but I did not make a claim. Can I still do this?",
       "answer": {
         "main_points": [
@@ -7291,8 +7291,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_041",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_041",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "My claim is set to pending. What does this mean?",
       "answer": {
         "main_points": [
@@ -7305,8 +7305,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_042",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_042",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "My claim has been declined. Can I appeal this decision?",
       "answer": {
         "main_points": [
@@ -7319,8 +7319,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_043",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_043",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "I have been granted extenuating circumstances but still wish to submit my work. Can I do this?",
       "answer": {
         "main_points": [
@@ -7333,8 +7333,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_044",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_044",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "I am an LPC student and want information on applying for extenuating circumstances. Who can I speak to?",
       "answer": {
         "main_points": [
@@ -7347,8 +7347,8 @@
       "source": "extracted"
     },
     {
-      "id": "extenuating_circumstances_045",
-      "category_id": "extenuating_circumstances",
+      "id": "extenuating_circumstances_at_university_of_wolverhampton_045",
+      "category_id": "extenuating_circumstances_at_university_of_wolverhampton",
       "question": "I have previously applied for extenuating circumstances. Can I apply again?",
       "answer": {
         "main_points": [
