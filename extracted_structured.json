@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "last_updated": "2025-02-15",
+    "last_updated": "2025-02-16",
     "version": "1.0",
     "language": "en",
     "source": "Extracted Documents (Structured)",
-    "topics_count": 37,
-    "qa_pairs_count": 201
+    "topics_count": 42,
+    "qa_pairs_count": 237
   },
   "categories": [
     {
@@ -131,6 +131,31 @@
     {
       "id": "how_to_make_studying_fun_and_less_stressful",
       "title": "How to Make Studying Fun and Less Stressful",
+      "subcategories": []
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "title": "Placement and Internship Information at University of Wolverhampton",
+      "subcategories": []
+    },
+    {
+      "id": "open_day_faqs",
+      "title": "Open Day FAQs",
+      "subcategories": []
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton",
+      "title": "Careers at University of Wolverhampton",
+      "subcategories": []
+    },
+    {
+      "id": "student_ambassadors_information_university_of_wolverhampton",
+      "title": "Student Ambassadors Information University of Wolverhampton",
+      "subcategories": []
+    },
+    {
+      "id": "chaplaincy_information_at_university_of_wolverhampton",
+      "title": "Chaplaincy Information at University of Wolverhampton",
       "subcategories": []
     },
     {
@@ -1554,6 +1579,474 @@
       "answer": {
         "main_points": [
           "- Making studying fun helps you stay motivated, reduces stress, and protects mental well-being. - Simple actions—like using music, flashcards, or comfy clothes—can transform study sessions. - Embrace small changes, take breaks, and stay open-minded to get the most from your study experience."
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_027",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What is a placement?",
+      "answer": {
+        "main_points": [
+          "- Placements are periods of professional experience ranging from a few weeks to 12 months. - They may be part of your course and can offer academic credits toward your degree. - Industrial placements, for example, are 12-month opportunities to work in a professional environment while still enjoying student benefits. - Typically, industrial placements occur between the second and final years of undergraduate study.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_028",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What will I be doing in a placement?",
+      "answer": {
+        "main_points": [
+          "- During a placement, you will perform work similar to that of a regular employee in an organization. - This provides you with unique insight into your chosen profession or sector. - It offers opportunities to acquire crucial personal and professional skills. - You can also build a network of useful business contacts.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_029",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What are the benefits of doing a placement?",
+      "answer": {
+        "main_points": [
+          "- Placements provide valuable work experience and a better understanding of your chosen field. - They significantly enhance employability; studies show that 52% of graduate employers rate work experience as essential. - Benefits include: - Gaining practical, hands-on experience - Developing a range of employability skills - Earning a salary (with average placements paying around £18,000 per annum) - Potentially securing a graduate position with the organization after your final year - Building a network of business contacts - Contributing toward professional qualifications or academic credits - Enhancing your CV for future interviews - Increasing overall employability  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_030",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "Where can I do a placement?",
+      "answer": {
+        "main_points": [
+          "- A placement can be undertaken locally, nationally, or, in some cases, internationally—the choice is yours. - If you find an opportunity that interests you or secure one independently, contact the Careers and Placements team for further support.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_031",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "Where are placements advertised?",
+      "answer": {
+        "main_points": [
+          "- All placement and work experience opportunities are advertised on the University's Jobs Board. - Additionally, Internship Experience UK is a three-day virtual internship programme held every summer, which has helped over 140,000 students and graduates; 10,000 have secured roles through it. - You can apply for internships via the Bright Network at: - https://www.brightnetwork.co.uk/search/?content_types=jobs&job_types=Internship&is_remote=true  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_032",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What work placements and internships does the University offer?",
+      "answer": {
+        "main_points": [
+          "- The University offers a variety of work experience opportunities that can enhance your CV and future career prospects. - Opportunities can be incorporated alongside your studies or as part of a sandwich placement year. - For instance, all undergraduate students at the University of Wolverhampton Business School can undertake a 12-month industrial placement during their third year. - Benefits include: - Gaining valuable work experience in your area of interest - Developing work-related skills demanded by graduate employers - Putting theory into practice - Building a network of business contacts - Receiving financial rewards (placements are typically paid) - Improving confidence and employability - Placements may be undertaken anywhere in the UK or overseas (subject to Visa requirements). - The Employability and Placement Unit supports your search by advertising vacancies and providing job search skills training. - Many students return to their placement company after graduation.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_033",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What about overseas placements/internships?",
+      "answer": {
+        "main_points": [
+          "- Overseas placements/internships offer valuable international work experience and insight into different cultures and customs. - These opportunities enhance your CV and broaden your understanding of global professional environments. ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_034",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What virtual opportunities are available?",
+      "answer": {
+        "main_points": [
+          "- Following COVID-19, the University partnered with new opportunity providers to offer virtual experiences. - These opportunities allow you to gain work, study, and travel experience from the comfort of your home. - Providers include: - Forage: An online resource offering virtual experience programmes (6–12 hours) to build real-world skills. - Visit: https://www.theforage.com/landing/university-of-wolverhampton-xoags/wolverhampton-careers-iGWG - Pagoda Projects: Browse over 500 remote internship listings with positions lasting 8–12 weeks. - Visit: https://www.pagodaprojects.com/internships - New projects are coming soon!  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_035",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What about volunteering opportunities?",
+      "answer": {
+        "main_points": [
+          "- Volunteering is an excellent way to gain work experience, develop graduate skills, and contribute to your community. - It demonstrates commitment and is highly valued by employers. - More information is available on the Volunteer Central website.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_036",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What are summer internships?",
+      "answer": {
+        "main_points": [
+          "- A summer internship is an ideal opportunity to gain work experience during the summer period. - They can be full-time or part-time, paid or unpaid, and usually last from two to twelve weeks. - Summer internships are especially popular among final-year students, helping them gain practical experience before entering the job market. - Benefits include: - Increasing knowledge and enhancing skills - Boosting your CV - Gaining hands-on experience that can lead to a job offer - A student intern blog by Gioan Peloumpi shares insights on the importance of summer internships and how they can shape future career prospects.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_037",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What should I do if I am interested in a work placement or internship?",
+      "answer": {
+        "main_points": [
+          "- If you are interested in a work placement or internship, reach out to the Careers and Placements team at the University of Wolverhampton for support and guidance.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "placement_and_internship_information_at_university_of_wolverhampton_038",
+      "category_id": "placement_and_internship_information_at_university_of_wolverhampton",
+      "question": "What opportunities are available in AI and Data Science?",
+      "answer": {
+        "main_points": [
+          "- The University of Wolverhampton has recently launched two newly funded postgraduate MSc conversion courses in Artificial Intelligence and Data Science. - These courses are designed to help you develop the knowledge and practical experience needed to transition into a career in these expanding fields. - Course features include: - Online support sessions prior to starting to help you up-skill and prepare - The opportunity to apply for paid, industry-supported internships"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "open_day_faqs_039",
+      "category_id": "open_day_faqs",
+      "question": "What is open day at University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- On open days, universities open their doors to prospective students so they can see facilities, campuses, and accommodation, and speak to current students and lecturers. - Open days offer you a chance to learn more about the courses you are interested in and help you imagine your life on campus. - They are a great way to gain insights into several universities and assist you in choosing where to go.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "open_day_faqs_040",
+      "category_id": "open_day_faqs",
+      "question": "Is it worth going to university open days?",
+      "answer": {
+        "main_points": [
+          "- While researching online is useful, attending open days gives you a first-hand experience of the facilities, campus, and accommodation. - Key benefits include: - Helping you confirm or remove options from your list - Providing the opportunity to chat with lecturers - Allowing you to learn about courses in greater detail - Offering experiences not available online - Giving you the chance to ask questions about any uncertainties  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "open_day_faqs_041",
+      "category_id": "open_day_faqs",
+      "question": "When should I start looking for universities?",
+      "answer": {
+        "main_points": [
+          "- University choices and applications typically begin in Year 12 or 13. - Most students attend open days in Year 13, but attending in Year 12 can give you extra time to view your options.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "open_day_faqs_042",
+      "category_id": "open_day_faqs",
+      "question": "Can parents go to university open days?",
+      "answer": {
+        "main_points": [
+          "- Yes, open days are open to all prospective students and their parents or guardians. - Bringing a family member can be helpful as they may think of questions you might not have considered and provide additional support during your selection process.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_043",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "Who can use our careers appointment services?",
+      "answer": {
+        "main_points": [
+          "- Our careers appointment services are available to: - All current students of the University of Wolverhampton (including those on Higher Apprenticeships and Degree Apprenticeships) - University of Wolverhampton alumni on a lifelong basis - Prospective students of this University (contact The Gateway at 01902 321032 or email gateway@wlv.ac.uk) - Current students and graduates of other universities should use their own institution’s careers service.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_044",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "How do I book a careers interview?",
+      "answer": {
+        "main_points": [
+          "- Log onto Career SPACE. - Click on the '1-2-1 careers appointments' in the Appointments & Workshops box. - Choose an available appointment. - Fill in the Notes section with details on what you would like to discuss. - Click the 'Book Now' button. - You will receive a confirmation email to your University email.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_045",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "What happens during a careers appointment?",
+      "answer": {
+        "main_points": [
+          "- The appointment is tailored to the issues you want to discuss. - A careers adviser will help you investigate your career options, sort out your career plans, and develop the necessary skills. - Your adviser may also identify additional areas for you to consider and help plan your next steps. - If needed, a second appointment can be scheduled, or you may be referred to a careers consultant with specialist knowledge.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_046",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "How is confidentiality and impartiality maintained in careers appointments?",
+      "answer": {
+        "main_points": [
+          "- Any personal and sensitive information you share is kept confidential and not passed on without your consent. - Notes from your appointment are for you and your adviser only. - The advice provided is entirely impartial, ensuring that you are only encouraged to take actions in your best interests.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_047",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "What alternative sources of careers advice are available?",
+      "answer": {
+        "main_points": [
+          "- Alternative providers include: - The National Careers Service - Prospects - Target Jobs - Connexions Wolverhampton - Jobcentre Plus - The Shaw Trust - Learndirect  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_048",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "What does the Career SPACE Disclaimer state?",
+      "answer": {
+        "main_points": [
+          "- The University of Wolverhampton may share some personal information (e.g., first name, last name, course details, email address) with third-party software suppliers to facilitate single sign-on. - By using the software, you consent to this sharing for that purpose only. - The University is committed to complying with Data Protection legislation.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_049",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "What careers support do current students receive?",
+      "answer": {
+        "main_points": [
+          "- Services available on a lifelong basis after graduation include: - 1-2-1 careers appointments (for CVs, application forms, etc.) - Mock interviews - Practice psychometric tests - Information on part-time jobs, placements, and internships - Advice on further study and professional qualifications - Career planning and guidance - Additional resources include career workshops, networking events, and access to Career SPACE for bespoke content.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_050",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "What is CV360?",
+      "answer": {
+        "main_points": [
+          "- CV360 is a tool on Career SPACE that provides instant feedback on your CV based on 50+ checks. - It analyzes File, Structure, Content, Language, Presentation, and Skills (including unique checks like time-to-read). - You can upload your CV and receive detailed feedback to help optimize it for job applications. - It also provides advice, tips, and best practices from employer insights.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_051",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "What support is available for recently graduated students?",
+      "answer": {
+        "main_points": [
+          "- Careers services continue to support you after graduation with: - 1-2-1 careers appointments - Mock interviews - Research into further study options - Information on graduate schemes and internships - Ongoing careers advice and planning support - If you need help with job hunting, CV targeting, or online presence, you can also contact the service.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "careers_at_university_of_wolverhampton_052",
+      "category_id": "careers_at_university_of_wolverhampton",
+      "question": "What should I do if I need help with job applications and interviews?",
+      "answer": {
+        "main_points": [
+          "- Book a 1-2-1 appointment on Career SPACE. - You can also email a Word document (CV, cover letter, or personal statement) to careers@wlv.ac.uk for support. - Alternatively, you can upload your CV via CV360 for instant feedback. - Response time is typically within 5 working days.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "student_ambassadors_information_university_of_wolverhampton_053",
+      "category_id": "student_ambassadors_information_university_of_wolverhampton",
+      "question": "What is a student ambassador?",
+      "answer": {
+        "main_points": [
+          "- A student ambassador is a current student who engages with enquirers, applicants, and the wider community. - They answer questions, provide reassurance, and support prospective students in their higher education journey. - Ambassadors also share their experiences about student life, clubs, societies, and campus facilities.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "student_ambassadors_information_university_of_wolverhampton_054",
+      "category_id": "student_ambassadors_information_university_of_wolverhampton",
+      "question": "Who are the student ambassadors?",
+      "answer": {
+        "main_points": [
+          "- There is a team of over 170 student ambassadors at the University of Wolverhampton. - They represent the University at various events such as Open Days, UCAS events, and school/college visits. - They also support essential functions like nurturing, clearing, and enrolment.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "student_ambassadors_information_university_of_wolverhampton_055",
+      "category_id": "student_ambassadors_information_university_of_wolverhampton",
+      "question": "What is the application process for becoming a student ambassador?",
+      "answer": {
+        "main_points": [
+          "- Complete the application form. - Attend one of the assessment sessions. - Complete the training programme. - Meet employment checks and onboard with the employing agency, Adecco.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "student_ambassadors_information_university_of_wolverhampton_056",
+      "category_id": "student_ambassadors_information_university_of_wolverhampton",
+      "question": "What happens after you complete the training?",
+      "answer": {
+        "main_points": [
+          "- Once training is completed, you will be referred to external Compliance and Payroll contacts at Adecco. - You will receive a link to register your personal details via Microsoft Forms. - An in-person appointment for Employment Checks will be scheduled (bring Right to Work documents). - Once fully onboarded, you can bid for work.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "student_ambassadors_information_university_of_wolverhampton_057",
+      "category_id": "student_ambassadors_information_university_of_wolverhampton",
+      "question": "Where can I apply for the Student Ambassador Scheme?",
+      "answer": {
+        "main_points": [
+          "- Applications can be submitted via the application form available on the University website. - Applications close on Sunday 20th October 2024. - You will be contacted within two weeks if you are selected for assessment.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "student_ambassadors_information_university_of_wolverhampton_058",
+      "category_id": "student_ambassadors_information_university_of_wolverhampton",
+      "question": "When are the assessment and training dates for the Student Ambassador Scheme?",
+      "answer": {
+        "main_points": [
+          "- **Assessment Dates for 2024/25:** - Tuesday 5th November, 10am - 1pm at Walsall - Wednesday 6th November, 2pm - 5pm at City - Thursday 7th November, 9am - 12 noon at City - **Training Dates for 2024/25:** - Tuesday 26th, Wednesday 27th, and Thursday 28th November (times and venues to be confirmed)  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "chaplaincy_information_at_university_of_wolverhampton_059",
+      "category_id": "chaplaincy_information_at_university_of_wolverhampton",
+      "question": "What is the University Chaplaincy?",
+      "answer": {
+        "main_points": [
+          "- The University Chaplaincy supports the spiritual, cultural, and pastoral needs of students and staff. - It offers one-to-one support (both online and in person), hosts events to build community understanding, and provides advice and training related to religion and faith. - The Chaplaincy centre on Molineux Street offers hospitality to all, with a lounge, kitchen, and meeting room (student bookings given priority).  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "chaplaincy_information_at_university_of_wolverhampton_060",
+      "category_id": "chaplaincy_information_at_university_of_wolverhampton",
+      "question": "What additional support does the Chaplaincy provide?",
+      "answer": {
+        "main_points": [
+          "- The Chaplaincy offers private and confidential conversations via online platforms and telephone. - Chaplains also attend events at various places of worship (churches, mosques, gurdwaras, etc.) and announce these visits as they occur. - Information on Student Faith Societies is available via the Students' Union.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "chaplaincy_information_at_university_of_wolverhampton_061",
+      "category_id": "chaplaincy_information_at_university_of_wolverhampton",
+      "question": "What facilities are available on campus for prayer and reflection?",
+      "answer": {
+        "main_points": [
+          "- **City Campus North:** A comfortable quiet room with sofas and prayer mats. - **City Campus South:** Rooms MD208/210 with two ablution rooms. - **City Campus (Springfield):** Room SPB028 with capacity for five persons (no ablutions available). - **Walsall Campus:** WC Building (rooms WC001, 001b, 002, and 003) with a capacity of ten per room and two ablution rooms. - **Telford Campus:** Room SA211 with capacity for four persons (no ablutions available).  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "chaplaincy_information_at_university_of_wolverhampton_062",
+      "category_id": "chaplaincy_information_at_university_of_wolverhampton",
+      "question": "What is the \"Light a Candle\" initiative?",
+      "answer": {
+        "main_points": [
+          "- It is an invitation to take a moment for reflection and remembrance. - You are encouraged to light a candle for: - Hope for the coming year - Gratitude for all that you have - Those in need - In remembrance of a loved one - For yourself"
         ],
         "examples": [],
         "tips": [],

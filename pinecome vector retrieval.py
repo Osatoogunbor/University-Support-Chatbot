@@ -14,8 +14,6 @@ if not OPENAI_API_KEY:
     raise ValueError("❌ Missing OPENAI_API_KEY in st.secrets.")
 if not PINECONE_API_KEY:
     raise ValueError("❌ Missing PINECONE_API_KEY in st.secrets.")
-if not PINECONE_ENV:
-    raise ValueError("❌ Missing PINECONE_ENV in st.secrets.")
 
 openai.api_key = OPENAI_API_KEY
 client = AsyncOpenAI(api_key=OPENAI_API_KEY)
