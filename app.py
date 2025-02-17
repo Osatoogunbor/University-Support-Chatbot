@@ -66,9 +66,9 @@ st.sidebar.markdown(
     """
 Welcome to **UniEase**—your university wellbeing companion!
 
+- Receive accurate, concise support tailored to help you navigate university life.
 - Ask questions about enrollment, extensions, deadlines and university resources.
 - Access mental health resources and strategies for managing academic stress.
-- Receive accurate, concise support tailored to help you navigate university life.
 """,
     unsafe_allow_html=True
 )
@@ -211,7 +211,7 @@ async def generate_response(user_query: str, top_k: int = 5) -> str:
 # -------------------------------------------------------------------------
 def main():
     st.title("🎓 UniEase: Your University Study & Wellbeing Companion")
-    st.markdown("Ask me about deadlines, university resources, or any academic stress concerns!")
+    st.markdown("Ask me about university life, deadlines, university resources, or any academic stress concerns!")
 
     if "messages" not in st.session_state:
         st.session_state["messages"] = []
