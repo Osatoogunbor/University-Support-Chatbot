@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "last_updated": "2025-02-16",
+    "last_updated": "2025-02-17",
     "version": "1.0",
     "language": "en",
     "source": "Extracted Documents (Structured)",
-    "topics_count": 42,
-    "qa_pairs_count": 237
+    "topics_count": 48,
+    "qa_pairs_count": 257
   },
   "categories": [
     {
@@ -91,6 +91,36 @@
     {
       "id": "extensions_and_late_submissions_at_university_of_wolverhampton",
       "title": "Extensions and Late Submissions at University of Wolverhampton",
+      "subcategories": []
+    },
+    {
+      "id": "extenuating_circumstances_extensions_information",
+      "title": "Extenuating Circumstances & Extensions Information",
+      "subcategories": []
+    },
+    {
+      "id": "msc_data_science_and_ai_course_information",
+      "title": "MSc Data Science and AI Course Information",
+      "subcategories": []
+    },
+    {
+      "id": "nursing_degrees_information",
+      "title": "Nursing Degrees Information",
+      "subcategories": []
+    },
+    {
+      "id": "cyber_security_courses",
+      "title": "Cyber Security Courses",
+      "subcategories": []
+    },
+    {
+      "id": "contact_for_admissions_at_university_of_wolverhampton",
+      "title": "Contact for Admissions at University of Wolverhampton",
+      "subcategories": []
+    },
+    {
+      "id": "assessment_and_deadlines_information",
+      "title": "Assessment and Deadlines Information",
       "subcategories": []
     },
     {
@@ -942,6 +972,266 @@
       "answer": {
         "main_points": [
           "- The evidence provided was insufficient to grant the claim. - You should have received an email with details on additional evidence needed. - If unsure about the required evidence, log a helpcall and the ASK@WLV Team will advise."
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "extenuating_circumstances_extensions_information_030",
+      "category_id": "extenuating_circumstances_extensions_information",
+      "question": "Where can I find more information about extenuating circumstances and extensions at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Visit: [University Policies: Understanding Extensions and Extenuating Circumstances](https://www.wlv.ac.uk/current-students/news/october-2024/university-policies-explained-understanding-extensions-and-extenuating-circumstances.php)  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "msc_data_science_and_ai_course_information_031",
+      "category_id": "msc_data_science_and_ai_course_information",
+      "question": "What is Data Science?",
+      "answer": {
+        "main_points": [
+          "- Data Science is a broad field focused on deriving meaning from data. - It involves the collection, processing, storage, modeling, warehousing, and analysis of data. - Data Scientists use various tools, applications, and algorithms to interpret data, inform business decisions, and predict future trends.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "msc_data_science_and_ai_course_information_032",
+      "category_id": "msc_data_science_and_ai_course_information",
+      "question": "What is Artificial Intelligence?",
+      "answer": {
+        "main_points": [
+          "- Artificial Intelligence equips machines with the ability to reason by mimicking human intelligence. - This is typically achieved by teaching machines through experience. - AI professionals use tools like machine learning and natural language processing to build, test, and deploy models that identify patterns and make predictions.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "msc_data_science_and_ai_course_information_033",
+      "category_id": "msc_data_science_and_ai_course_information",
+      "question": "How do Data Science and Artificial Intelligence overlap?",
+      "answer": {
+        "main_points": [
+          "- The two disciplines frequently overlap; for example, machine learning relies on large data sets to train models. - Data Scientists often use intelligent agents to extract insights from their data. - Both fields share common methodologies while maintaining specialized modules focused on their respective areas.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "msc_data_science_and_ai_course_information_034",
+      "category_id": "msc_data_science_and_ai_course_information",
+      "question": "Do I need prior maths or programming experience for these conversion MSc courses?",
+      "answer": {
+        "main_points": [
+          "- No, these conversion courses are designed for applicants who may not have extensive maths or programming backgrounds. - A free online “bridging course” is available, featuring short videos, handouts, and quizzes to bring your maths and programming skills up to speed. - This support is available throughout your studies and is updated regularly.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "msc_data_science_and_ai_course_information_035",
+      "category_id": "msc_data_science_and_ai_course_information",
+      "question": "What are the general entry requirements?",
+      "answer": {
+        "main_points": [
+          "- A minimum of a 2.2 (second class honours, grade 2) in an honours degree is generally expected. - Maths skills should be equivalent to GCSE grade 4 or higher. - Applicants with alternative qualifications and/or industry experience may also be considered; contact the admissions team to explore your options.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "msc_data_science_and_ai_course_information_036",
+      "category_id": "msc_data_science_and_ai_course_information",
+      "question": "What is the course duration and start dates?",
+      "answer": {
+        "main_points": [
+          "- Full-time study lasts 14 months, and part-time study lasts 28 months. - The extended duration accounts for industry internships/placements. - There are four start dates per year: April, September, November, and February.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "msc_data_science_and_ai_course_information_037",
+      "category_id": "msc_data_science_and_ai_course_information",
+      "question": "Is there a dissertation requirement?",
+      "answer": {
+        "main_points": [
+          "- Yes, the dissertation follows BCS guidelines and requires an artefact.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "nursing_degrees_information_038",
+      "category_id": "nursing_degrees_information",
+      "question": "What are Nursing degrees at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Nursing degrees prepare you for one of the most rewarding healthcare professions by equipping you to provide essential patient support. - A range of general and specialised nursing courses are available to suit different study requirements.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "nursing_degrees_information_039",
+      "category_id": "nursing_degrees_information",
+      "question": "What are some popular undergraduate Nursing courses?",
+      "answer": {
+        "main_points": [
+          "- BNurs (Hons) Adult Nursing - BNurs (Hons) Adult Nursing with Foundation Year - BNurs (Hons) Children's Nursing - BNurs (Hons) Children's Nursing with Foundation Year - BNurs (Hons) Learning Disability Nursing - BNurs (Hons) Learning Disability Nursing with Foundation Year - BNurs (Hons) Mental Health Nursing - BNurs (Hons) Mental Health Nursing with Foundation Year - BSc (Hons) Specialist Community Nursing (General Practice Nursing) (Top Up) - BSc (Hons) Specialist Community Public Health Nursing (Health Visiting) (Top Up) - BSc (Hons) Specialist Community Public Health Nursing (School Nursing) (Top Up) - BSc Professional Practice in Healthcare (top-up) - Undergraduate Credit Return to Practice (Nursing)  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "nursing_degrees_information_040",
+      "category_id": "nursing_degrees_information",
+      "question": "What Nursing postgraduate courses are available?",
+      "answer": {
+        "main_points": [
+          "- MAN Adult Nursing - MMHN Mental Health Nursing - MSc Professional Practice in Healthcare (Leadership and Management) - MSc Professional Practice in Healthcare (Speciality Practice) - MSc Professional Practice in Healthcare (Teaching and Learning) - PG Cert Professional Practice in Healthcare - PGDip Adult Nursing - PGDip Mental Health Nursing - Postgraduate Credit in Advocacy and Education for Quality Improvement in Practice (A-EQUIP)  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "cyber_security_courses_041",
+      "category_id": "cyber_security_courses",
+      "question": "What Cyber Security postgraduate courses are available?",
+      "answer": {
+        "main_points": [
+          "- MA Air, Space and Cyber Power Studies - MSc Cyber Security - MSc Cyber Security with Professional Practice  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "contact_for_admissions_at_university_of_wolverhampton_042",
+      "category_id": "contact_for_admissions_at_university_of_wolverhampton",
+      "question": "How do I contact the Admissions Team?",
+      "answer": {
+        "main_points": [
+          "- For pre-application queries, email: - admissions@wlv.ac.uk or internationaladmissions@wlv.ac.uk - For post-application support, log a helpdesk message on your e:Vision portal at www.wlv.ac.uk/evision - Phone: - Home Applicants: (+44) 01902 323505 - International and EU Applicants: +441902 322230 - Mailing address: - University of Wolverhampton, Admissions Department, MX Building, Camp Street, Wolverhampton, WV1 1AD  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "assessment_and_deadlines_information_043",
+      "category_id": "assessment_and_deadlines_information",
+      "question": "How are assessments categorized?",
+      "answer": {
+        "main_points": [
+          "- Assessments are categorized by type, as outlined in your module guide on e:Vision (e.g., portfolio, examination, coursework).  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "assessment_and_deadlines_information_044",
+      "category_id": "assessment_and_deadlines_information",
+      "question": "Why is my deadline showing a wrong date?",
+      "answer": {
+        "main_points": [
+          "- If your deadline is incorrect, log into e:Vision and raise a call using the help button.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "assessment_and_deadlines_information_045",
+      "category_id": "assessment_and_deadlines_information",
+      "question": "Why are assessment deadlines not showing for one or more modules?",
+      "answer": {
+        "main_points": [
+          "- Check that you are correctly registered on the module in e:Vision. - If deadlines still do not appear, log a help call for further support.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "assessment_and_deadlines_information_046",
+      "category_id": "assessment_and_deadlines_information",
+      "question": "What other items are shown in assessment deadlines?",
+      "answer": {
+        "main_points": [
+          "- The deadlines tile may also display tasks you’ve entered into your Office 365 calendar.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "assessment_and_deadlines_information_047",
+      "category_id": "assessment_and_deadlines_information",
+      "question": "What assessment deadlines are displayed?",
+      "answer": {
+        "main_points": [
+          "- Only formal summative (grade-bearing) assessments are shown in the student portal. - For any queries regarding what is displayed, log a call via e:Vision using the help button.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "assessment_and_deadlines_information_048",
+      "category_id": "assessment_and_deadlines_information",
+      "question": "Who do I contact if timetables are incorrect or missing?",
+      "answer": {
+        "main_points": [
+          "- Log a help call in e:Vision for module timetable issues. - For other problems, contact IT Support via the portal.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "assessment_and_deadlines_information_049",
+      "category_id": "assessment_and_deadlines_information",
+      "question": "How do I contact Faculty Student Services?",
+      "answer": {
+        "main_points": [
+          "- You can contact your Faculty Student Services directly or log a call using the e:Vision helpdesk."
         ],
         "examples": [],
         "tips": [],
