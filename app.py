@@ -150,9 +150,6 @@ async def retrieve_chunks(query: str, top_k: int = 5) -> List[dict]:
         st.error(f"❌ Retrieval Error: {e}")
         return []
 
-# -------------------------------------------------------------------------
-# UPDATED: generate_response with Dynamic Model Selection
-# -------------------------------------------------------------------------
 async def generate_response(user_query: str, top_k: int = 5) -> str:
     greeting_reply = detect_generic_intent(user_query)
     if greeting_reply:
@@ -165,20 +162,17 @@ async def generate_response(user_query: str, top_k: int = 5) -> str:
     unique_chunks = list({c["text"]: c for c in context_chunks}.values())
     combined_context = "\n\n---\n\n".join([c["text"] for c in unique_chunks])
 
-    # Dynamically choose model based on the complexity of the user's query:
-    if len(user_query.split()) < 10:  # Short query → Use GPT-3.5 Turbo for speed
-        chosen_model = "gpt-3.5-turbo"
-    else:  # Longer/complex query → Use GPT-4 for better quality
-        chosen_model = "gpt-4"
+    # Use GPT-4 Turbo exclusively
+    chosen_model = "gpt-4-turbo"
 
     system_message = (
-        "You are UniEase, a University Student Support Chatbot. Your goal is to provide accurate and relevant answers to student inquiries. "
-        "When a question is straightforward or requires only a brief clarification, answer in one or two succinct sentences. "
-        "If the question is complex or the context requires more explanation, provide a detailed, well-structured response using clear paragraphs or bullet points. "
-        "Do not include unnecessary details; focus on the key information needed. "
+        "You are UniEase, a University Student Support Chatbot responsible for providing accurate and concise answers to student inquiries. "
+        "When a question is straightforward or requires only brief clarification, answer in one or two succinct sentences. "
+        "If the question is complex or the context requires further explanation, provide a detailed, well-structured response using clear paragraphs or bullet points. "
+        "Do not include unnecessary details; focus only on the key information required. "
         "If you lack sufficient detail, politely ask for clarification. "
-        "If the query is urgent (e.g., mental health or emergencies), address it immediately and prioritize safety. "
-        "Remember, most of your users are University of Wolverhampton students, so ensure your responses are relevant to their context."
+        "If the query is urgent (e.g., mental health or emergencies), acknowledge the urgency and prioritize your response. "
+        "Remember, your primary audience is University of Wolverhampton students."
     )
 
     user_prompt = (
@@ -207,7 +201,7 @@ async def generate_response(user_query: str, top_k: int = 5) -> str:
         return "Oops, something went wrong."
 
 # -------------------------------------------------------------------------
-# MAIN FUNCTION
+# MAIN CHATBOT FUNCTION
 # -------------------------------------------------------------------------
 def main():
     st.title("🎓 UniEase: Your University Study & Wellbeing Companion")
