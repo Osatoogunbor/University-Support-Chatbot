@@ -4,8 +4,8 @@
     "version": "1.0",
     "language": "en",
     "source": "University Knowledge Base",
-    "topics_count": 89,
-    "qa_pairs_count": 415
+    "topics_count": 93,
+    "qa_pairs_count": 432
   },
   "categories": [
     {
@@ -326,6 +326,26 @@
     {
       "id": "assessment_and_deadlines_information",
       "title": "Assessment and Deadlines Information",
+      "subcategories": []
+    },
+    {
+      "id": "cyber_security_programs_at_university_of_wolverhampton",
+      "title": "Cyber Security Programs at University of Wolverhampton",
+      "subcategories": []
+    },
+    {
+      "id": "msc_cyber_security_program",
+      "title": "MSc Cyber Security Program",
+      "subcategories": []
+    },
+    {
+      "id": "msc_artificial_intelligence_program_information",
+      "title": "MSc Artificial Intelligence Program Information",
+      "subcategories": []
+    },
+    {
+      "id": "msc_data_science_program_information",
+      "title": "MSc Data Science Program Information",
       "subcategories": []
     },
     {
@@ -5266,6 +5286,244 @@
       "answer": {
         "main_points": [
           "- You can contact your Faculty Student Services directly or log a call using the e:Vision helpdesk."
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "cyber_security_programs_at_university_of_wolverhampton_050",
+      "category_id": "cyber_security_programs_at_university_of_wolverhampton",
+      "question": "What does the BSc Cybersecurity program offer?",
+      "answer": {
+        "main_points": [
+          "- It provides fundamental knowledge and skills to protect organisations, networks, IT systems, and individuals against cyber threats, attacks, risks, and vulnerabilities. - The course is fully accredited by the British Computing Society (BCS) and covers all main topic areas required for an accredited Cybersecurity degree. - It includes core security concepts and skills for monitoring, detecting, investigating, analysing, and responding to issues such as cybercrime, cyberespionage, insider threats, and advanced persistent threats. - The program emphasizes the practical application of these skills to maintain secure networked systems and manage information risks.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "cyber_security_programs_at_university_of_wolverhampton_051",
+      "category_id": "cyber_security_programs_at_university_of_wolverhampton",
+      "question": "What are the industry and employment prospects for BSc Cybersecurity graduates?",
+      "answer": {
+        "main_points": [
+          "- Several staff members are actively engaged in cybersecurity research and collaborate with industry to ensure the course meets current professional needs. - Employment in cybersecurity is predicted to increase fivefold in the next two years, and there is a severe shortage of trained graduates. - This makes the likelihood of gaining well-paid employment at the end of your degree extremely high.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "cyber_security_programs_at_university_of_wolverhampton_052",
+      "category_id": "cyber_security_programs_at_university_of_wolverhampton",
+      "question": "What happens during the BSc Cybersecurity course?",
+      "answer": {
+        "main_points": [
+          "- **First Year:** - Develop an understanding of computer architecture and how data is used in organisations. - Study programming, problem-solving, and learn how modern software applications are built and structured. - Learn to manage data in cloud and virtual environments. - **Second Year:** - Gain an understanding of cybersecurity architecture and operations. - Use specialist tools to study computer networks and learn techniques for protecting systems. - Acquire practical experience in ethical hacking and data mining. - **Final Year:** - Further develop and apply your knowledge through advanced applications and technologies in cybersecurity. - Topics include digital forensics, human factors affecting security, risk management, information governance, and cyber intelligence. - You will have the option to engage with industry on a real-life project as part of your final year module.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_cyber_security_program_053",
+      "category_id": "msc_cyber_security_program",
+      "question": "What is the MSc Cyber Security program?",
+      "answer": {
+        "main_points": [
+          "- It is a full-time, 1-year conversion course designed to develop cutting-edge skills in cyber exploitation and defense. - The program is designed by leading experts and researchers to address the increasing demand for cybersecurity professionals in both industry and academia.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_cyber_security_program_054",
+      "category_id": "msc_cyber_security_program",
+      "question": "What are the key details of the MSc Cyber Security program?",
+      "answer": {
+        "main_points": [
+          "- **Award:** MSc - **Start Dates:** September 2025, January 2025, January 2026 - **Course Length:** Full-time (1 year) - **Campus Location:** City Campus - **School:** Computing and Mathematical Sciences - The course overview, entry requirements, fees & finance, modules, employability, and facilities are detailed on the University website.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_cyber_security_program_055",
+      "category_id": "msc_cyber_security_program",
+      "question": "How is the MSc Cyber Security course delivered?",
+      "answer": {
+        "main_points": [
+          "- The program incorporates practical activities that simulate learning techniques used by industry professionals, serving as an engaging introduction to the field.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_artificial_intelligence_program_information_056",
+      "category_id": "msc_artificial_intelligence_program_information",
+      "question": "What is the MSc Artificial Intelligence (AI) program?",
+      "answer": {
+        "main_points": [
+          "- The MSc AI is a conversion course designed for students from various disciplines who wish to enhance their knowledge and skills in AI. - It prepares you for a career in AI by combining technical training with management and organisational skills.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_artificial_intelligence_program_information_057",
+      "category_id": "msc_artificial_intelligence_program_information",
+      "question": "What are the key details of the MSc Artificial Intelligence program?",
+      "answer": {
+        "main_points": [
+          "- **Award:** MSc - **Study Options:** Part-time (28 months) and Full-time (14 months) - **Start Dates:** January 2025, March 2025, September 2025 - **Campus Location:** City Campus - **School:** Computing and Mathematical Sciences - Detailed information is available on the University website under Overview, Entry Requirements, Fees & Finance, Modules, Employability, and Facilities.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_artificial_intelligence_program_information_058",
+      "category_id": "msc_artificial_intelligence_program_information",
+      "question": "Why choose the MSc Artificial Intelligence program?",
+      "answer": {
+        "main_points": [
+          "- AI is increasingly critical across sectors including infrastructure, education, healthcare, and climate change. - There is persistent demand for graduates with the expertise to use AI responsibly to address major challenges. - The course is developed by experts to produce agile, flexible, and dynamic graduates. - Scholarships (Office for Students Scholarships for Home Students Only) may be available.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_artificial_intelligence_program_information_059",
+      "category_id": "msc_artificial_intelligence_program_information",
+      "question": "What is the structure of the MSc Artificial Intelligence course?",
+      "answer": {
+        "main_points": [
+          "- The course is divided into six blocks: - Four taught blocks (each including two 15-credit modules). - Two additional blocks for the Dissertation and Industry Internship. - Modules vary yearly but typically cover subjects such as: - Data Science - Concepts & Technologies of Artificial Intelligence - Deep Machine Learning - Data Mining & Informatics - Intelligent Agents - Statistics with AI and Data Science - Research Methods - Project Management - A pre-course induction programme in fundamental mathematics and programming is also provided.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_artificial_intelligence_program_information_060",
+      "category_id": "msc_artificial_intelligence_program_information",
+      "question": "What are the entry requirements for the MSc Artificial Intelligence program?",
+      "answer": {
+        "main_points": [
+          "- A lower second class honours degree in any discipline. - GCSE Grade 4 in Mathematics or equivalent. - Alternatively, relevant industrial experience will be considered (with an interview process for candidates with non-standard academic backgrounds). - International applicants must have equivalent qualifications and meet English language requirements.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_data_science_program_information_061",
+      "category_id": "msc_data_science_program_information",
+      "question": "What is the MSc Data Science conversion course about?",
+      "answer": {
+        "main_points": [
+          "- The MSc Data Science is designed for graduates from diverse disciplines to equip them with cutting-edge skills for tackling global challenges through data-driven approaches. - It combines theoretical learning with practical, real-world case studies and cloud training environments provided by industry partners.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_data_science_program_information_062",
+      "category_id": "msc_data_science_program_information",
+      "question": "What are the key details of the MSc Data Science program?",
+      "answer": {
+        "main_points": [
+          "- **Award:** MSc - **Study Options:** Full-time (14 months) and Part-time (28 months) - **Start Dates:** January 2025, March 2025, September 2025 - **Campus Location:** City Campus - **School:** Computing and Mathematical Sciences - The course details are available under Overview, Entry Requirements, Fees & Finance, Modules, Employability, and Facilities on the University website.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_data_science_program_information_063",
+      "category_id": "msc_data_science_program_information",
+      "question": "Why choose the MSc Data Science course?",
+      "answer": {
+        "main_points": [
+          "- It is a conversion MSc suitable for graduates from various disciplines. - The course addresses the growing demand for data science skills across industries. - It is developed by experts to produce agile, flexible, and dynamic graduates. - A free pre-course induction programme and ongoing support in mathematics and programming are provided. - Industry partners supply real-world case studies and cloud training environments.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_data_science_program_information_064",
+      "category_id": "msc_data_science_program_information",
+      "question": "What modules are included in the MSc Data Science course?",
+      "answer": {
+        "main_points": [
+          "- Regular modules include: - Data Science - Concepts & Technologies of Artificial Intelligence - Data Visualization - Database Systems & Security - Data Mining & Informatics - Statistics with AI and Data Science - Research Methods - Project Management - Students also benefit from a free pre-course induction programme in fundamental mathematics and programming.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_data_science_program_information_065",
+      "category_id": "msc_data_science_program_information",
+      "question": "What are the entry requirements for the MSc Data Science course?",
+      "answer": {
+        "main_points": [
+          "- A lower second class honours degree in any discipline. - GCSE Grade 4 in Mathematics or equivalent. - Alternatively, relevant industrial experience may be considered (with an interview process for non-standard academic backgrounds). - International applicants must have qualifications deemed equivalent and meet English language requirements (typically IELTS 6.5 with a minimum of 6.0 in each area).  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "msc_data_science_program_information_066",
+      "category_id": "msc_data_science_program_information",
+      "question": "Where can international applicants find more information about qualification equivalency?",
+      "answer": {
+        "main_points": [
+          "- Visit: https://www.wlv.ac.uk/international/our-locations/your-country/  ---"
         ],
         "examples": [],
         "tips": [],
