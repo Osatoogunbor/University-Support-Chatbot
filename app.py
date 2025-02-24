@@ -27,8 +27,9 @@ if not PINECONE_API_KEY:
 
 openai.api_key = OPENAI_API_KEY
 client = AsyncOpenAI(api_key=OPENAI_API_KEY)
-pc = Pinecone(api_key=PINECONE_API_KEY)  # ✅ Corrected initialization
-index = pc.Index("ai-powered-chatbot")  # ✅ Ensures proper index usage
+# ✅ Correct Pinecone initialization
+pc = Pinecone(api_key=PINECONE_API_KEY)
+index = pc.Index("ai-powered-chatbot")  # ✅ Correctly access the Pinecone index
 
 # -------------------------------------------------------------------------
 # 2. SET PAGE CONFIG FIRST
@@ -68,55 +69,14 @@ def detect_sentiment(query: str) -> str:
 # -------------------------------------------------------------------------
 
 GENERIC_INTENTS = {
-    # Basic greetings (Mixing plain and emoji responses)
     "hello": "Hello! How can I assist you today?",
-    "hi": "Hi! How can I help? 👋",
+    "hi": "Hi! How can I help?",
     "hey": "Hey! What do you need help with?",
     "good morning": "Good morning! How can I assist?",
-    "good afternoon": "Good afternoon! What do you need help with?",
-    "good evening": "Good evening! How can I assist? 🌙",
-    "sup": "Hey! What's up?",
-    "yo": "Yo! How can I help? 😎",
-    "hiya": "Hiya! What can I do for you?",
-    "heyy": "Heyy! What’s up?",
-    "hello there": "Hello there!",
-    "what's up": "Hey! How’s it going?",
-
-    # Ways people might call UniEase
-    "UniEase": "Hello, I'm UniEase, your University Student Support Chatbot. How can I assist you today?",
-    "UniEase bot": "Yes! I’m UniEase, your AI assistant. How can I help?",
-    "UniEase assistant": "I’m here to help! How can I assist you today?",
-    "hey UniEase": "Hey! What do you need help with?",
-    "hello UniEase": "Hello! I’m listening. How can I assist?",
-
-    # Common farewells (Mixing plain and emoji responses)
-    "bye": "Goodbye! Have a great day! 👋",
-    "goodbye": "Goodbye! Take care!",
-    "see you": "See you next time!",
-    "later": "Catch you later! ✌️",
-    "peace": "Peace out! ✌️",
-    "quit": "Goodbye! See you next time!",
+    "bye": "Goodbye! Have a great day!",
     "exit": "Goodbye! Take care!",
-
-    # Appreciation & Thanks (Keeping these plain)
-    "thank you": "You're welcome! I'm always here to help!",
-    "thanks": "No problem! Let me know if you need anything else.",
-    "thx": "You're welcome!",
-    "appreciate it": "Glad I could help!",
-
-    # Emoji-based responses
-    "👋": "Hello! How can I assist you today?",
-    "🤗": "Aww, sending you a virtual hug! 🤗 How can I help?",
-    "😊": "You seem happy! How can I assist you today?",
-    "😃": "Great energy! What do you need help with?",
-    "😢": "Oh no! What’s wrong? I’m here to help.",
-    "😞": "I hear you. Tell me what's bothering you.",
-    "😔": "I’m here for you. What can I do to help?",
-    "😡": "I sense some frustration. Want to talk about it?",
-    "🤬": "Yikes! What happened? Maybe I can help?",
-    "❤️": "Aww, thank you! ❤️ How else can I assist you?",
-    "💕": "Sending good vibes your way! 💕 How can I help?",
-    "🤍": "I appreciate your kindness! 🤍 How can I support you?"
+    "quit": "Goodbye! See you next time!",
+    "uniease": "Hello, I'm UniEase, your University Student Support Chatbot. How can I assist you today?"
 }
 
 
