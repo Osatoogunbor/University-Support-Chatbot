@@ -1,7 +1,6 @@
 streamlit
 openai
 pinecone
-pinecone client
 transformers
 gTTS
 speechrecognition
