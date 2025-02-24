@@ -66,69 +66,71 @@ def detect_sentiment(query: str) -> str:
 # -------------------------------------------------------------------------
 # 5. FIXED FUNCTION ORDER
 # -------------------------------------------------------------------------
-def truncate_chunk(text: str, max_chars: int = 300) -> str:
-    """Truncates text if it exceeds a character limit."""
-    if len(text) <= max_chars:
-        return text
-    return text[:max_chars] + "...(truncated)"
-
 
 GENERIC_INTENTS = {
-    # Basic greetings
-    "hello": "Hello! How can I assist you today? 😊",
+    # Basic greetings (Mixing plain and emoji responses)
+    "hello": "Hello! How can I assist you today?",
     "hi": "Hi! How can I help? 👋",
-    "hey": "Hey! What do you need help with? 😃",
-    "good morning": "Good morning! How can I assist? 🌞",
-    "good afternoon": "Good afternoon! How can I assist? ☀️",
-    "good evening": "Good evening! What do you need help with? 🌙",
-    "sup": "Hey! What's up? 😃",
+    "hey": "Hey! What do you need help with?",
+    "good morning": "Good morning! How can I assist?",
+    "good afternoon": "Good afternoon! What do you need help with?",
+    "good evening": "Good evening! How can I assist? 🌙",
+    "sup": "Hey! What's up?",
     "yo": "Yo! How can I help? 😎",
-    "hiya": "Hiya! What can I do for you? 😊",
-    "heyy": "Heyy! What’s up? 😃",
-    "hello there": "Hello there! 😊",
-    "what's up": "Hey! How’s it going? 😃",
+    "hiya": "Hiya! What can I do for you?",
+    "heyy": "Heyy! What’s up?",
+    "hello there": "Hello there!",
+    "what's up": "Hey! How’s it going?",
 
     # Ways people might call UniEase
-    "uniease": "Hello, I'm UniEase, your University Student Support Chatbot. How can I assist you today? 🤖",
-    "uniease bot": "Yes! I’m UniEase, your AI assistant. How can I help? 🤖",
-    "uniease assistant": "I’m here to help! How can I assist you today? 😊",
-    "hey uniease": "Hey! What do you need help with? 😊",
-    "hello uniease": "Hello! I’m listening. How can I assist? 👂",
+    "UniEase": "Hello, I'm UniEase, your University Student Support Chatbot. How can I assist you today?",
+    "UniEase bot": "Yes! I’m UniEase, your AI assistant. How can I help?",
+    "UniEase assistant": "I’m here to help! How can I assist you today?",
+    "hey UniEase": "Hey! What do you need help with?",
+    "hello UniEase": "Hello! I’m listening. How can I assist?",
 
-    # Common farewells
+    # Common farewells (Mixing plain and emoji responses)
     "bye": "Goodbye! Have a great day! 👋",
-    "goodbye": "Goodbye! Take care! 👋",
-    "see you": "See you next time! 👋",
+    "goodbye": "Goodbye! Take care!",
+    "see you": "See you next time!",
     "later": "Catch you later! ✌️",
     "peace": "Peace out! ✌️",
-    "quit": "Goodbye! See you next time! 👋",
-    "exit": "Goodbye! Take care! 😊",
+    "quit": "Goodbye! See you next time!",
+    "exit": "Goodbye! Take care!",
 
-    # Appreciation & Thanks
-    "thank you": "You're welcome! 😊 I'm always here to help!",
-    "thanks": "No problem! Let me know if you need anything else. 😃",
-    "thx": "You're welcome! 😊",
-    "appreciate it": "Glad I could help! 😊",
+    # Appreciation & Thanks (Keeping these plain)
+    "thank you": "You're welcome! I'm always here to help!",
+    "thanks": "No problem! Let me know if you need anything else.",
+    "thx": "You're welcome!",
+    "appreciate it": "Glad I could help!",
 
     # Emoji-based responses
-    "👋": "Hello! How can I assist you today? 😊",
+    "👋": "Hello! How can I assist you today?",
     "🤗": "Aww, sending you a virtual hug! 🤗 How can I help?",
-    "😊": "You seem happy! How can I assist you today? 😃",
-    "😃": "Great energy! What do you need help with? 😃",
-    "😢": "Oh no! What’s wrong? I’m here to help. 💙",
-    "😞": "I hear you. Tell me what's bothering you. 💙",
-    "😔": "I’m here for you. What can I do to help? 💕",
-    "😡": "I sense some frustration. Want to talk about it? 🤔",
-    "🤬": "Yikes! What happened? Maybe I can help? 🤔",
+    "😊": "You seem happy! How can I assist you today?",
+    "😃": "Great energy! What do you need help with?",
+    "😢": "Oh no! What’s wrong? I’m here to help.",
+    "😞": "I hear you. Tell me what's bothering you.",
+    "😔": "I’m here for you. What can I do to help?",
+    "😡": "I sense some frustration. Want to talk about it?",
+    "🤬": "Yikes! What happened? Maybe I can help?",
     "❤️": "Aww, thank you! ❤️ How else can I assist you?",
     "💕": "Sending good vibes your way! 💕 How can I help?",
     "🤍": "I appreciate your kindness! 🤍 How can I support you?"
 }
 
 
+# Define detect_generic_intent BEFORE retrieve_chunks()
 def detect_generic_intent(query: str) -> Optional[str]:
     """Detects common greetings, farewells, appreciation, and emoji-based intents."""
     return GENERIC_INTENTS.get(query.strip().lower())  # Matches case-insensitive text & emoji
+
+# Define truncate_chunk BEFORE retrieve_chunks()
+def truncate_chunk(text: str, max_chars: int = 600) -> str:
+    """Truncates text if it exceeds a character limit."""
+    if len(text) <= max_chars:
+        return text
+    return text[:max_chars] + "...(truncated)"
 
 # -------------------------------------------------------------------------
 # 6. RETRIEVING RELEVANT CHUNKS FROM PINECONE
