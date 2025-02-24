@@ -16,19 +16,27 @@ from openai import AsyncOpenAI
 from pinecone import Pinecone
 from transformers import pipeline
 
-# Grab secrets from st.secrets
+# ✅ Access API keys securely
 OPENAI_API_KEY = st.secrets["openai_api_key"]
 PINECONE_API_KEY = st.secrets["pinecone_api_key"]
 
+# ✅ Check if API keys are loaded correctly
 if not OPENAI_API_KEY:
-    raise ValueError("❌ Missing OPENAI_API_KEY in st.secrets.")
+    raise ValueError("❌ OPENAI_API_KEY not found! Check your Streamlit secrets.")
 if not PINECONE_API_KEY:
-    raise ValueError("❌ Missing PINECONE_API_KEY in st.secrets.")
+    raise ValueError("❌ PINECONE_API_KEY not found! Check your Streamlit secrets.")
 
+# ✅ Initialize OpenAI & Pinecone
 openai.api_key = OPENAI_API_KEY
-client = AsyncOpenAI(api_key=OPENAI_API_KEY)
+
+# ✅ Define aclient for AsyncOpenAI usage
+aclient = AsyncOpenAI(api_key=OPENAI_API_KEY)
+
 pc = Pinecone(api_key=PINECONE_API_KEY)
 index = pc.Index("ai-powered-chatbot")
+
+print("✅ API keys loaded successfully!")
+print("✅ Pinecone and OpenAI clients initialized!")
 
 # -------------------------------------------------------------------------
 # 2. SET PAGE CONFIG FIRST
@@ -107,7 +115,7 @@ def detect_generic_intent(query: str) -> Optional[str]:
 
 async def retrieve_chunks(query: str, top_k: int = 5) -> List[dict]:
     try:
-        embedding_resp = await client.embeddings.create(
+        embedding_resp = await aclient.embeddings.create(
             model="text-embedding-ada-002",
             input=query
         )
@@ -183,7 +191,7 @@ async def generate_response(user_query: str, top_k: int = 5) -> str:
     )
 
     try:
-        chat_response = await client.chat.completions.create(
+        chat_response = await aclient.chat.completions.create(
             model=chosen_model,
             messages=[
                 {"role": "system", "content": system_message},
