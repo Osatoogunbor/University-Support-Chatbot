@@ -13,7 +13,7 @@ import asyncio
 import streamlit as st
 import openai
 from openai import AsyncOpenAI
-from pinecone import Pinecone  # ✅ Corrected import statement
+from pinecone import Pinecone
 from transformers import pipeline
 
 # Grab secrets from st.secrets
@@ -27,9 +27,8 @@ if not PINECONE_API_KEY:
 
 openai.api_key = OPENAI_API_KEY
 client = AsyncOpenAI(api_key=OPENAI_API_KEY)
-# ✅ Correct Pinecone initialization
 pc = Pinecone(api_key=PINECONE_API_KEY)
-index = pc.Index("ai-powered-chatbot")  # ✅ Correctly access the Pinecone index
+index = pc.Index("ai-powered-chatbot")
 
 # -------------------------------------------------------------------------
 # 2. SET PAGE CONFIG FIRST
@@ -37,7 +36,30 @@ index = pc.Index("ai-powered-chatbot")  # ✅ Correctly access the Pinecone inde
 st.set_page_config(page_title="UniEase Chatbot", layout="wide")
 
 # -------------------------------------------------------------------------
-# 3. SIDEBAR CONFIGURATION
+# 3. OPTIONAL: ADD CSS STYLING FOR SIDEBAR
+# -------------------------------------------------------------------------
+st.markdown(
+    """
+    <style>
+    /* Make the sidebar title bigger and more noticeable */
+    [data-testid="stSidebar"] h1 {
+        font-size: 1.8rem !important;
+        font-weight: 700 !important;
+        color: #333333;
+        margin-bottom: 0.5em;
+    }
+    /* Larger font for sidebar text, paragraphs and list items */
+    [data-testid="stSidebar"] p, [data-testid="stSidebar"] li, [data-testid="stSidebar"] div {
+        font-size: 1.15rem !important;
+        line-height: 1.5 !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# -------------------------------------------------------------------------
+# 4. SIDEBAR
 # -------------------------------------------------------------------------
 st.sidebar.title("UniEase: University 24/7 Assistant")
 st.sidebar.markdown(
@@ -45,14 +67,14 @@ st.sidebar.markdown(
 Welcome to **UniEase**—your university wellbeing companion!
 
 - Receive accurate, concise support tailored to help you navigate university life.
-- Ask questions about enrollment, extensions, deadlines, and university resources.
+- Ask questions about enrollment, extensions, deadlines and university resources.
 - Access mental health resources and strategies for managing academic stress.
 """,
     unsafe_allow_html=True
 )
 
 # -------------------------------------------------------------------------
-# 4. SENTIMENT ANALYSIS
+# 5. SENTIMENT ANALYSIS, ETC.
 # -------------------------------------------------------------------------
 sentiment_analyzer = pipeline(
     "sentiment-analysis",
@@ -64,9 +86,10 @@ def detect_sentiment(query: str) -> str:
     result = sentiment_analyzer(query)[0]
     return result['label'].lower()
 
-# -------------------------------------------------------------------------
-# 5. FIXED FUNCTION ORDER
-# -------------------------------------------------------------------------
+def truncate_chunk(text: str, max_chars: int = 300) -> str:
+    if len(text) <= max_chars:
+        return text
+    return text[:max_chars] + "...(truncated)"
 
 GENERIC_INTENTS = {
     "hello": "Hello! How can I assist you today?",
@@ -79,22 +102,9 @@ GENERIC_INTENTS = {
     "uniease": "Hello, I'm UniEase, your University Student Support Chatbot. How can I assist you today?"
 }
 
-
-# Define detect_generic_intent BEFORE retrieve_chunks()
 def detect_generic_intent(query: str) -> Optional[str]:
-    """Detects common greetings, farewells, appreciation, and emoji-based intents."""
-    return GENERIC_INTENTS.get(query.strip().lower())  # Matches case-insensitive text & emoji
+    return GENERIC_INTENTS.get(query.strip().lower())
 
-# Define truncate_chunk BEFORE retrieve_chunks()
-def truncate_chunk(text: str, max_chars: int = 600) -> str:
-    """Truncates text if it exceeds a character limit."""
-    if len(text) <= max_chars:
-        return text
-    return text[:max_chars] + "...(truncated)"
-
-# -------------------------------------------------------------------------
-# 6. RETRIEVING RELEVANT CHUNKS FROM PINECONE
-# -------------------------------------------------------------------------
 async def retrieve_chunks(query: str, top_k: int = 5) -> List[dict]:
     try:
         embedding_resp = await client.embeddings.create(
@@ -103,7 +113,7 @@ async def retrieve_chunks(query: str, top_k: int = 5) -> List[dict]:
         )
         query_vector = embedding_resp.data[0].embedding
 
-        pinecone_result = index.query(  # ✅ Updated to use the correct Pinecone package
+        pinecone_result = index.query(
             vector=query_vector,
             top_k=top_k,
             include_metadata=True
@@ -140,9 +150,6 @@ async def retrieve_chunks(query: str, top_k: int = 5) -> List[dict]:
         st.error(f"❌ Retrieval Error: {e}")
         return []
 
-# -------------------------------------------------------------------------
-# 7. GENERATING GPT RESPONSE
-# -------------------------------------------------------------------------
 async def generate_response(user_query: str, top_k: int = 5) -> str:
     greeting_reply = detect_generic_intent(user_query)
     if greeting_reply:
@@ -184,7 +191,8 @@ async def generate_response(user_query: str, top_k: int = 5) -> str:
             ],
             max_tokens=350,   # Reduced token limit for faster responses
             temperature=0.7,  # Lower randomness
-            top_p=0.5
+            top_p=0.5,
+            store = True
         )
         final_answer = chat_response.choices[0].message.content.strip()
         return final_answer
@@ -194,7 +202,7 @@ async def generate_response(user_query: str, top_k: int = 5) -> str:
         return "Oops, something went wrong."
 
 # -------------------------------------------------------------------------
-# 8. MAIN CHATBOT FUNCTION
+# MAIN CHATBOT FUNCTION
 # -------------------------------------------------------------------------
 def main():
     st.title("🎓 UniEase: Your University Study & Wellbeing Companion")
@@ -202,6 +210,13 @@ def main():
 
     if "messages" not in st.session_state:
         st.session_state["messages"] = []
+
+    # Display previous messages
+    for msg in st.session_state["messages"]:
+        role = msg["role"]
+        content = msg["content"]
+        with st.chat_message(role):
+            st.markdown(content)
 
     user_input = st.chat_input("Type your message here...")
     if user_input:
@@ -211,6 +226,8 @@ def main():
         response_text = loop.run_until_complete(generate_response(user_input))
         st.session_state["messages"].append({"role": "assistant", "content": response_text})
         st.rerun()
+
+    st.divider()
 
 if __name__ == "__main__":
     main()
