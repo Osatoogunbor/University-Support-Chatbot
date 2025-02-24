@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "last_updated": "2025-02-20",
+    "last_updated": "2025-02-24",
     "version": "1.0",
     "language": "en",
     "source": "Extracted Documents (Structured)",
-    "topics_count": 67,
-    "qa_pairs_count": 312
+    "topics_count": 68,
+    "qa_pairs_count": 334
   },
   "categories": [
     {
@@ -246,6 +246,11 @@
     {
       "id": "e_take_action_to_improve_student_mental_health",
       "title": "E: Take Action to Improve Student Mental Health",
+      "subcategories": []
+    },
+    {
+      "id": "university_of_wolverhampton_faqs",
+      "title": "University of Wolverhampton FAQs",
       "subcategories": []
     },
     {
@@ -2341,6 +2346,292 @@
       "answer": {
         "main_points": [
           "- Remember, being there for a mate is invaluable, but also look after yourself. - Seek help early—university is a learning experience academically and personally. - You aren’t alone: many services, charities, and peer networks exist to support students’ mental well-being."
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_001",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What are the library opening hours at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Our latest library opening hours are detailed online; use the “Next” button to view future dates. Library hours vary by location: Harrison and Walsall Libraries are open 8:30 AM—12 AM on weekdays and 10 AM—10 PM on weekends. Hutchison Library operates 8:30 AM—5 PM on weekdays and is closed on weekends. Check social media for updates. - Check our Instagram and Facebook pages for any short-notice changes, especially during holiday periods. - University students must bring their Campus ID card when visiting the library. - Outside regular hours, Library ASSIST Chat is available 24/7 for support.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_002",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "How can I access past exam papers for my course at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- The University does not provide past exam papers for taught modules. - You can access your exam results and other documents through your e:Vision account by navigating to the Graduation page under \"My Study\" and completing the transcript request task. - For PDF or hard copy documents, follow the instructions on e:Vision or email them to yourself. - If you encounter login issues, try the forgotten password option or email graduates@wlv.ac.uk with official ID.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_003",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "Where can I get help with academic writing at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Drop-in sessions for academic writing and referencing support are available at the Library. - The Skills for Learning drop-in service now has extended hours: - Harrison Library, City Campus (ground floor): 11am to 4pm on weekdays. - Walsall Library, ground floor: Tuesday to Thursday, 11am to 2pm. - Hutchison Library, Telford: Wednesday, 11am to 2pm. - For more details, visit the one-to-one support page on the University website.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_004",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "How can I change my course or module at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Contact your Faculty Student Services Office for advice on course or module changes. - You may also contact ASK@WLV for guidance on course rules and regulations. - For urgent requests, call the Central Timetabling Unit at 01902 32 1091. - Module registration changes must be approved by Registry Services and are typically confirmed within the first three weeks of teaching.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_005",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What can I do if I need financial support as a student at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Contact the Funding Support Team: - Email: money@wlv.ac.uk - Phone: (01902) 321070 - Alternatively, log a helpdesk call via your e:Vision account or book a drop-in appointment. - You may apply for the Dennis Turner Hardship Fund by visiting wlv.ac.uk/fund. - Consider other funding sources such as trust funds, charitable organizations, Citizen Advice Bureau, Step Change, Christians Against Poverty, or National Debt Line.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_006",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What are the key points about student discounts in Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Discounts are available for public transport, retail stores, food and drink, and entertainment. - Most discounts require a valid student ID card or use of platforms like UNiDAYS or the Totum card.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_007",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "How do I replace a University of Wolverhampton student ID card?",
+      "answer": {
+        "main_points": [
+          "- Contact the Harrison Library at City Campus and use the Library chat to arrange for a replacement. - Collect the card from the Campus Library or have it posted. - Replacement cards typically cost £10. - If you have never had a card, contact the Library; if you’re a staff member, contact HR. - For forgotten cards, use the intercom by the barriers to contact Security or log a help call via ASK@WLV.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_008",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What is the process of reporting a lost item on campus?",
+      "answer": {
+        "main_points": [
+          "- Contact the Security Control Room at 01902 322106. - Alternatively, hand the lost item directly to a security officer or staff member at a reception desk. - You may also use the \"SafeZone\" app to contact a security officer on campus. - The security team is available 24/7.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_009",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "Where can I find information about postgraduate study options at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Visit the university's postgraduate study information page online. - Explore a range of postgraduate programmes, including Master’s degrees, PhD programmes, part-time courses, and accredited CPD courses. - These options are designed to open up new opportunities for retraining, career advancement, and professional development.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_010",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What is the process for obtaining a reference letter from a lecturer?",
+      "answer": {
+        "main_points": [
+          "- Ask the appropriate lecturer directly, providing your full name, student ID, transcripts, and CV. - Specify what the reference is for, including the deadline and recipient’s address. - Allow sufficient time for the lecturer to write the letter. - Ensure the reference is provided on official letterhead, dated, signed, and submitted as a PDF or via email if required.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_011",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What information is available about study spaces at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- The library offers multiple study environments: - General study areas (Library Study Spaces) accessible with your campus ID. - Social Study Zones for a vibrant, collaborative atmosphere. - Quiet Study Zones for a calmer environment with minimal distractions. - Silent Study Zones for solo, focused study. - Bookable individual study rooms (up to 4 hours) and group study rooms (up to 2 hours). - Bookings can be made via the MyWLV app or QR codes posted outside the rooms, and you must check in upon arrival.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_012",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What support is available for students with disabilities at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- The University offers support through the Disabled Students' Allowance (DSA), which helps with costs for specialist equipment, non-medical helpers, extra travel, and materials. - Reasonable adjustments are provided, such as automatic extensions, extended library loans, and access to accessible software. - Additional support is available from the Disability and Inclusion Team and Student Support and Wellbeing services. - To apply, indicate your disability on your application, complete the Self-Declaration Form, and provide proof from a medical professional.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_013",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "How do I book a counselling session at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Fill out the Contact Us form at wlv.ac.uk/SSW. - Register with the Mental Health and Wellbeing (MHW) team. - Self-refer through the online booking system for the Psychology Community Research Clinic (PCRC). - Drop-in sessions are also available.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_014",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "Are there mental health workshops and events at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- Yes, the University offers mental health workshops such as psycho-educational workshops, Wellbeing Days, and \"Let's Talk\" sessions. - These are designed to provide techniques for managing mental health challenges and are run by mental health professionals. - Additional support is offered through drop-in services and various student support initiatives.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_015",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "Where can I get advice on managing exam anxiety?",
+      "answer": {
+        "main_points": [
+          "- You can seek advice from your school counselor, mental health professionals, or the university's dedicated student wellbeing services. - Universities often offer resources and guides on managing exam stress through workshops and online materials. - Mental health charities such as Mind, YoungMinds, and Childline also provide helpful information and support.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_016",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "Where can I get advice on managing exam anxiety at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- The Mental Health and Wellbeing (MHW) team offers free, confidential advice on managing exam anxiety. - Additional support is available through drop-in services and one-to-one sessions; check the university's student support portal for details.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_017",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "How can I get involved with mindfulness or meditation groups on campus?",
+      "answer": {
+        "main_points": [
+          "- The University offers free mindfulness sessions, such as breathwork sessions at the Students’ Union. - Mindfulness is a practice of being present and can help reduce stress and improve focus. - Check the university's event pages or the Students’ Union announcements for upcoming mindfulness or meditation group sessions. - Additional free mindfulness exercises can be found online, for example at [franticworld.com/free-meditations-from-mindfulness](http://franticworld.com/free-meditations-from-mindfulness/).  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_018",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What services are available for students with long-term mental health conditions at the University of Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "- The University provides comprehensive support including: - Mental Health and Wellbeing (MHW) team support (assessments, 1:1 sessions, workshops). - Student Minds, a student mental health charity. - WLV Student Life Connect, a 24/7 digital support platform. - The Disability and Inclusion Team offers additional support and reasonable adjustments. - Contact the MHW team by completing the registration form or emailing MHWenquiries@wlv.ac.uk.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_019",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "How do I log in to my e:Vision account?",
+      "answer": {
+        "main_points": [
+          "- Use your student number as your username and the password you created. - First-time users will be prompted to create a new password. - If you forget your password, use the \"Forgotten Password\" option or contact your school's student office or the IT Service Desk (01902 322000 or ext. 2000).  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_020",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "Where can I find my exam timetable on e:Vision?",
+      "answer": {
+        "main_points": [
+          "- Log in to e:Vision and navigate to \"My Study\" > \"My Modules\" > \"Exam Timetable.\" - You will receive an email notification when your timetable is ready. - Ensure your contact email in e:Vision is current, and check regularly as timetables may change. - For any queries, contact the ASK@WLV student enquiry team.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_021",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "What are the rules for submitting coursework on Canvas?",
+      "answer": {
+        "main_points": [
+          "- Submit your assignments online via the Canvas portal. - Do not submit both electronic and hard copies. - Late submissions are accepted up to seven calendar days after the deadline, with penalties: - Up to 2 days late: 10% deduction. - More than 2 days but up to 7 days late: 20% deduction. - Extensions and extenuating circumstances may apply as per university policies. - All assessments are marked in Canvas regardless of submission format.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      }
+    },
+    {
+      "id": "university_of_wolverhampton_faqs_022",
+      "category_id": "university_of_wolverhampton_faqs",
+      "question": "Where do I find my personal tutor’s details?",
+      "answer": {
+        "main_points": [
+          "- Log in to your e:Vision account and navigate to the \"My Studies\" section. - Your personal tutor’s contact details, including email and phone number, will be listed there. - If you have trouble locating this information, contact your Faculty Student Services or log a help call via e:Vision."
         ],
         "examples": [],
         "tips": [],
