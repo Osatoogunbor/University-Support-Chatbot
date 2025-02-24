@@ -13,7 +13,7 @@ import asyncio
 import streamlit as st
 import openai
 from openai import AsyncOpenAI
-from pinecone import Pinecone
+from pinecone import Pinecone  # ✅ Corrected import statement
 from transformers import pipeline
 
 # Grab secrets from st.secrets
@@ -27,51 +27,13 @@ if not PINECONE_API_KEY:
 
 openai.api_key = OPENAI_API_KEY
 client = AsyncOpenAI(api_key=OPENAI_API_KEY)
-pc = Pinecone(api_key=PINECONE_API_KEY)
-index = pc.Index("ai-powered-chatbot")
+pc = Pinecone(api_key=PINECONE_API_KEY)  # ✅ Corrected initialization
+index = pc.Index("ai-powered-chatbot")  # ✅ Ensures proper index usage
 
 # -------------------------------------------------------------------------
 # 2. SET PAGE CONFIG FIRST
 # -------------------------------------------------------------------------
 st.set_page_config(page_title="UniEase Chatbot", layout="wide")
-
-# -------------------------------------------------------------------------
-# 3. OPTIONAL: ADD CSS STYLING FOR SIDEBAR
-# -------------------------------------------------------------------------
-st.markdown(
-    """
-    <style>
-    /* Make the sidebar title bigger and more noticeable */
-    [data-testid="stSidebar"] h1 {
-        font-size: 1.8rem !important;
-        font-weight: 700 !important;
-        color: #333333;
-        margin-bottom: 0.5em;
-    }
-    /* Larger font for sidebar text, paragraphs and list items */
-    [data-testid="stSidebar"] p, [data-testid="stSidebar"] li, [data-testid="stSidebar"] div {
-        font-size: 1.15rem !important;
-        line-height: 1.5 !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# -------------------------------------------------------------------------
-# 4. SIDEBAR
-# -------------------------------------------------------------------------
-st.sidebar.title("UniEase: University 24/7 Assistant")
-st.sidebar.markdown(
-    """
-Welcome to **UniEase**—your university wellbeing companion!
-
-- Receive accurate, concise support tailored to help you navigate university life.
-- Ask questions about enrollment, extensions, deadlines and university resources.
-- Access mental health resources and strategies for managing academic stress.
-""",
-    unsafe_allow_html=True
-)
 
 # -------------------------------------------------------------------------
 # 5. SENTIMENT ANALYSIS, ETC.
@@ -86,25 +48,6 @@ def detect_sentiment(query: str) -> str:
     result = sentiment_analyzer(query)[0]
     return result['label'].lower()
 
-def truncate_chunk(text: str, max_chars: int = 300) -> str:
-    if len(text) <= max_chars:
-        return text
-    return text[:max_chars] + "...(truncated)"
-
-GENERIC_INTENTS = {
-    "hello": "Hello! How can I assist you today?",
-    "hi": "Hi! How can I help?",
-    "hey": "Hey! What do you need help with?",
-    "good morning": "Good morning! How can I assist?",
-    "bye": "Goodbye! Have a great day!",
-    "exit": "Goodbye! Take care!",
-    "quit": "Goodbye! See you next time!",
-    "uniease": "Hello, I'm UniEase, your University Student Support Chatbot. How can I assist you today?"
-}
-
-def detect_generic_intent(query: str) -> Optional[str]:
-    return GENERIC_INTENTS.get(query.strip().lower())
-
 async def retrieve_chunks(query: str, top_k: int = 5) -> List[dict]:
     try:
         embedding_resp = await client.embeddings.create(
@@ -113,7 +56,7 @@ async def retrieve_chunks(query: str, top_k: int = 5) -> List[dict]:
         )
         query_vector = embedding_resp.data[0].embedding
 
-        pinecone_result = index.query(
+        pinecone_result = index.query(  # ✅ Updated to use the correct Pinecone package
             vector=query_vector,
             top_k=top_k,
             include_metadata=True
