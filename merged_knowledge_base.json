@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "last_updated": "2025-02-24",
+    "last_updated": "2025-02-27",
     "version": "1.0",
     "language": "en",
     "source": "University Knowledge Base",
-    "topics_count": 109,
-    "qa_pairs_count": 492
+    "topics_count": 116,
+    "qa_pairs_count": 498
   },
   "categories": [
     {
@@ -456,6 +456,41 @@
     {
       "id": "university_of_wolverhampton_faqs",
       "title": "University of Wolverhampton FAQs",
+      "subcategories": []
+    },
+    {
+      "id": "social_events_and_gatherings_at_the_university_of_wolverhampton",
+      "title": "Social Events and Gatherings at the University of Wolverhampton",
+      "subcategories": []
+    },
+    {
+      "id": "recreational_sports_and_activities",
+      "title": "Recreational Sports and Activities",
+      "subcategories": []
+    },
+    {
+      "id": "team_wolverhampton",
+      "title": "Team Wolverhampton",
+      "subcategories": []
+    },
+    {
+      "id": "social_inclusion_and_community_engagement",
+      "title": "Social Inclusion and Community Engagement",
+      "subcategories": []
+    },
+    {
+      "id": "student_union_and_support_services",
+      "title": "Student Union and Support Services",
+      "subcategories": []
+    },
+    {
+      "id": "student_societies_and_volunteering",
+      "title": "Student Societies and Volunteering",
+      "subcategories": []
+    },
+    {
+      "id": "conclusion",
+      "title": "Conclusion",
       "subcategories": []
     },
     {
@@ -6771,6 +6806,90 @@
       "answer": {
         "main_points": [
           "- Log in to your e:Vision account and navigate to the \"My Studies\" section. - Your personal tutor’s contact details, including email and phone number, will be listed there. - If you have trouble locating this information, contact your Faculty Student Services or log a help call via e:Vision."
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "social_events_and_gatherings_at_the_university_of_wolverhampton_023",
+      "category_id": "social_events_and_gatherings_at_the_university_of_wolverhampton",
+      "question": "Can you direct me and advise me on social events and gatherings at the university?",
+      "answer": {
+        "main_points": [
+          "The University of Wolverhampton offers various social events and activities throughout the year, including STEM festivals, community engagement projects, and recreational sports. Below are some key social events and activities:  ---  ### **SciFest** - An annual STEM festival aimed at increasing aspiration through interactive learning. - Engages school learners and the wider community in Science, Technology, Engineering, and Mathematics (STEM). - Features interactive workshops, demonstrations, and career exploration activities.  ---  ### **Home Is Where the Habitat Is** - A UK Space Agency-funded project delivering space science workshops to Year 5/6 students. - Covers topics such as planetary atmospheres, human survival in space, and space habitat design. - Includes CPD sessions for teachers to enhance science teaching.  ---  ### **Women in Chemistry 2** - A free interactive theatre production by the STEM Response Team. - Highlights the achievements of women in science and their contributions to sustainability and green energy. - Includes experiments and demonstrations related to DNA, genetic modification, and nuclear fission.  ---  ### **Life & Science Exhibit** - A community-based arts project celebrating science and technology’s impact on daily life. - Contributions from local residents shape the exhibit, curated by artist Charlotte Dunn. - Supported by Creative Black Country and the Black Country Living Museum.  ---  ### **Infection Detection!** - A hands-on microbiology event led by the STEM Response Team. - Allows participants to diagnose and treat a patient using real scientific methods. - Covers the role of NHS biomedical scientists and medical microbiology.  ---  ### **DN…Eh?** - An interactive outreach event exploring genetics, cells, and biochemistry. - Supported by the Biochemical Society’s Scientific Outreach Grant.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "team_wolverhampton_024",
+      "category_id": "team_wolverhampton",
+      "question": "What is Team Wolverhampton?",
+      "answer": {
+        "main_points": [
+          "Team Wolverhampton represents the university in the national **BUCS (British Universities and Colleges Sport) competition**. Sports include: - Basketball - Netball - Judo - Badminton - Futsal - Football - Touch Rugby  Students can also compete in individual BUCS competitions throughout the year.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "social_inclusion_and_community_engagement_025",
+      "category_id": "social_inclusion_and_community_engagement",
+      "question": "How does the university support social inclusion and change?",
+      "answer": {
+        "main_points": [
+          "The University of Wolverhampton aims to: - Provide **equality of opportunity** for students from all backgrounds. - Encourage students and graduates to contribute positively to their communities through **volunteering**. - Support students through **financial aid** programs and **bursaries**. - Conduct **user-led research** to maximize societal impact. - Promote **graduate entrepreneurship** through business incubators and innovation hubs.  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "student_union_and_support_services_026",
+      "category_id": "student_union_and_support_services",
+      "question": "What is the Advice and Representation Centre (ARC)?",
+      "answer": {
+        "main_points": [
+          "The ARC offers **free, confidential, and independent advice** for students, covering academic, financial, and personal matters.  - **Location:** City Campus, open Monday–Friday, 9:00 AM–4:30 PM. - **Contact:** 01902 322038 or submit an online enquiry.  **Additional contacts:** - **Finance-related queries:** incomesection@wlv.ac.uk - **Course-related concerns:** University ASK Services  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "student_societies_and_volunteering_027",
+      "category_id": "student_societies_and_volunteering",
+      "question": "How can I join a student society?",
+      "answer": {
+        "main_points": [
+          "- Societies provide opportunities to meet like-minded students and explore interests. - The Students' Union supports and funds societies on various topics. - Visit the **Societies A-Z page** on the Students' Union website to find and join societies.  **Contact for support:** J.Appleby@wlv.ac.uk  ---"
+        ],
+        "examples": [],
+        "tips": [],
+        "related_topics": []
+      },
+      "source": "extracted"
+    },
+    {
+      "id": "student_societies_and_volunteering_028",
+      "category_id": "student_societies_and_volunteering",
+      "question": "What volunteering opportunities are available?",
+      "answer": {
+        "main_points": [
+          "- Gain skills and experience by volunteering with local charities and student-led initiatives. - Opportunities include course reps, committee roles, and community outreach programs. - Register online through the **Students' Union website**.  **Recognition & Rewards:** - Outstanding volunteers are celebrated at the annual **Students' Union Awards**. - Achievements are highlighted in newsletters and social media.  ---"
         ],
         "examples": [],
         "tips": [],
