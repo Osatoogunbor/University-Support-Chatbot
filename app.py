@@ -6,7 +6,10 @@ import openai
 from openai import AsyncOpenAI
 from pinecone import Pinecone  # Import the Pinecone class
 from transformers import pipeline
-import asyncio
+import asyncio  # Ensure asyncio is imported
+
+# Debug print to verify asyncio is imported
+print("DEBUG: asyncio module is", asyncio)
 
 # Access API keys securely
 OPENAI_API_KEY = st.secrets["openai_api_key"]
