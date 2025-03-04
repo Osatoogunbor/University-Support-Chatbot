@@ -7,17 +7,20 @@ from transformers import pipeline
 import streamlit as st
 import openai
 from openai import AsyncOpenAI
-from pinecone import Pinecone
+import pinecone  # Updated: import the module directly
 
 # ✅ Access API keys securely
 OPENAI_API_KEY = st.secrets["openai_api_key"]
 PINECONE_API_KEY = st.secrets["pinecone_api_key"]
+PINECONE_ENV = st.secrets["pinecone_env"]  # e.g. "us-east-1" (ensure this secret is set)
 
 # ✅ Check if API keys are loaded correctly
 if not OPENAI_API_KEY:
     raise ValueError("❌ OPENAI_API_KEY not found! Check your Streamlit secrets.")
 if not PINECONE_API_KEY:
     raise ValueError("❌ PINECONE_API_KEY not found! Check your Streamlit secrets.")
+if not PINECONE_ENV:
+    raise ValueError("❌ PINECONE_ENV not found! Check your Streamlit secrets.")
 
 # ✅ Initialize OpenAI & Pinecone
 openai.api_key = OPENAI_API_KEY
@@ -25,8 +28,9 @@ openai.api_key = OPENAI_API_KEY
 # ✅ Define aclient for AsyncOpenAI usage
 aclient = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
-pc = Pinecone(api_key=PINECONE_API_KEY)
-index = pc.Index("ai-powered-chatbot")
+# Updated Pinecone initialization:
+pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
+index = pinecone.Index("ai-powered-chatbot")
 
 print("✅ API keys loaded successfully!")
 print("✅ Pinecone and OpenAI clients initialized!")
