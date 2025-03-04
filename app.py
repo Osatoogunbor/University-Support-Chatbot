@@ -158,6 +158,7 @@ def display_link_card(title, description, image_url, link):
 
 # Main Streamlit UI
 def main():
+    import asyncio  # Ensure asyncio is available locally
     st.markdown(
         """
         <style>
