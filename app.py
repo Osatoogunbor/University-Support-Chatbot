@@ -20,7 +20,7 @@ openai.api_key = OPENAI_API_KEY
 aclient = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
 # Initialize Pinecone with the correct package
-pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
+pinecone.init(api_key=PINECONE_API_KEY)
 index = pinecone.Index("ai-powered-chatbot")
 
 print("✅ API keys loaded successfully!")
