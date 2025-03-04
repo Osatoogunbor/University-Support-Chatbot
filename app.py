@@ -9,7 +9,6 @@ import pinecone  # This should now work with the official client
 # Access API keys securely
 OPENAI_API_KEY = st.secrets["openai_api_key"]
 PINECONE_API_KEY = st.secrets["pinecone_api_key"]
-
 # Check if API keys are loaded correctly
 if not OPENAI_API_KEY:
     raise ValueError("❌ OPENAI_API_KEY not found! Check your Streamlit secrets.")
