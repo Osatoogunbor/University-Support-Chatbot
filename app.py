@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#!/usr/bin/env python
-# coding: utf-8
-
 import streamlit as st
 import openai
 from openai import AsyncOpenAI
@@ -38,7 +35,7 @@ sentiment_analyzer = pipeline(
     revision="714eb0f"
 )
 
-# ✅ Generic Intent Responses
+# Generic Intent Responses
 GENERIC_INTENTS = {
     "hello": "Hello! How can I assist you today?",
     "hi": "Hi! How can I help you?",
@@ -55,12 +52,12 @@ def detect_generic_intent(query):
             return response
     return None
 
-# ✅ Function to Detect Sentiment
+# Function to Detect Sentiment
 def detect_sentiment(query):
     result = sentiment_analyzer(query)[0]
     return result['label'].lower()
 
-# ✅ Retrieve Relevant Chunks from Pinecone
+# Retrieve Relevant Chunks from Pinecone
 async def retrieve_chunks(query, top_k=3):
     try:
         if not query or not isinstance(query, str):
@@ -82,7 +79,7 @@ async def retrieve_chunks(query, top_k=3):
         st.error(f"❌ Error retrieving chunks: {e}")
         return []
 
-# ✅ Generate Response
+# Generate Response
 async def generate_response(query):
     generic_response = detect_generic_intent(query)
     if generic_response:
@@ -137,7 +134,7 @@ async def generate_response(query):
     except Exception as e:
         return f"❌ Error: {e}"
 
-# ✅ Function to display link cards properly
+# Function to display link cards properly
 def display_link_card(title, description, image_url, link):
     st.markdown(
         f"""
@@ -155,7 +152,7 @@ def display_link_card(title, description, image_url, link):
         unsafe_allow_html=True
     )
 
-# ✅ Main Streamlit UI
+# Main Streamlit UI
 def main():
     st.markdown(
         """
@@ -175,7 +172,7 @@ def main():
     st.markdown('<div class="title">🎓 UniEase: Your University Study and Wellbeing Companion </div>', unsafe_allow_html=True)
     st.write("🔹 Type your queries below.")
 
-    # ✅ Chat history container
+    # Chat history container
     if "messages" not in st.session_state:
         st.session_state["messages"] = []
 
@@ -186,7 +183,7 @@ def main():
 
     st.divider()
 
-    # ✅ Chat input
+    # Chat input
     user_input = st.chat_input("Type your message here...")
     if user_input:
         st.session_state["messages"].append({"role": "user", "content": user_input.strip()})
