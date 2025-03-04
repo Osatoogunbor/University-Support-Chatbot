@@ -30,6 +30,8 @@ pip==25.0
 pygments==2.19.1
 markdown-it-py==3.0.0
 mdurl==0.1.2
+pinecone>=2.2.0
+
 rich==13.9.4
 transformers==4.37.0
 
