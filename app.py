@@ -1,20 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import asyncio
-from transformers import pipeline
-
 import streamlit as st
 import openai
 from openai import AsyncOpenAI
-import pinecone  # Updated: import the module directly
+import pinecone  # This should now work with the official client
 
-# ✅ Access API keys securely
+# Access API keys securely
 OPENAI_API_KEY = st.secrets["openai_api_key"]
 PINECONE_API_KEY = st.secrets["pinecone_api_key"]
-PINECONE_ENV = st.secrets["pinecone_env"]  # e.g. "us-east-1" (ensure this secret is set)
+PINECONE_ENV = st.secrets["pinecone_env"]  # e.g. "us-east-1"
 
-# ✅ Check if API keys are loaded correctly
+# Check if API keys are loaded correctly
 if not OPENAI_API_KEY:
     raise ValueError("❌ OPENAI_API_KEY not found! Check your Streamlit secrets.")
 if not PINECONE_API_KEY:
@@ -22,18 +19,17 @@ if not PINECONE_API_KEY:
 if not PINECONE_ENV:
     raise ValueError("❌ PINECONE_ENV not found! Check your Streamlit secrets.")
 
-# ✅ Initialize OpenAI & Pinecone
+# Initialize OpenAI & Pinecone
 openai.api_key = OPENAI_API_KEY
-
-# ✅ Define aclient for AsyncOpenAI usage
 aclient = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
-# Updated Pinecone initialization:
+# Initialize Pinecone with the correct package
 pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
 index = pinecone.Index("ai-powered-chatbot")
 
 print("✅ API keys loaded successfully!")
 print("✅ Pinecone and OpenAI clients initialized!")
+
 
 # ✅ Load Sentiment Analysis Model
 sentiment_analyzer = pipeline(
