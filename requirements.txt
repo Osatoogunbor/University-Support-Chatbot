@@ -1,6 +1,5 @@
 streamlit
 openai
-pinecone-client
 pinecone
 transformers
 gTTS
